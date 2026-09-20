@@ -1,0 +1,3658 @@
+[
+  {
+    "id": "tu-berlin",
+    "name": "TU Berlin",
+    "city": "Berlin",
+    "tier": "T1",
+    "score": 10,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "Feb 28, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Jan 2027"
+    },
+    "programs": [
+      {
+        "name": "Computer Science (Informatik) — M.Sc.",
+        "note": "Open admission · English · 4 sem",
+        "pick": true,
+        "brief": "A broad, respected research-oriented CS master's. You pick a focus from a huge elective catalogue — algorithms, databases, software engineering, AI, computer graphics, security. Strong for a Computer Engineering grad because electives let you stay systems/embedded-oriented. Very international cohort in Berlin's startup hub."
+      }
+    ],
+    "steps": [
+      "Get a uni-assist VPD first at my.uni-assist.de (4-6 weeks).",
+      "Create a tuPORT account on TU Berlin's site.",
+      "Choose Computer Science (Informatik) M.Sc.",
+      "Upload: bachelor's, transcript, high-school cert, IELTS/TOEFL, CV, VPD.",
+      "Submit before deadline. Open admission = no GPA cut-off."
+    ],
+    "track": "tuPORT shows received / under review / admitted. Decision also emailed. Summer '27: Dec 1 '26 - Feb 28 '27.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "High-school cert",
+        "IELTS 6.5 / TOEFL 90",
+        "VPD",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [
+        "Motivation letter"
+      ],
+      "Optional": []
+    },
+    "links": {
+      "program": "https://www.tu.berlin/en/studying/study-programs/all-programs-offered/study-course/computer-science-informatik-m-sc",
+      "apply": "",
+      "site": "https://www.tu.berlin/en"
+    }
+  },
+  {
+    "id": "tuhh",
+    "name": "Hamburg Univ. of Technology (TUHH)",
+    "city": "Hamburg",
+    "tier": "T1",
+    "score": 10,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "Jan 15, 2027",
+      "winter": "Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "#1 most popular CS M.Sc. in Germany · English",
+        "pick": true,
+        "brief": "Germany's most popular English CS master's (by applications). Research-grounded with majors in Computer & Software Engineering, Intelligence Engineering and Mathematics, plus free electives. Strong industry links in Hamburg (Airbus, tech). Practical, current, and open admission."
+      }
+    ],
+    "steps": [
+      "Apply directly on TUHH's portal.",
+      "Create account → choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV, motivation letter.",
+      "Submit in window: Dec 1-Jan 15 (summer) or Jun 1-Jul 15 (winter)."
+    ],
+    "track": "TUHH application portal. Decision emailed as Zulassungsbescheid.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [
+        "Motivation letter"
+      ],
+      "Optional": []
+    },
+    "links": {
+      "program": "https://www.tuhh.de/tuhh/en/studying/before-studying/degree-courses/masters-programs/computer-science",
+      "apply": "",
+      "site": "https://www.tuhh.de/tuhh/en/"
+    }
+  },
+  {
+    "id": "heidelberg",
+    "name": "Heidelberg University",
+    "city": "Heidelberg",
+    "tier": "T1",
+    "score": 9,
+    "fee": "paid",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "Jan 15, 2027 (CE: Nov 15, 2026)",
+      "winter": "May 15, 2027",
+      "applyBy": "By Nov-Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Engineering — M.Sc.",
+        "note": "English · open admission · closest to your degree",
+        "pick": true,
+        "brief": "The closest match to your Computer Engineering degree. Covers hardware-software co-design, embedded/cyber-physical systems, computer architecture, and digital systems. Open admission at Germany's oldest university — a strong pick with prestige."
+      },
+      {
+        "name": "Data & Computer Science — M.Sc.",
+        "note": "English · open admission",
+        "pick": true,
+        "brief": "Blends classical computer science with modern data science: algorithms, machine learning, data management, statistical modelling, and AI. Open admission. Great fit given your math/stats background."
+      }
+    ],
+    "steps": [
+      "Apply directly on Heidelberg's portal.",
+      "Pick Computer Engineering (your exact match) or Data & CS.",
+      "Upload: bachelor's, transcript, high-school cert, IELTS/TOEFL, CV, motivation letter.",
+      "Submit by Jan 15, 2027 (summer). CE deadline may be Nov 15 (tight)."
+    ],
+    "track": "Heidelberg application portal + email. ~€1,500/sem (Baden-Württemberg).",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "High-school cert",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Motivation letter",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "https://www.uni-heidelberg.de/en/study/all-subjects",
+      "apply": "",
+      "site": "https://www.uni-heidelberg.de/en"
+    }
+  },
+  {
+    "id": "dresden",
+    "name": "TU Dresden",
+    "city": "Dresden",
+    "tier": "T1",
+    "score": 8,
+    "fee": "free",
+    "nc": "nc",
+    "summer": "winter",
+    "method": "uniassist",
+    "deadlines": {
+      "summer": "Winter only",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By May 2027"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · TU9 · Winter only",
+        "pick": true,
+        "brief": "A TU9 research master's covering systems, networking, databases, algorithms and software design. Winter-only intake. Dresden's 'Silicon Saxony' provides strong semiconductor/tech internships."
+      }
+    ],
+    "steps": [
+      "Apply via uni-assist.",
+      "my.uni-assist.de → TU Dresden → Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, high-school cert, IELTS/TOEFL, CV.",
+      "GRE recommended (not required) for non-EU.",
+      "Winter-only (Oct start)."
+    ],
+    "track": "my.uni-assist.de + TU Dresden email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "High-school cert",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [
+        "GRE"
+      ],
+      "Optional": []
+    },
+    "links": {
+      "program": "https://tu-dresden.de/ing/informatik/studium/studienangebot/master-studiengaenge/m-sc-computer-science?set_language=en",
+      "apply": "",
+      "site": "https://tu-dresden.de/"
+    }
+  },
+  {
+    "id": "saarland",
+    "name": "Saarland University",
+    "city": "Saarbrücken",
+    "tier": "T2",
+    "score": 9,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "Nov 15, 2026 (late)",
+      "winter": "May 15, 2027",
+      "applyBy": "By Oct 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English C1 · GRE · top EU CS research",
+        "pick": true,
+        "brief": "One of Europe's top CS research environments (Max Planck, CISPA, DFKI on campus). Heavy theory + systems. Extremely strong for research careers and PhDs. Requires GRE + C1 English — high bar but elite outcome."
+      },
+      {
+        "name": "Data Science & AI — M.Sc.",
+        "note": "English C1 · GRE · math-friendly",
+        "pick": true,
+        "brief": "Focused on machine learning, deep learning, NLP and data engineering, backed by world-class AI research institutes. Your math/statistics background is a strong fit. GRE + C1 English required."
+      },
+      {
+        "name": "Embedded Systems — M.Sc.",
+        "note": "English C1 · GRE · CE fit",
+        "pick": true,
+        "brief": "Hardware-software co-design, real-time systems, IoT and microcontrollers. A natural fit for Computer Engineering. Backed by the same top-ranked campus. GRE + C1 required."
+      }
+    ],
+    "steps": [
+      "Apply directly via Saarland Informatics Campus (SIM) portal.",
+      "Take GRE General Test first — MANDATORY for non-EU/EFTA (incl. Egypt).",
+      "English must be IELTS 7.0+ / TOEFL 95+ (C1). AAST MOI letter NOT accepted here.",
+      "Upload: bachelor's, transcript, GRE, IELTS/TOEFL, CV, motivation letter.",
+      "Submit by deadline (summer late ~Nov 15)."
+    ],
+    "track": "SIM portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "GRE General Test",
+        "IELTS 7.0 / TOEFL 95 (C1)",
+        "CV",
+        "Motivation letter",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "https://saarland-informatics-campus.de/en/studium-studies/master-english/",
+      "apply": "",
+      "site": "https://www.uni-saarland.de/en/home.html"
+    }
+  },
+  {
+    "id": "rostock",
+    "name": "University of Rostock",
+    "city": "Rostock",
+    "tier": "T2",
+    "score": 9,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "uniassist",
+    "deadlines": {
+      "summer": "Nov 30, 2026",
+      "winter": "May 31, 2027",
+      "applyBy": "By Oct-Nov 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science International — M.Sc.",
+        "note": "English · open admission",
+        "pick": true,
+        "brief": "An English-taught, internationally-focused CS master's with specialisations in software and systems. Open admission and popular with internationals. Affordable Baltic-coast living."
+      }
+    ],
+    "steps": [
+      "Apply via uni-assist.",
+      "my.uni-assist.de → Rostock → Computer Science International.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV, passport.",
+      "After approval, enroll at Rostock directly.",
+      "Non-EU: Nov 30 (summer) / May 31 (winter)."
+    ],
+    "track": "my.uni-assist.de Inbox + Rostock email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree (min 180 ECTS)",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [
+        "Motivation letter"
+      ],
+      "Optional": []
+    },
+    "links": {
+      "program": "https://www.ief.uni-rostock.de/en/studiengaenge/master-studiengaenge-2/computer-science-international-msc/csi-master-spso-2021",
+      "apply": "",
+      "site": "https://www.uni-rostock.de/en/"
+    }
+  },
+  {
+    "id": "bochum",
+    "name": "Ruhr University Bochum",
+    "city": "Bochum",
+    "tier": "T2",
+    "score": 9,
+    "fee": "free",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Dec 15, 2026",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Oct-Nov 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · IT security excellence",
+        "pick": true,
+        "brief": "Research-oriented CS with a standout IT-security focus (Horst Görtz Institute). Broad specialisations with real industry ties to the Ruhr's tech sector. Requires solid CS + math credits in your bachelor's."
+      }
+    ],
+    "steps": [
+      "Apply directly on Bochum portal.",
+      "International students apply for all programs online.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV.",
+      "Deadline ~Dec 15 (main)."
+    ],
+    "track": "Bochum portal + email (apply-cs@rub.de).",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's (50 CP CS + 18 CP math)",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "https://informatik.rub.de/en/studies/application/msc-cs",
+      "apply": "",
+      "site": "https://www.ruhr-uni-bochum.de/en/"
+    }
+  },
+  {
+    "id": "oldenburg",
+    "name": "University of Oldenburg",
+    "city": "Oldenburg",
+    "tier": "T2",
+    "score": 9,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Dec 15, 2026",
+      "winter": "~Sep 30, 2027",
+      "applyBy": "By Nov 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · open admission",
+        "pick": true,
+        "brief": "An open-admission CS master's with specialisations including applied computing, marine/offshore informatics and health informatics. Solid, accessible, good value. The older 'Computing Science' track is being phased out — choose this one."
+      }
+    ],
+    "steps": [
+      "Apply directly on Oldenburg portal (uol.de).",
+      "Choose Computer Science M.Sc. (older 'Computing Science' track ending).",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Oldenburg portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "https://uol.de/en/course-of-study/computer-science-master-642",
+      "apply": "",
+      "site": "https://uol.de/en"
+    }
+  },
+  {
+    "id": "rptu",
+    "name": "RPTU Kaiserslautern-Landau",
+    "city": "Kaiserslautern",
+    "tier": "T2",
+    "score": 9,
+    "fee": "free",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "Oct 31, 2026",
+      "winter": "Apr 30, 2027",
+      "applyBy": "By Oct 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · DFKI AI center · #1 int'l satisfaction",
+        "pick": true,
+        "brief": "A DFKI-affiliated research master's (DFKI = Germany's top AI research centre is here). Strong in AI, software systems, and cybersecurity. Ranked #1 for international student satisfaction. Requires good CS fundamentals."
+      },
+      {
+        "name": "Embedded Computing Systems — M.Sc.",
+        "note": "English · CE fit",
+        "pick": true,
+        "brief": "Specialised in embedded/cyber-physical systems, real-time computing, IoT hardware. An excellent CE match with strong lab and industry components. English-taught."
+      }
+    ],
+    "steps": [
+      "Apply directly on RPTU CS dept portal (applymsc.cs.rptu.de).",
+      "Choose CS or Embedded Computing Systems.",
+      "Upload: bachelor's, transcript, IELTS (C1 preferred), CV.",
+      "Summer 2027 deadline: Oct 31, 2026."
+    ],
+    "track": "RPTU applymsc portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5+ (C1 preferred)",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "https://applymsc.cs.rptu.de",
+      "site": "https://rptu.de/en"
+    }
+  },
+  {
+    "id": "halle",
+    "name": "Martin Luther Univ. Halle-Wittenberg",
+    "city": "Halle",
+    "tier": "T2",
+    "score": 9,
+    "fee": "free",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "uniassist",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · IELTS only 6.0 (B2) — lowest bar",
+        "pick": true,
+        "brief": "An accessible English CS master's. Notably the lowest English requirement of your options (IELTS 6.0 / B2). Good fundamentals-focused curriculum at a mid-size university in an affordable city. Reliable safety-net choice."
+      }
+    ],
+    "steps": [
+      "Apply via uni-assist.",
+      "my.uni-assist.de → Halle → Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS 6.0, CV.",
+      "Lowest English requirement — great safety net."
+    ],
+    "track": "my.uni-assist.de + Halle email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree (60%+)",
+        "Transcript",
+        "IELTS 6.0 (B2)",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "https://www.uni-halle.de/ssc/bewerbungsinformationen?lang=en",
+      "site": "https://www.uni-halle.de/"
+    }
+  },
+  {
+    "id": "weimar",
+    "name": "Bauhaus University Weimar",
+    "city": "Weimar",
+    "tier": "T2",
+    "score": 9,
+    "fee": "free",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science for Digital Media — M.Sc.",
+        "note": "English · media security, ML, visualization",
+        "pick": true,
+        "brief": "Unique program at the famous Bauhaus university blending CS with digital media: media security, data mining, information retrieval, machine learning, visualisation. Great if you like CS + creative tech."
+      },
+      {
+        "name": "Human-Computer Interaction — M.Sc.",
+        "note": "English · UX",
+        "pick": true,
+        "brief": "Focuses on interface design, interactive systems, usability, and UX research. Blends a strong CS foundation with design/cognitive science — a distinctive, employable niche."
+      },
+      {
+        "name": "Digital Engineering — M.Sc.",
+        "note": "English · modeling, simulation",
+        "pick": true,
+        "brief": "Interdisciplinary: combines computer science with civil/environmental engineering — modelling, simulation, visualisation and data science. Good if you want CS applied to engineering domains."
+      }
+    ],
+    "steps": [
+      "Apply directly on Weimar portal (or uni-assist for foreign degrees).",
+      "Choose a program from International Degree Programmes.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV, motivation letter."
+    ],
+    "track": "Weimar portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Motivation letter",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "https://www.uni-weimar.de/en/media/international/international-degree-programmes",
+      "apply": "",
+      "site": "https://www.uni-weimar.de/en/"
+    }
+  },
+  {
+    "id": "cottbus",
+    "name": "BTU Cottbus-Senftenberg",
+    "city": "Cottbus",
+    "tier": "T2",
+    "score": 9,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · open admission · near Berlin",
+        "pick": true,
+        "brief": "A solid, very international CS master's (21 English programs at BTU). Covers core CS with electives. Open admission, near Berlin, affordable. Good-value pick."
+      },
+      {
+        "name": "Artificial Intelligence Engineering — M.Sc.",
+        "note": "English · open admission",
+        "pick": true,
+        "brief": "Applied AI/ML engineering — deep learning, intelligent systems, robotics. Practical, industry-oriented. Good fit for AI careers."
+      },
+      {
+        "name": "Cyber Security — M.Sc.",
+        "note": "English · open admission",
+        "pick": true,
+        "brief": "IT/network security, cryptography, penetration testing and cyber defense. Applied and hands-on. Good if security interests you. Open admission."
+      }
+    ],
+    "steps": [
+      "Apply directly on BTU portal (or uni-assist).",
+      "Choose CS / AI Engineering / Cyber Security.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "BTU portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "https://www.b-tu.de/en/informatik-ms",
+      "apply": "",
+      "site": "https://www.b-tu.de/en"
+    }
+  },
+  {
+    "id": "leipzig",
+    "name": "Leipzig University",
+    "city": "Leipzig",
+    "tier": "T2",
+    "score": 8,
+    "fee": "free",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "uniassist",
+    "deadlines": {
+      "summer": "Mar 1, 2027",
+      "winter": "~Sep 1, 2027",
+      "applyBy": "By Jan-Feb 2027"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · 9 CS programs · affordable city",
+        "pick": true,
+        "brief": "One of Germany's classic universities with a strong CS department. Broad specialisations; Leipzig is an affordable, vibrant tech city. Good reputation at low cost."
+      },
+      {
+        "name": "Data Science — M.Sc.",
+        "note": "English · math/stats fit",
+        "pick": true,
+        "brief": "Focused on big data, machine learning, statistics and efficient data management. Strong database group at Leipzig. Excellent fit for your math background."
+      }
+    ],
+    "steps": [
+      "Apply via uni-assist.",
+      "my.uni-assist.de → Leipzig → your CS/DS program.",
+      "Upload: bachelor's, transcript, IELTS (B2 ok at Leipzig), CV.",
+      "Summer '27 window ~Nov 6 '26 - Mar 1 '27.",
+      "After approval, enroll at Leipzig."
+    ],
+    "track": "my.uni-assist.de + Leipzig email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.0 (B2) or 6.5",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.uni-leipzig.de/en"
+    }
+  },
+  {
+    "id": "potsdam",
+    "name": "University of Potsdam",
+    "city": "Potsdam (near Berlin)",
+    "tier": "T2",
+    "score": 8,
+    "fee": "free",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · Hasso Plattner Institute (HPI)",
+        "pick": true,
+        "brief": "Research CS near Berlin, closely tied to the elite Hasso Plattner Institute (HPI) — Germany's best-known software-systems research school. Excellent for software engineering & systems. Strong reputation."
+      },
+      {
+        "name": "Data Science — M.Sc.",
+        "note": "English · HPI · strong AI/data",
+        "pick": true,
+        "brief": "Data science with HPI-level ML and data-engineering depth. Very strong if you want to be a data scientist/ML engineer. Competitive but high value."
+      },
+      {
+        "name": "Cognitive Systems — M.Sc.",
+        "note": "English · AI, NLP",
+        "pick": true,
+        "brief": "Intersection of AI, cognitive science and NLP — modeling human-like reasoning and perception. Distinctive and research-leaning. Good for AI researchers."
+      }
+    ],
+    "steps": [
+      "Apply directly on Potsdam portal.",
+      "Choose CS / Data Science / Cognitive Systems.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Potsdam portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.uni-potsdam.de/en/"
+    }
+  },
+  {
+    "id": "bremen",
+    "name": "University of Bremen",
+    "city": "Bremen",
+    "tier": "T2",
+    "score": 8,
+    "fee": "free",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · digital media, AI",
+        "pick": true,
+        "brief": "A solid research CS master's with strengths in digital media, robotics/space (University of Bremen + DFKI space robotics) and AI. Good breadth and affordability."
+      }
+    ],
+    "steps": [
+      "Apply directly on Bremen portal.",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Bremen portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.uni-bremen.de/en/"
+    }
+  },
+  {
+    "id": "hannover",
+    "name": "Leibniz University Hannover",
+    "city": "Hannover",
+    "tier": "T1",
+    "score": 8,
+    "fee": "free",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · TU9 · summer intake",
+        "pick": true,
+        "brief": "A TU9 research master's with strong systems, software and theoretical CS. Summer intake available. Solid engineering reputation and industry links in Lower Saxony."
+      }
+    ],
+    "steps": [
+      "Apply directly on Leibniz Hannover portal (or uni-assist).",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Leibniz Hannover portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.uni-hannover.de/en/"
+    }
+  },
+  {
+    "id": "braunschweig",
+    "name": "TU Braunschweig",
+    "city": "Braunschweig",
+    "tier": "T1",
+    "score": 8,
+    "fee": "free",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · TU9 · AI/autonomous",
+        "pick": true,
+        "brief": "TU9 research CS with strong AI, autonomous systems and informatics. Good industry ties. A respected, accessible-in-principle choice."
+      }
+    ],
+    "steps": [
+      "Apply directly on TU Braunschweig portal.",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "TU Braunschweig portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.tu-braunschweig.de/en"
+    }
+  },
+  {
+    "id": "hamburg",
+    "name": "University of Hamburg",
+    "city": "Hamburg",
+    "tier": "T2",
+    "score": 7,
+    "fee": "free",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "Mar 31, 2027 (intl)",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Intelligent Adaptive Systems — M.Sc.",
+        "note": "English · AI, autonomous systems",
+        "pick": true,
+        "brief": "Specialised in AI, autonomous systems, robotics and human-machine interaction. A well-regarded niche program at a large university. Good for an AI/robotics career."
+      }
+    ],
+    "steps": [
+      "Apply directly on Hamburg portal (or uni-assist).",
+      "Choose Intelligent Adaptive Systems M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV, motivation letter."
+    ],
+    "track": "Hamburg portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Motivation letter",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.uni-hamburg.de/en.html"
+    }
+  },
+  {
+    "id": "koeln",
+    "name": "University of Cologne",
+    "city": "Cologne",
+    "tier": "T2",
+    "score": 7,
+    "fee": "free",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English tracks · large city",
+        "pick": true,
+        "brief": "Compares well for breadth — large university, solid CS with data science and systems options. Good for a flexible graduate profile. Cologne is a major job market."
+      }
+    ],
+    "steps": [
+      "Apply directly on Cologne portal.",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Cologne portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://portal.uni-koeln.de/en/"
+    }
+  },
+  {
+    "id": "frankfurtu",
+    "name": "Goethe University Frankfurt",
+    "city": "Frankfurt",
+    "tier": "T2",
+    "score": 7,
+    "fee": "free",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · financial hub",
+        "pick": true,
+        "brief": "Research-leaning CS at a top German research university. Broad electives and a strong computing department; Frankfurt is a finance/tech hub."
+      }
+    ],
+    "steps": [
+      "Apply directly on Goethe Frankfurt portal.",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Goethe Frankfurt portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.uni-frankfurt.de/en/"
+    }
+  },
+  {
+    "id": "goettingen",
+    "name": "University of Göttingen",
+    "city": "Göttingen",
+    "tier": "T2",
+    "score": 8,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Applied Computer Science — M.Sc.",
+        "note": "English · open admission · historic",
+        "pick": true,
+        "brief": "Applied, practical CS with specialisation options and an online aptitude assessment. Lower barriers; a solid accessible option at a historic university."
+      }
+    ],
+    "steps": [
+      "Apply directly on Göttingen online portal.",
+      "Choose Applied Computer Science.",
+      "There's an online aptitude test (math/stats/CS) after applying.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Göttingen portal + email. Watch for aptitude-test email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "https://www.uni-goettingen.de/en/642406.html",
+      "site": "https://www.uni-goettingen.de/en"
+    }
+  },
+  {
+    "id": "freiburg",
+    "name": "University of Freiburg",
+    "city": "Freiburg",
+    "tier": "T2",
+    "score": 7,
+    "fee": "paid",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · strong ML · €1,500/sem",
+        "pick": true,
+        "brief": "Research-quality CS with strong machine learning, AI, and bioinformatics. Beautiful city, elite reputation. Baden-Württemberg tuition (~€1,500/sem) applies."
+      }
+    ],
+    "steps": [
+      "Apply directly on Freiburg portal.",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Freiburg portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.uni-freiburg.de/en/"
+    }
+  },
+  {
+    "id": "erlangen",
+    "name": "FAU Erlangen-Nürnberg",
+    "city": "Erlangen",
+    "tier": "T2",
+    "score": 8,
+    "fee": "free",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · Siemens partner",
+        "pick": true,
+        "brief": "FAU is a Siemens-partnered university with strong systems, AI and software engineering. Excellent industry placement. Free tuition. High value."
+      },
+      {
+        "name": "Information & Communication Tech — M.Sc.",
+        "note": "English · CE fit",
+        "pick": true,
+        "brief": "An English ICT master's combining computer science with communications/wireless/signal processing — a natural CE match with strong industry links."
+      }
+    ],
+    "steps": [
+      "Apply directly via FAU master's portal (www.master.fau.eu).",
+      "Choose your program.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "FAU master's portal (master.fau.eu) + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "https://www.fau.eu/studying/degree-programs/masters-degree-programmes",
+      "apply": "https://www.master.fau.eu",
+      "site": "https://www.fau.eu"
+    }
+  },
+  {
+    "id": "passau",
+    "name": "University of Passau",
+    "city": "Passau",
+    "tier": "T2",
+    "score": 9,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English & German · open admission",
+        "pick": true,
+        "brief": "A flexible German+English CS master's covering broad CS with logic, algorithms and systems. Open admission, free, in a beautiful German-Czech border town."
+      },
+      {
+        "name": "Artificial Intelligence Eng. — M.Sc.",
+        "note": "English · open admission · math-friendly",
+        "pick": true,
+        "brief": "Applied AI engineering — ML, deep learning, intelligent systems — taught in English, open admission. Strong fit for AI careers."
+      }
+    ],
+    "steps": [
+      "Apply directly on Passau portal.",
+      "Choose CS or AI Engineering.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Passau portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "https://www.uni-passau.de/en/international-programmes",
+      "apply": "",
+      "site": "https://www.uni-passau.de/en/"
+    }
+  },
+  {
+    "id": "bayreuth",
+    "name": "University of Bayreuth",
+    "city": "Bayreuth",
+    "tier": "T2",
+    "score": 9,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · elite clusters · open admission",
+        "pick": true,
+        "brief": "CS at an 'excellence-cluster' university with applied informatics and strong math cross-links. Open admission, affordable Bavaria location."
+      },
+      {
+        "name": "High Performance Computing — M.Sc.",
+        "note": "English",
+        "pick": true,
+        "brief": "Specialised HPC master's — parallel computing, scientific computing, supercomputing. Strong fit for systems/CE-minded students. Good for research/HPC careers."
+      }
+    ],
+    "steps": [
+      "Apply directly on Bayreuth portal.",
+      "Choose CS or HPC.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Bayreuth portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.uni-bayreuth.de/en/index.html"
+    }
+  },
+  {
+    "id": "magdeburg",
+    "name": "OvGU Magdeburg",
+    "city": "Magdeburg",
+    "tier": "T2",
+    "score": 9,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Data Science — M.Sc.",
+        "note": "English · open admission · strong math/stats fit",
+        "pick": true,
+        "brief": "A dedicated Data Science master's (big data, ML, statistics, analytics) at a university strong in data research. Excellent fit for your math/stats background. Open admission."
+      }
+    ],
+    "steps": [
+      "Apply directly on OvGU portal.",
+      "Choose Data Science.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "OvGU portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.ovgu.de/"
+    }
+  },
+  {
+    "id": "clausthal",
+    "name": "TU Clausthal",
+    "city": "Clausthal",
+    "tier": "T2",
+    "score": 9,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · small TU · open admission · high acceptance",
+        "pick": true,
+        "brief": "Small, focused TU with open admission and high acceptance. Broad practical CS. Very low cost of living. A reliable, low-stress admission option."
+      }
+    ],
+    "steps": [
+      "Apply directly on TU Clausthal portal.",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "TU Clausthal portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.tu-clausthal.de/en/"
+    }
+  },
+  {
+    "id": "luebeck",
+    "name": "University of Lübeck",
+    "city": "Lübeck",
+    "tier": "T2",
+    "score": 9,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · open admission · medical informatics",
+        "pick": true,
+        "brief": "CS with a strong medical-informatics and AI angle (University of Lübeck's speciality). Open admission. Good niche if health-tech interests you."
+      }
+    ],
+    "steps": [
+      "Apply directly on Lübeck portal.",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Lübeck portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.uni-luebeck.de/en/"
+    }
+  },
+  {
+    "id": "hildesheim",
+    "name": "University of Hildesheim",
+    "city": "Hildesheim",
+    "tier": "T2",
+    "score": 9,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Data Analytics — M.Sc.",
+        "note": "English · open admission",
+        "pick": true,
+        "brief": "A focused Data Analytics master's — statistics, machine learning, business intelligence, data visualisation. Great fit and open admission."
+      }
+    ],
+    "steps": [
+      "Apply directly on Hildesheim portal.",
+      "Choose Data Analytics M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Hildesheim portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.uni-hildesheim.de/en/"
+    }
+  },
+  {
+    "id": "wuerzburg",
+    "name": "University of Würzburg",
+    "city": "Würzburg",
+    "tier": "T2",
+    "score": 8,
+    "fee": "free",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · AI, space science",
+        "pick": true,
+        "brief": "Solid CS master's at a respected Bavarian university. Specialisations include AI, space/satellite data, and software systems. Good breadth."
+      }
+    ],
+    "steps": [
+      "Apply directly on Würzburg portal.",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Würzburg portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.uni-wuerzburg.de/en/"
+    }
+  },
+  {
+    "id": "osnabrueck",
+    "name": "University of Osnabrück",
+    "city": "Osnabrück",
+    "tier": "T2",
+    "score": 8,
+    "fee": "free",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · cognitive science, AI",
+        "pick": true,
+        "brief": "CS with a strong cognitive-science and AI-leaning profile, plus practical informatics. Reasonable, well-rounded option."
+      }
+    ],
+    "steps": [
+      "Apply directly on Osnabrück portal.",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Osnabrück portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.uni-osnabrueck.de/en/"
+    }
+  },
+  {
+    "id": "ilmenau",
+    "name": "TU Ilmenau",
+    "city": "Ilmenau",
+    "tier": "T2",
+    "score": 8,
+    "fee": "free",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · communications, signal processing",
+        "pick": true,
+        "brief": "Technical CS at a classic German technical university — communications, signal processing, media tech. Good engineering crossover. Affordable."
+      }
+    ],
+    "steps": [
+      "Apply directly on TU Ilmenau portal.",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "TU Ilmenau portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.tu-ilmenau.de/en/"
+    }
+  },
+  {
+    "id": "kiel",
+    "name": "Kiel University (CAU)",
+    "city": "Kiel",
+    "tier": "T2",
+    "score": 8,
+    "fee": "free",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · Baltic coast",
+        "pick": true,
+        "brief": "Research-leaning CS at a northern German university with marine and medical-informatics angles. Solid, accessible, Baltic-coast living costs."
+      }
+    ],
+    "steps": [
+      "Apply directly on Kiel portal.",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Kiel portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.uni-kiel.de/en/"
+    }
+  },
+  {
+    "id": "duisburg",
+    "name": "Univ. of Duisburg-Essen",
+    "city": "Duisburg/Essen",
+    "tier": "T2",
+    "score": 9,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · multiple tracks · Ruhr",
+        "pick": true,
+        "brief": "English CS with specialisation tracks (software engineering, embedded, data). Free NRW tuition, very international, strong applied focus and good industry links in the Ruhr."
+      },
+      {
+        "name": "Applied Computer Science — M.Sc.",
+        "note": "English",
+        "pick": true,
+        "brief": "A practical, applied CS variant with emphasis on real-world software development. Lower barriers, career-oriented."
+      }
+    ],
+    "steps": [
+      "Apply directly on UDE portal (or uni-assist).",
+      "Choose CS or Applied CS.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "UDE portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.uni-due.de/en/"
+    }
+  },
+  {
+    "id": "siegen",
+    "name": "University of Siegen",
+    "city": "Siegen",
+    "tier": "T2",
+    "score": 9,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · #8 most popular",
+        "pick": true,
+        "brief": "Popular open-admission CS master's (one of Germany's most-applied-to). Broad and accessible with good specialisations. Free."
+      }
+    ],
+    "steps": [
+      "Apply directly on Siegen portal.",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Siegen portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.uni-siegen.de/start/"
+    }
+  },
+  {
+    "id": "paderborn",
+    "name": "University of Paderborn",
+    "city": "Paderborn",
+    "tier": "T2",
+    "score": 8,
+    "fee": "free",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · 15 CS programs",
+        "pick": true,
+        "brief": "Paderborn is a dedicated CS powerhouse (15+ CS programs). Research-strong with excellent software/systems focus. Free NRW. Strong value."
+      }
+    ],
+    "steps": [
+      "Apply directly on Paderborn portal.",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Paderborn portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.uni-paderborn.de/en/"
+    }
+  },
+  {
+    "id": "wildau",
+    "name": "TH Wildau",
+    "city": "Wildau (30 min Berlin)",
+    "tier": "T3",
+    "score": 10,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Feb 28, 2027",
+      "winter": "~Aug 31, 2027",
+      "applyBy": "By Jan-Feb 2027"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · open admission · very international",
+        "pick": true,
+        "brief": "Hands-on, very international CS master's at a university of applied sciences 30 minutes from Berlin — combines applied tech with Berlin's job market. Open admission. Your work experience is valued here."
+      }
+    ],
+    "steps": [
+      "Apply directly on TH Wildau portal (or uni-assist).",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV. 3yr XP is a big plus."
+    ],
+    "track": "TH Wildau portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [
+        "Work experience proof",
+        "Motivation letter"
+      ],
+      "Optional": []
+    },
+    "links": {
+      "program": "https://en.th-wildau.de/study/programmes",
+      "apply": "",
+      "site": "https://en.th-wildau.de"
+    }
+  },
+  {
+    "id": "htw-berlin",
+    "name": "HTW Berlin",
+    "city": "Berlin",
+    "tier": "T3",
+    "score": 10,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jun 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · practice-oriented",
+        "pick": true,
+        "brief": "Practice-oriented CS at Berlin's largest applied-sciences university. Strong Berlin industry links and internships. Case-by-case admission values your work experience + UK degree."
+      },
+      {
+        "name": "Applied Computer Science — M.Sc.",
+        "note": "English · case-by-case",
+        "pick": true,
+        "brief": "An applied CS variant focused on building real systems, with flexible specialisation. Also case-by-case — experience-based admission."
+      }
+    ],
+    "steps": [
+      "Apply directly on HTW Berlin master's page.",
+      "Pick your program.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV, work experience.",
+      "Case-by-case = 3yr XP + UK degree help a lot."
+    ],
+    "track": "HTW Berlin portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [
+        "Work experience proof",
+        "Motivation letter"
+      ],
+      "Optional": []
+    },
+    "links": {
+      "program": "https://www.htw-berlin.de/en/studies/degree-programmes",
+      "apply": "https://www.htw-berlin.de/en/studies/application/masters-application",
+      "site": "https://www.htw-berlin.de/en"
+    }
+  },
+  {
+    "id": "rhine-waal",
+    "name": "Rhine-Waal UAS",
+    "city": "Kleve",
+    "tier": "T3",
+    "score": 10,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Information Engineering & CS — M.Sc.",
+        "note": "English · open admission · #5 popular",
+        "pick": true,
+        "brief": "A unique program combining information engineering, CS and embedded/sensor systems — a strong CE match. #5 most popular CS program in Germany, open admission, extremely international."
+      }
+    ],
+    "steps": [
+      "Apply directly on Rhine-Waal portal (or uni-assist).",
+      "Choose Information Engineering & CS.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Rhine-Waal portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "https://www.hochschule-rhein-waal.de/en/faculties/communication-and-environment/degree-programmes/master-degree-programmes/information",
+      "apply": "",
+      "site": "https://www.hochschule-rhein-waal.de/en"
+    }
+  },
+  {
+    "id": "anhalt",
+    "name": "Hochschule Anhalt",
+    "city": "Köthen",
+    "tier": "T3",
+    "score": 10,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "uniassist",
+    "deadlines": {
+      "summer": "~Mar 15, 2027",
+      "winter": "~Sep 15, 2027",
+      "applyBy": "By Feb 2027"
+    },
+    "programs": [
+      {
+        "name": "Applied Computer Science — M.Sc.",
+        "note": "English · open admission",
+        "pick": true,
+        "brief": "Practical, applied CS at a very international East-German Fachhochschule. Open admission, extremely low cost of living, high acceptance. Strong safety-net value."
+      },
+      {
+        "name": "Data Science — M.Sc.",
+        "note": "English · open admission",
+        "pick": true,
+        "brief": "Applied data science — ML, analytics, business intelligence — at an affordable, international FH. Great fit and easily accessible."
+      }
+    ],
+    "steps": [
+      "Apply via uni-assist.",
+      "my.uni-assist.de → Anhalt → program.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "my.uni-assist.de + Anhalt email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "https://www.hs-anhalt.de/en/degree-programs/ain/study.html",
+      "apply": "https://www.hs-anhalt.de/en/study/paths-to-university/your-application.html",
+      "site": "https://www.hs-anhalt.de/en/"
+    }
+  },
+  {
+    "id": "hof",
+    "name": "Hof University of Applied Sciences",
+    "city": "Hof",
+    "tier": "T3",
+    "score": 9,
+    "fee": "paid",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Artificial Intelligence & Robotics — M.Sc.",
+        "note": "English · career-focused · strong XP match",
+        "pick": true,
+        "brief": "Career-focused AI + robotics master's at a Bavarian FH with strong industry internships. Your 3 years of work experience makes you an ideal candidate. Note: this program carries tuition."
+      },
+      {
+        "name": "Software Engineering — M.Sc.",
+        "note": "English · NOTE ~€3,300/sem tuition",
+        "pick": false,
+        "brief": "Practical software engineering: agile development, architecture, project management. Career-oriented. NOTE: ~€3,300/sem tuition applies — the AI&Robotics program is the better-value pick."
+      }
+    ],
+    "steps": [
+      "Apply directly on Hof portal.",
+      "Choose AI & Robotics (Software Engineering has tuition).",
+      "You may need uni-assist to certify your foreign degree.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV.",
+      "Check program page for exact dates (some apply Nov 5-30)."
+    ],
+    "track": "Hof portal (Primuss) + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [
+        "Work experience proof",
+        "Motivation letter"
+      ],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.hof-university.com"
+    }
+  },
+  {
+    "id": "stralsund",
+    "name": "Hochschule Stralsund",
+    "city": "Stralsund",
+    "tier": "T3",
+    "score": 10,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Feb 15, 2027",
+      "winter": "~Aug 15, 2027",
+      "applyBy": "By Jan 2027"
+    },
+    "programs": [
+      {
+        "name": "Simulation & System Design — M.Sc.",
+        "note": "English · open admission · CE fit",
+        "pick": true,
+        "brief": "Specialised in modelling, simulation and systems design/integration for engineering — a strong CE fit. Open admission, Baltic-coast location, very low cost. High acceptance."
+      },
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · open admission",
+        "pick": true,
+        "brief": "Broad accessible CS master's at an open-admission Baltic-coast FH. Low cost, high acceptance, good value."
+      }
+    ],
+    "steps": [
+      "Apply directly on Stralsund portal.",
+      "Choose Simulation & System Design or CS.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Stralsund portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "https://www.hochschule-stralsund.de/en/studium-und-lehre/international-programs",
+      "apply": "",
+      "site": "https://www.hochschule-stralsund.de/en/"
+    }
+  },
+  {
+    "id": "suedwestfalen",
+    "name": "FH Südwestfalen",
+    "city": "Iserlohn",
+    "tier": "T3",
+    "score": 10,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · open admission · NRW free · easy",
+        "pick": true,
+        "brief": "Straightforward, accessible CS master's at a small NRW FH. Open admission, tuition-free, easy entry. Dependable safety-net option."
+      }
+    ],
+    "steps": [
+      "Apply directly on FH Südwestfalen portal.",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "FH SWF portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.fh-swf.de/en/"
+    }
+  },
+  {
+    "id": "emden",
+    "name": "Hochschule Emden/Leer",
+    "city": "Emden",
+    "tier": "T3",
+    "score": 10,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Industrial Informatics — M.Sc.",
+        "note": "English · open admission · Industry 4.0",
+        "pick": true,
+        "brief": "Specialised in Industry 4.0, automation informatics, embedded/cyber-physical systems for manufacturing — an excellent CE fit with strong German industrial relevance."
+      },
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · open admission",
+        "pick": true,
+        "brief": "Broad applied CS with 8 program variants in the faculty. Open admission, North-Sea location, very low cost. High acceptance."
+      }
+    ],
+    "steps": [
+      "Apply directly on Emden/Leer portal.",
+      "Choose Industrial Informatics (CE fit).",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Emden/Leer portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.hs-emden-leer.de/en/"
+    }
+  },
+  {
+    "id": "harz",
+    "name": "Hochschule Harz",
+    "city": "Wernigerode",
+    "tier": "T3",
+    "score": 10,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Mar 15, 2027",
+      "winter": "~Sep 15, 2027",
+      "applyBy": "By Feb 2027"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · open admission · low cost",
+        "pick": true,
+        "brief": "Accessible CS master's in the Harz region — among the cheapest places to live in Germany. Open admission, high acceptance. Excellent low-stress option."
+      },
+      {
+        "name": "Data Science — M.Sc.",
+        "note": "English · open admission",
+        "pick": true,
+        "brief": "Applied data science (analytics, ML, BI) at very low cost, open admission. Great fit for your math background and an easy entry."
+      }
+    ],
+    "steps": [
+      "Apply directly on Hochschule Harz portal.",
+      "Choose CS or Data Science.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Hochschule Harz portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.hs-harz.de/en/"
+    }
+  },
+  {
+    "id": "nordhausen",
+    "name": "Nordhausen UAS",
+    "city": "Nordhausen",
+    "tier": "T3",
+    "score": 10,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Mar 31, 2027",
+      "winter": "~Sep 30, 2027",
+      "applyBy": "By Feb-Mar 2027"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · very small FH · near-guaranteed",
+        "pick": true,
+        "brief": "A very small FH with near-guaranteed admission and the lowest living costs in Germany. Reliable, low-anxiety safety net."
+      }
+    ],
+    "steps": [
+      "Apply directly on Nordhausen portal.",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Nordhausen portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.hs-nordhausen.de/en"
+    }
+  },
+  {
+    "id": "wismar",
+    "name": "Hochschule Wismar",
+    "city": "Wismar",
+    "tier": "T3",
+    "score": 10,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Feb 15, 2027",
+      "winter": "~Aug 15, 2027",
+      "applyBy": "By Jan 2027"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · Baltic coast · open admission",
+        "pick": true,
+        "brief": "Accessible CS master's on the Baltic coast (UNESCO town). Open admission, low cost, high acceptance. Good dependable option."
+      }
+    ],
+    "steps": [
+      "Apply directly on Wismar portal.",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Wismar portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.hs-wismar.de/en/"
+    }
+  },
+  {
+    "id": "mittweida",
+    "name": "UAS Mittweida",
+    "city": "Mittweida",
+    "tier": "T3",
+    "score": 10,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Cybersecurity / CS — M.Sc.",
+        "note": "English · high acceptance · low cost",
+        "pick": true,
+        "brief": "CS with a notable cybersecurity/cybercrime focus. Very high acceptance rate, extremely low cost. Good niche if security interests you."
+      }
+    ],
+    "steps": [
+      "Apply directly on Mittweida portal (or uni-assist).",
+      "Choose Cybersecurity / Computer Science.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Mittweida portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.hs-mittweida.de/en/"
+    }
+  },
+  {
+    "id": "coburg",
+    "name": "Hochschule Coburg",
+    "city": "Coburg",
+    "tier": "T3",
+    "score": 9,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · autonomous driving · AI",
+        "pick": true,
+        "brief": "CS with an autonomous-driving/AI focus at a Bavarian FH near Munich — strong industrial relevance. Open admission, good value."
+      }
+    ],
+    "steps": [
+      "Apply directly on Coburg portal.",
+      "Choose Computer Science / Autonomous Driving.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Coburg portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.hs-coburg.de/en/"
+    }
+  },
+  {
+    "id": "kempten",
+    "name": "Hochschule Kempten",
+    "city": "Kempten",
+    "tier": "T3",
+    "score": 9,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · AI · Bavarian Alps",
+        "pick": true,
+        "brief": "CS + AI in the Bavarian Alps region. Open admission, affordable, near Munich's tech economy. Good applied option."
+      }
+    ],
+    "steps": [
+      "Apply directly on Kempten portal.",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Kempten portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.hs-kempten.de/en/"
+    }
+  },
+  {
+    "id": "landshut",
+    "name": "Hochschule Landshut",
+    "city": "Landshut",
+    "tier": "T3",
+    "score": 9,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · near Munich",
+        "pick": true,
+        "brief": "Broad applied CS near Munich. Open admission, affordable. Flexible and accessible."
+      },
+      {
+        "name": "AI — M.Sc.",
+        "note": "English",
+        "pick": true,
+        "brief": "Focused applied artificial intelligence — ML, deep learning, intelligent systems. Good AI career pathway, accessible."
+      }
+    ],
+    "steps": [
+      "Apply directly on Landshut portal.",
+      "Choose CS or AI.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Landshut portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.haw-landshut.de/en/"
+    }
+  },
+  {
+    "id": "rosenheim",
+    "name": "TH Rosenheim",
+    "city": "Rosenheim",
+    "tier": "T3",
+    "score": 9,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · AI · near Munich",
+        "pick": true,
+        "brief": "Applied CS with an AI/robotics angle in the gorgeous region near Munich. Notably new English Robotics/AI offerings. Open admission, strong industry links."
+      },
+      {
+        "name": "Artificial Intelligence — M.Sc.",
+        "note": "English",
+        "pick": true,
+        "brief": "Applied AI and machine learning specialization. Near Munich tech market, open admission, career-oriented."
+      }
+    ],
+    "steps": [
+      "Apply directly on TH Rosenheim portal.",
+      "Choose CS or AI.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "TH Rosenheim portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.th-rosenheim.de/en"
+    }
+  },
+  {
+    "id": "bonnrhsieg",
+    "name": "Hochschule Bonn-Rhein-Sieg",
+    "city": "Sankt Augustin",
+    "tier": "T3",
+    "score": 9,
+    "fee": "free",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · near Bonn",
+        "pick": true,
+        "brief": "Practice-linked CS near Bonn. Open to internationals with strong practical emphasis. Good access to Bonn's UN/tech ecosystem."
+      },
+      {
+        "name": "Autonomous Systems — M.Sc.",
+        "note": "English · robotics",
+        "pick": true,
+        "brief": "Specialised autonomous systems: robotics, autonomous vehicles, and AI. An excellent, modern CE fit with strong lab work."
+      }
+    ],
+    "steps": [
+      "Apply directly on H-BRS portal.",
+      "Choose CS or Autonomous Systems.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "H-BRS portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.h-brs.de/en"
+    }
+  },
+  {
+    "id": "htwk-leipzig",
+    "name": "HTWK Leipzig",
+    "city": "Leipzig",
+    "tier": "T3",
+    "score": 9,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Feb 15, 2027",
+      "winter": "~Aug 15, 2027",
+      "applyBy": "By Jan-Feb 2027"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · super affordable city",
+        "pick": true,
+        "brief": "Practical CS master's in super-affordable, culturally rich Leipzig. Applied, industry-linked, high acceptance. Strong value."
+      }
+    ],
+    "steps": [
+      "Apply directly on HTWK Leipzig portal.",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "HTWK Leipzig portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.htwk-leipzig.de/en/"
+    }
+  },
+  {
+    "id": "htw-dresden",
+    "name": "HTW Dresden",
+    "city": "Dresden",
+    "tier": "T3",
+    "score": 9,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · affordable Dresden · Silicon Saxony",
+        "pick": true,
+        "brief": "Applied CS in Dresden — 'Silicon Saxony' semiconductor/tech hub. Affordable, practical, good industry links."
+      }
+    ],
+    "steps": [
+      "Apply directly on HTW Dresden portal.",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "HTW Dresden portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.htw-dresden.de/en/"
+    }
+  },
+  {
+    "id": "nuernberg",
+    "name": "TH Nürnberg",
+    "city": "Nuremberg",
+    "tier": "T3",
+    "score": 9,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · near Siemens/Adidas",
+        "pick": true,
+        "brief": "Applied CS near Siemens/Adidas HQ in Nuremberg. Strong regional industry connections and internships. Good value."
+      }
+    ],
+    "steps": [
+      "Apply directly on TH Nürnberg portal.",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "TH Nürnberg portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.th-nuernberg.de/en/"
+    }
+  },
+  {
+    "id": "fhbielefeld",
+    "name": "FH Bielefeld (HSBI)",
+    "city": "Bielefeld",
+    "tier": "T3",
+    "score": 9,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · NRW free",
+        "pick": true,
+        "brief": "Practical CS at a NRW Fachhochschule. Applied, affordable, strong regional industry. Good accessible pick."
+      },
+      {
+        "name": "Data Science — M.Sc.",
+        "note": "English",
+        "pick": true,
+        "brief": "Applied data science/analytics at an affordable FH. Good fit for data careers, accessible entry."
+      }
+    ],
+    "steps": [
+      "Apply directly on HSBI portal (or uni-assist).",
+      "Choose CS or Data Science.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "HSBI portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.hsbi.de/en/"
+    }
+  },
+  {
+    "id": "muenchen-fh",
+    "name": "Hochschule München (HM)",
+    "city": "Munich",
+    "tier": "T3",
+    "score": 8,
+    "fee": "free",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · largest FH · Munich (expensive city)",
+        "pick": true,
+        "brief": "CS at Germany's largest applied-sciences university, right in Munich's booming tech ecosystem. Excellent internships but Munich is expensive to live in."
+      }
+    ],
+    "steps": [
+      "Apply directly on HM portal.",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "HM portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://hm.edu/en/index.en.html"
+    }
+  },
+  {
+    "id": "haw-hamburg",
+    "name": "HAW Hamburg",
+    "city": "Hamburg",
+    "tier": "T3",
+    "score": 8,
+    "fee": "free",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "Jan 15, 2027",
+      "winter": "Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · Hamburg tech hub",
+        "pick": true,
+        "brief": "Practice-oriented CS with strong digital-communication focus at Hamburg's applied university. Real Hamburg tech-market access. Summer + winter intakes."
+      }
+    ],
+    "steps": [
+      "Apply directly on HAW Hamburg master's page (online only, during period).",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV.",
+      "Summer: Dec 1-Jan 15. Winter: Jun 1-Jul 15."
+    ],
+    "track": "HAW Hamburg application system + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "https://www.haw-hamburg.de/en/master-computer-science",
+      "apply": "",
+      "site": "https://www.haw-hamburg.de/en/"
+    }
+  },
+  {
+    "id": "th-koeln",
+    "name": "TH Köln (Cologne UAS)",
+    "city": "Cologne",
+    "tier": "T3",
+    "score": 8,
+    "fee": "free",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · large city",
+        "pick": true,
+        "brief": "Applied CS at Germany's largest university of applied sciences (by students) in Cologne. Broad, industry-linked, good city job market."
+      },
+      {
+        "name": "Game Development — M.Sc.",
+        "note": "English · graphics",
+        "pick": true,
+        "brief": "Specialised game development & graphics programming. A rare, fun, employable niche within CS at a big applied university."
+      }
+    ],
+    "steps": [
+      "Apply directly on TH Köln portal.",
+      "Choose CS or Game Development.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "TH Köln portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.th-koeln.de/en/"
+    }
+  },
+  {
+    "id": "frankfurt-fh",
+    "name": "Frankfurt UAS",
+    "city": "Frankfurt",
+    "tier": "T3",
+    "score": 8,
+    "fee": "free",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "High Integrity Systems — M.Sc.",
+        "note": "English · safety-critical · unique",
+        "pick": true,
+        "brief": "A distinctive master's in safety-critical, high-integrity software systems (formal methods, safety engineering) for aviation/automotive — strong for CE grads."
+      }
+    ],
+    "steps": [
+      "Apply directly on Frankfurt UAS portal.",
+      "Choose High Integrity Systems M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Frankfurt UAS portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.frankfurt-university.de/en/"
+    }
+  },
+  {
+    "id": "fhmuenster",
+    "name": "FH Münster",
+    "city": "Münster",
+    "tier": "T3",
+    "score": 8,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · student city",
+        "pick": true,
+        "brief": "Applied CS at a large, well-regarded NRW FH in the beautiful student city of Münster. Open admission, career-oriented."
+      }
+    ],
+    "steps": [
+      "Apply directly on FH Münster portal.",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "FH Münster portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.fh-muenster.de/en/"
+    }
+  },
+  {
+    "id": "flensburg",
+    "name": "Hochschule Flensburg",
+    "city": "Flensburg",
+    "tier": "T3",
+    "score": 9,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "uniassist",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · Danish border · Baltic coast",
+        "pick": true,
+        "brief": "Applied CS near the Danish border — cross-border tech opportunities. Accessible, small FH, low cost."
+      }
+    ],
+    "steps": [
+      "For a non-German degree, apply via uni-assist.",
+      "my.uni-assist.de → Flensburg → Computer Science.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "my.uni-assist.de + Flensburg email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "https://hs-flensburg.de/en/study-with-us/apply",
+      "site": "https://hs-flensburg.de/en"
+    }
+  },
+  {
+    "id": "degendorf",
+    "name": "Deggendorf Institute of Technology",
+    "city": "Deggendorf",
+    "tier": "T3",
+    "score": 8,
+    "fee": "paid",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · AI, HPC · some fees",
+        "pick": true,
+        "brief": "Applied CS (with AI/HPC options) at a popular, modern Bavarian FH. Strong industry links and career focus. Some tuition in Bavaria."
+      },
+      {
+        "name": "Artificial Intelligence — M.Sc.",
+        "note": "English",
+        "pick": true,
+        "brief": "Focused applied AI — ML, deep learning, intelligent systems — at a career-oriented Bavarian FH. Good AI pathway."
+      },
+      {
+        "name": "High Performance Computing — M.Sc.",
+        "note": "English",
+        "pick": true,
+        "brief": "Specialised HPC/scientific computing at an applied university with computing resources. Good for systems/HPC careers."
+      }
+    ],
+    "steps": [
+      "Apply directly on Deggendorf portal.",
+      "Choose CS / AI / HPC.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV.",
+      "Some fees €500-1,500/sem (Bavaria)."
+    ],
+    "track": "Deggendorf portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.th-deg.de/en"
+    }
+  },
+  {
+    "id": "hka",
+    "name": "Hochschule Karlsruhe (HKA)",
+    "city": "Karlsruhe",
+    "tier": "T3",
+    "score": 8,
+    "fee": "paid",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · sensor systems · €1,500/sem",
+        "pick": true,
+        "brief": "Applied CS with a sensor-systems/embedded angle at a Karlsruhe FH — a strong CE fit in a tech city. Baden-Württemberg tuition applies."
+      }
+    ],
+    "steps": [
+      "Apply directly on HKA portal.",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "HKA portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.h-ka.de/en/"
+    }
+  },
+  {
+    "id": "esslingen",
+    "name": "Hochschule Esslingen",
+    "city": "Esslingen",
+    "tier": "T3",
+    "score": 7,
+    "fee": "paid",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Automotive Systems — M.Sc.",
+        "note": "English · Mercedes/Porsche/Bosch · €1,500/sem",
+        "pick": true,
+        "brief": "Automotive software/electronics master's right in the heart of the German automotive industry (Stuttgart region — Mercedes, Bosch, Porsche). Excellent CE fit if you want automotive. BW tuition."
+      },
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English",
+        "pick": true,
+        "brief": "Applied CS near Stuttgart's tech industry. Good breadth, strong regional employer links."
+      }
+    ],
+    "steps": [
+      "Apply directly on Esslingen portal.",
+      "Choose CS or Automotive Systems (CE fit).",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV, work experience if automotive."
+    ],
+    "track": "Esslingen portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [
+        "Work experience (automotive)"
+      ],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.hs-esslingen.de/en/"
+    }
+  },
+  {
+    "id": "erfurt-fh",
+    "name": "FH Erfurt",
+    "city": "Erfurt",
+    "tier": "T3",
+    "score": 9,
+    "fee": "free",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · affordable Thuringia",
+        "pick": true,
+        "brief": "Applied CS at an affordable Thuringia FH. Accessible, low cost, reasonable NC. Dependable option."
+      }
+    ],
+    "steps": [
+      "Apply directly on FH Erfurt portal.",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "FH Erfurt portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.fh-erfurt.de/en/"
+    }
+  },
+  {
+    "id": "trier-fh",
+    "name": "Hochschule Trier",
+    "city": "Trier",
+    "tier": "T3",
+    "score": 9,
+    "fee": "free",
+    "nc": "open",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · near Luxembourg",
+        "pick": true,
+        "brief": "Applied CS with a strong international campus (Birkenfeld) near Luxembourg — cross-border tech jobs. Good value."
+      },
+      {
+        "name": "Data Science — M.Sc.",
+        "note": "English",
+        "pick": true,
+        "brief": "Applied data science/analytics with Luxembourg-border access. Good data-career fit, accessible."
+      }
+    ],
+    "steps": [
+      "Apply directly on Trier portal.",
+      "Choose CS or Data Science.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "Trier portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.hochschule-trier.de/en/"
+    }
+  },
+  {
+    "id": "regensburg-fh",
+    "name": "OTH Regensburg",
+    "city": "Regensburg",
+    "tier": "T3",
+    "score": 9,
+    "fee": "free",
+    "nc": "nc",
+    "summer": "yes",
+    "method": "direct",
+    "deadlines": {
+      "summer": "~Jan 15, 2027",
+      "winter": "~Jul 15, 2027",
+      "applyBy": "By Dec 2026"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · AI track",
+        "pick": true,
+        "brief": "Applied CS with an AI/embedded track at a beautiful Bavarian FH. Solid, industry-linked, good value."
+      }
+    ],
+    "steps": [
+      "Apply directly on OTH Regensburg portal.",
+      "Choose Computer Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV."
+    ],
+    "track": "OTH Regensburg portal + email.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.oth-regensburg.de/en/"
+    }
+  },
+  {
+    "id": "iu",
+    "name": "IU International University",
+    "city": "Berlin + online",
+    "tier": "T3",
+    "score": 7,
+    "fee": "paid",
+    "nc": "open",
+    "summer": "rolling",
+    "method": "direct",
+    "deadlines": {
+      "summer": "Rolling (anytime)",
+      "winter": "Rolling (anytime)",
+      "applyBy": "Anytime — faster = better"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · FAST admission (2-4 wks) · paid",
+        "pick": true,
+        "brief": "Private, English CS master's with rolling admission — you can get an admission letter in 2–4 weeks (great for urgent military deferral). State-recognized, flexible. ~€7,500–12,700 total. Backup option."
+      },
+      {
+        "name": "Data Science — M.Sc.",
+        "note": "English · fast · paid",
+        "pick": true,
+        "brief": "Private, fast-admission Data Science master's (rolling). Great for urgent admission letter needs. Paid (~€7,500–12,700). Backup."
+      }
+    ],
+    "steps": [
+      "Apply directly on IU's website.",
+      "Choose CS or Data Science M.Sc.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV, passport.",
+      "Rolling admission — admission letter in 2-4 weeks (great for urgent military deferral)."
+    ],
+    "track": "IU admissions portal + email. ~€7,500-12,700 total.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "https://www.iu.org/master/computer-science/",
+      "apply": "",
+      "site": "https://www.iu.org"
+    }
+  },
+  {
+    "id": "constructor",
+    "name": "Constructor University Bremen",
+    "city": "Bremen",
+    "tier": "T3",
+    "score": 5,
+    "fee": "paid",
+    "nc": "open",
+    "summer": "rolling",
+    "method": "direct",
+    "deadlines": {
+      "summer": "Rolling (anytime)",
+      "winter": "Rolling (anytime)",
+      "applyBy": "Anytime — faster = better"
+    },
+    "programs": [
+      {
+        "name": "Computer Science & Software Eng — M.Sc.",
+        "note": "English · private · €20k/yr",
+        "pick": false,
+        "brief": "Private (€20k/yr) research-oriented CS & software engineering on a campus modelled on US liberal-arts. Fast admission but very expensive. Low priority."
+      }
+    ],
+    "steps": [
+      "Apply directly on Constructor website.",
+      "Choose CS & Software Engineering.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV, passport.",
+      "Rolling admission — fast but very expensive."
+    ],
+    "track": "Constructor graduate application portal. €20,000/year.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "https://constructor.university/programs/graduate-education/computer-science-software-engineering",
+      "apply": "",
+      "site": "https://constructor.university"
+    }
+  },
+  {
+    "id": "srh",
+    "name": "SRH University",
+    "city": "Berlin/Heidelberg",
+    "tier": "T3",
+    "score": 7,
+    "fee": "paid",
+    "nc": "open",
+    "summer": "rolling",
+    "method": "direct",
+    "deadlines": {
+      "summer": "Rolling (anytime)",
+      "winter": "Rolling (anytime)",
+      "applyBy": "Anytime — faster = better"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · fast · paid",
+        "pick": true,
+        "brief": "Private CS master's at a multi-campus university. Rolling admission, practical, but paid (~€4,770–6,950/sem). Backup."
+      },
+      {
+        "name": "AI & Big Data — M.Sc.",
+        "note": "English · paid",
+        "pick": true,
+        "brief": "Private, practical AI & big-data master's. Fast rolling admission. Paid. Backup."
+      }
+    ],
+    "steps": [
+      "Apply directly on SRH website.",
+      "Choose CS or AI & Big Data.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV, passport.",
+      "Rolling admission."
+    ],
+    "track": "SRH admissions portal + email. ~€4,770-6,950/sem.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.srh-university.com/en/"
+    }
+  },
+  {
+    "id": "lancaster",
+    "name": "Lancaster University Leipzig",
+    "city": "Leipzig",
+    "tier": "T3",
+    "score": 6,
+    "fee": "paid",
+    "nc": "open",
+    "summer": "rolling",
+    "method": "direct",
+    "deadlines": {
+      "summer": "Intake-based (Jan/Apr/Sep)",
+      "winter": "Intake-based",
+      "applyBy": "Apply 2-3 months before intake"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · UK degree from Leipzig · paid",
+        "pick": true,
+        "brief": "A British (Lancaster) CS degree delivered in Leipzig — international, UK-accredited. Rolling intakes. Paid (~€12,500–15k/yr). Backup."
+      }
+    ],
+    "steps": [
+      "Apply directly on Lancaster Leipzig website.",
+      "Choose CS / Data Science / Software Eng.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV, passport.",
+      "Rolling (Sept/Jan/Apr intakes)."
+    ],
+    "track": "Lancaster Leipzig portal + email. €12,500-15,000/yr.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://lancasterleipzig.de/"
+    }
+  },
+  {
+    "id": "ue",
+    "name": "Univ. of Europe for Applied Sciences",
+    "city": "Berlin/Hamburg",
+    "tier": "T3",
+    "score": 6,
+    "fee": "paid",
+    "nc": "open",
+    "summer": "rolling",
+    "method": "direct",
+    "deadlines": {
+      "summer": "Rolling (anytime)",
+      "winter": "Rolling (anytime)",
+      "applyBy": "Anytime — faster = better"
+    },
+    "programs": [
+      {
+        "name": "Computer Science — M.Sc.",
+        "note": "English · paid",
+        "pick": true,
+        "brief": "Private applied CS at the University of Europe (Berlin/Hamburg). Rolling admission, English. Paid (~€4,500–5,500/sem). Backup."
+      },
+      {
+        "name": "Data Science — M.Sc.",
+        "note": "English · paid",
+        "pick": true,
+        "brief": "Private, applied data science with business analytics focus. Rolling admission. Paid. Backup."
+      }
+    ],
+    "steps": [
+      "Apply directly on UE website.",
+      "Choose CS or Data Science.",
+      "Upload: bachelor's, transcript, IELTS/TOEFL, CV, passport.",
+      "Rolling admission."
+    ],
+    "track": "UE portal + email. ~€4,500-5,500/sem.",
+    "docs": {
+      "Mandatory": [
+        "Bachelor's degree",
+        "Transcript",
+        "IELTS 6.5 / TOEFL 90",
+        "CV",
+        "Passport"
+      ],
+      "Recommended": [],
+      "Optional": []
+    },
+    "links": {
+      "program": "",
+      "apply": "",
+      "site": "https://www.ue-germany.com/"
+    }
+  }
+]

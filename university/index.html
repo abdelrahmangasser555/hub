@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>German Master's Guide — Abdelrahman Gasser</title>
+<style>
+:root{
+  --bg:#000000;
+  --surface:#0c0c10;
+  --surface2:#16161c;
+  --hairline:rgba(255,255,255,0.10);
+  --hairline2:rgba(255,255,255,0.06);
+  --text:#ffffff;
+  --text2:#a1a1ad;
+  --text3:#6b6b76;
+  --accent:#0a84ff;
+  --green:#30d158;
+  --amber:#ffd60a;
+  --red:#ff453a;
+  --radius:14px;
+  --font:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--font);
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.45;
+  font-size:15px;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  min-height:100vh;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* ---------- Masthead ---------- */
+header.mast{
+  padding:34px 20px 18px;
+  max-width:720px;
+  margin:0 auto;
+}
+header.mast h1{
+  font-size:26px;
+  font-weight:700;
+  letter-spacing:-0.02em;
+  line-height:1.15;
+}
+header.mast .sub{
+  color:var(--text2);
+  font-size:13.5px;
+  margin-top:8px;
+  max-width:640px;
+}
+header.mast .chips{
+  display:flex;flex-wrap:wrap;gap:6px;margin-top:14px;
+}
+.guide-actions{display:flex;flex-direction:column;gap:8px;margin-top:16px}
+.guide-actions .ga{
+  display:flex;align-items:center;gap:12px;
+  background:var(--surface);border:1px solid var(--hairline);border-radius:12px;
+  padding:13px 16px;font-size:14px;font-weight:600;color:var(--text);text-decoration:none;
+}
+.guide-actions .ga:active{background:var(--surface2)}
+.guide-actions .ga .ga-badge{
+  width:24px;height:24px;border-radius:50%;background:var(--accent);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:12.5px;font-weight:700;flex-shrink:0;
+}
+.guide-actions .ga .chev{margin-left:auto;color:var(--text3)}
+.chip{
+  font-size:12px;font-weight:500;color:var(--text2);
+  padding:4px 10px;border-radius:999px;
+  border:1px solid var(--hairline);background:var(--surface);
+}
+
+/* ---------- Stats ---------- */
+.stats{
+  max-width:720px;margin:4px auto 6px;padding:0 20px;
+  display:grid;grid-template-columns:repeat(5,1fr);gap:10px;
+}
+.stat{background:var(--surface);border:1px solid var(--hairline2);border-radius:var(--radius);padding:10px 4px;text-align:center}
+.stat .num{font-size:19px;font-weight:650;letter-spacing:-0.01em}
+.stat .lbl{font-size:10.5px;color:var(--text3);text-transform:uppercase;letter-spacing:0.05em;margin-top:2px}
+@media(max-width:520px){.stats{grid-template-columns:repeat(3,1fr)}}
+
+/* ---------- Controls ---------- */
+.controls{
+  max-width:720px;margin:14px auto;padding:0 20px;display:flex;gap:10px;
+}
+.controls .search-wrap{position:relative;flex:1}
+.controls input[type=text]{
+  width:100%;background:var(--surface);border:1px solid var(--hairline);
+  color:var(--text);border-radius:10px;padding:11px 14px;font-size:14.5px;
+  font-family:var(--font);outline:none;transition:border-color .15s;
+}
+.controls input[type=text]:focus{border-color:var(--accent)}
+.controls input::placeholder{color:var(--text3)}
+.controls select{
+  background:var(--surface);border:1px solid var(--hairline);color:var(--text);
+  border-radius:10px;padding:11px 10px;font-size:13.5px;font-family:var(--font);outline:none;
+  max-width:132px;
+}
+@media(max-width:560px){
+  .controls{flex-wrap:wrap}
+  .controls select{max-width:none;flex:1 1 30%}
+}
+.result-count{
+  max-width:720px;margin:0 auto;padding:2px 22px;
+  color:var(--text3);font-size:12.5px;
+}
+
+/* ---------- Unified list (iOS Settings style) ---------- */
+.tiers{max-width:720px;margin:16px auto 40px;padding:0 20px}
+.tier-head{padding:18px 4px 8px}
+.tier-head h2{font-size:15px;font-weight:650;color:var(--text2);letter-spacing:-0.01em}
+@media(max-width:520px){.tier-head{overflow:hidden}.tier-head h2{white-space:nowrap;text-overflow:ellipsis}}
+.group{
+  background:var(--surface);
+  border:1px solid var(--hairline);
+  border-radius:var(--radius);
+  overflow:hidden;
+}
+.group + .tier-head{margin-top:22px}
+.uni-row{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:15px 16px;
+  cursor:pointer;
+  border-bottom:1px solid var(--hairline2);
+  transition:background .12s;
+  position:relative;
+}
+.uni-row:last-child{border-bottom:none}
+.uni-row:active{background:var(--surface2)}
+.uni-row .left{min-width:0;flex:1}
+.uni-row .nm{font-size:15.5px;font-weight:600;letter-spacing:-0.01em;display:flex;align-items:baseline;gap:7px}
+.uni-row .nm .city{color:var(--text3);font-weight:400;font-size:13px}
+.uni-row .meta{color:var(--text2);font-size:12.5px;margin-top:3px;display:flex;flex-wrap:wrap;gap:4px 10px}
+.uni-row .meta b{color:var(--text);font-weight:600}
+.score-badge{flex-shrink:0;font-size:13px;font-weight:700;padding:3px 9px;border-radius:999px;min-width:44px;text-align:center}
+.sb-green{background:rgba(48,209,88,.14);color:var(--green)}
+.sb-amber{background:rgba(255,214,10,.12);color:var(--amber)}
+.sb-red{background:rgba(255,69,58,.12);color:var(--red)}
+.chev{flex-shrink:0;color:var(--text3);font-size:16px;font-weight:300;transform:translateY(-1px)}
+
+/* ---------- Drawer ---------- */
+.overlay{
+  position:fixed;inset:0;background:rgba(0,0,0,.5);
+  opacity:0;visibility:hidden;transition:opacity .28s ease;
+  z-index:900;
+}
+.overlay.show{opacity:1;visibility:visible}
+.drawer{
+  position:fixed;z-index:1000;
+  top:0;right:0;bottom:0;
+  width:min(560px,100vw);
+  background:var(--surface);
+  box-shadow:-20px 0 60px rgba(0,0,0,.6);
+  transform:translateX(105%);
+  transition:transform .32s cubic-bezier(.2,.9,.25,1);
+  display:flex;flex-direction:column;
+  border-left:1px solid var(--hairline);
+}
+.drawer.open{transform:translateX(0)}
+@media(max-width:620px){
+  .drawer{width:100vw;border-left:none}
+}
+.drawer-head{
+  display:flex;align-items:center;gap:10px;
+  padding:14px 16px;
+  border-bottom:1px solid var(--hairline2);
+  background:var(--surface);
+  flex-shrink:0;
+}
+.drawer-close{
+  background:var(--surface2);border:none;cursor:pointer;
+  color:var(--text2);font-size:15px;width:30px;height:30px;border-radius:8px;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.drawer-close:hover{background:#22222a;color:var(--text)}
+.drawer-head .dh-name{flex:1;min-width:0}
+.drawer-head .dh-name .t{font-size:16px;font-weight:650;letter-spacing:-0.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.drawer-head .dh-name .c{color:var(--text3);font-size:12.5px;margin-top:1px}
+.drawer-body{
+  flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;
+  padding:0 0 env(safe-area-inset-bottom);
+}
+.drawer-body::-webkit-scrollbar{width:6px}
+.drawer-body::-webkit-scrollbar-thumb{background:rgba(255,255,255,.15);border-radius:3px}
+
+.d-sec{
+  padding:16px 18px;
+  border-bottom:1px dashed rgba(255,255,255,.12);
+}
+.d-sec:last-child{border-bottom:none}
+.d-sec h3{
+  font-size:11.5px;font-weight:600;color:var(--text3);
+  text-transform:uppercase;letter-spacing:0.07em;margin-bottom:10px;
+  display:flex;align-items:center;gap:8px;
+}
+.d-sec h3 .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);opacity:.8}
+
+/* overview chips */
+.ov-flex{display:flex;flex-wrap:wrap;gap:8px}
+.ov-chip{
+  background:var(--surface2);border:1px solid var(--hairline);
+  border-radius:10px;padding:9px 12px;font-size:12.5px;flex:1;min-width:120px;
+}
+.ov-chip .k{color:var(--text3);font-size:10.5px;text-transform:uppercase;letter-spacing:.05em}
+.ov-chip .v{font-weight:600;color:var(--text);margin-top:2px}
+
+/* deadlines */
+.dl-row{display:flex;align-items:center;gap:10px;padding:8px 0;font-size:13.5px}
+.dl-row+.dl-row{border-top:1px dashed rgba(255,255,255,.08)}
+.dl-row .dk{color:var(--text3);width:78px;flex-shrink:0;font-size:12.5px}
+.dl-row .dv{color:var(--text);font-weight:600}
+
+/* programs */
+.pgm{border:1px solid var(--hairline);background:var(--surface2);border-radius:12px;padding:12px 14px;margin-bottom:8px}
+.pgm:last-child{margin-bottom:0}
+.pgm .pn{font-weight:650;font-size:14px}
+.pgm .pd{color:var(--text2);font-size:12.5px;margin-top:3px}
+.pgm .pick{display:inline-block;font-size:10.5px;font-weight:700;margin-top:7px;padding:2px 8px;border-radius:999px;background:rgba(10,132,255,.15);color:var(--accent)}
+.pgm .no-pick{display:inline-block;font-size:10.5px;font-weight:600;margin-top:7px;padding:2px 8px;border-radius:999px;background:var(--surface);color:var(--text3);border:1px solid var(--hairline)}
+.pgm .brief{color:var(--text2);font-size:13px;margin-top:8px;line-height:1.5;border-top:1px dashed rgba(255,255,255,.08);padding-top:8px}
+
+/* steps */
+ol.dsteps{list-style:none;counter-reset:st;margin:0}
+ol.dsteps li{counter-increment:st;display:flex;gap:12px;align-items:flex-start;padding:8px 0;font-size:13.5px;color:var(--text)}
+ol.dsteps li::before{
+  content:counter(st);flex-shrink:0;width:22px;height:22px;border-radius:50%;
+  background:var(--surface2);border:1px solid var(--hairline);color:var(--accent);
+  font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:1px;
+}
+
+/* docs */
+.doc-list{display:flex;flex-wrap:wrap;gap:6px}
+.doc-chip{font-size:12.5px;padding:6px 11px;border-radius:8px;border:1px solid var(--hairline)}
+.doc-mand{background:rgba(255,69,58,.10);color:var(--red);border-color:rgba(255,69,58,.25)}
+.doc-rec{background:rgba(10,132,255,.10);color:var(--accent);border-color:rgba(10,132,255,.25)}
+.doc-opt{background:var(--surface2);color:var(--text2)}
+
+/* links */
+.d-links{display:flex;flex-direction:column;gap:8px}
+.d-links a{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  background:var(--accent);color:#fff;border-radius:10px;padding:12px 14px;
+  font-size:14px;font-weight:600;
+}
+.d-links a:hover{background:#0d6ed0;text-decoration:none}
+.d-links a.sec{background:var(--surface2);border:1px solid var(--hairline);color:var(--text)}
+.d-links a.sec:hover{background:#1f1f27}
+.d-track{color:var(--text2);font-size:13px;line-height:1.5;margin-top:10px}
+.d-track b{color:var(--text);font-weight:600}
+
+/* status / error */
+.loading,.erro{max-width:720px;margin:80px auto;text-align:center;color:var(--text2);font-size:14px;padding:0 20px}
+.foot{max-width:720px;margin:0 auto;padding:8px 22px 70px;color:var(--text3);font-size:12px;text-align:center;line-height:1.7}
+.foot b{color:var(--text2);font-weight:600}
+
+/* reduce motion */
+@media (prefers-reduced-motion:reduce){
+  .drawer,.overlay{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <h1>German Master's Guide</h1>
+  <div class="sub">Egyptian · AAST Computer Engineering (1 semester left) · Northampton UK dual degree · Cambridge IGCSE · 3.0 GPA · 3yr work + clients — targeting Summer 2027 / Winter 2027-28</div>
+  <div class="chips">
+    <span class="chip">Free / affordable</span>
+    <span class="chip">English-taught</span>
+    <span class="chip">UK degree = asset</span>
+    <span class="chip">IGCSE recognized</span>
+    <span class="chip">Summer 2027 / Winter 2027-28</span>
+  </div>
+  <div class="guide-actions">
+    <a class="ga" href="uni-assist.html"><span class="ga-badge">1</span> uni-assist · How to apply &amp; costs<span class="chev">›</span></a>
+    <a class="ga" href="documents.html"><span class="ga-badge">2</span> Documents guide · What each one needs<span class="chev">›</span></a>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="stat"><div class="num" id="s-total">–</div><div class="lbl">Universities</div></div>
+  <div class="stat"><div class="num" id="s-free">–</div><div class="lbl">Tuition-free</div></div>
+  <div class="stat"><div class="num" id="s-open">–</div><div class="lbl">Open admission</div></div>
+  <div class="stat"><div class="num" id="s-top">–</div><div class="lbl">Score 8+</div></div>
+  <div class="stat"><div class="num" id="s-summer">–</div><div class="lbl">Summer 2027</div></div>
+</div>
+
+<div class="controls">
+  <div class="search-wrap">
+    <input type="text" id="search" placeholder="Search by name, city, or program…">
+  </div>
+  <select id="f-tier">
+    <option value="">All tiers</option>
+    <option value="T1">Tier 1 — Elite/TU9</option>
+    <option value="T2">Tier 2 — Strong</option>
+    <option value="T3">Tier 3 — Applied (FH)</option>
+  </select>
+  <select id="f-score">
+    <option value="">All scores</option>
+    <option value="8">Score 8–10</option>
+    <option value="6">Score 6–7</option>
+    <option value="0">Score ≤5</option>
+  </select>
+  <select id="f-fee">
+    <option value="">Any tuition</option>
+    <option value="free">Free only</option>
+    <option value="paid">Paid</option>
+  </select>
+</div>
+
+<div class="result-count" id="rescount"></div>
+
+<div class="tiers" id="list"></div>
+
+<div class="foot">
+  <p><b>Compiled Sept 2026.</b> Verify each university's current deadlines before submitting.</p>
+  <p>Tap a university to open its full details. Built for Abdelrahman Gasser.</p>
+</div>
+
+<!-- Drawer -->
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="University details">
+  <div class="drawer-head">
+    <button class="drawer-close" id="drawer-close" aria-label="Close">✕</button>
+    <div class="dh-name">
+      <div class="t" id="d-name"></div>
+      <div class="c" id="d-city"></div>
+    </div>
+  </div>
+  <div class="drawer-body" id="d-body"></div>
+</aside>
+
+<script>
+const TIER_NAMES={T1:'Elite / TU9',T2:'Strong',T3:'Applied (FH) + private'};
+const TIER_DESC={
+  T1:'QS-ranked research powerhouses. Work experience + UK degree help at the 3.0 threshold.',
+  T2:'Strong research universities, better admission odds.',
+  T3:'Practice-oriented Fachhochschulen — your sweet spot. Open admission, many tuition-free.'
+};
+const METHOD_LABEL={direct:'Direct portal',uniassist:'uni-assist'};
+const SUMMER_LABEL={yes:'Summer + Winter',winter:'Winter only',rolling:'Rolling'};
+const DOC_LABEL={Mandatory:'Mandatory',Recommended:'Recommended',Optional:'Optional'};
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+let UNIS=[];
+const $=id=>document.getElementById(id);
+
+const scoreCls=s=>s>=8?'sb-green':s>=6?'sb-amber':'sb-red';
+
+function render(){
+  const list=$('list');list.innerHTML='';
+  const q=$('search').value.toLowerCase();
+  const tv=$('f-tier').value,sv=$('f-score').value,fv=$('f-fee').value;
+  let visible=0;
+  const rowsByTier={'T1':[],'T2':[],'T3':[]};
+  UNIS.forEach((u,idx)=>{
+    const hay=[u.name,u.city,...u.programs.map(p=>p.name+' '+p.note)].join(' ').toLowerCase();
+    const mt=!q||hay.includes(q);
+    const mti=!tv||u.tier===tv;
+    const ms=!sv||(sv==='8'?u.score>=8:(sv==='6'?u.score>=6&&u.score<=7:u.score<=5));
+    const mf=!fv||u.fee===fv;
+    if(!(mt&&mti&&ms&&mf))return;
+    visible++;
+    rowsByTier[u.tier].push(
+      `<div class="uni-row" data-id="${u.id}" data-idx="${idx}" tabindex="0" role="button" aria-label="Open ${esc(u.name)}">
+         <div class="left">
+           <div class="nm">${esc(u.name)} <span class="city">${esc(u.city)}</span></div>
+           <div class="meta">
+             <span>${METHOD_LABEL[u.method]}</span>
+             <span>${u.nc==='open'?'Open':''}<b>${u.nc==='open'?'Open admission':'Restricted'}</b></span>
+             <span><b>${u.fee==='free'?'€0 free':SUMMER_LABEL[u.summer]}</b></span>
+           </div>
+         </div>
+         <div class="score-badge ${scoreCls(u.score)}">${u.score}</div>
+         <span class="chev">›</span>
+       </div>`
+    );
+  });
+  const frag=document.createDocumentFragment();
+  let first=true;
+  ['T1','T2','T3'].forEach(t=>{
+    if(!rowsByTier[t].length)return;
+    const h=document.createElement('div');
+    h.className='tier-head';
+    h.innerHTML=`<h2>${TIER_NAMES[t]} · ${rowsByTier[t].length}</h2>`;
+    const g=document.createElement('div');
+    g.className='group';
+    g.innerHTML=rowsByTier[t].join('');
+    frag.appendChild(h);frag.appendChild(g);
+    first=false;
+  });
+  list.appendChild(frag);
+  $('rescount').textContent=visible+' of '+UNIS.length+' universities';
+  bindRows();
+}
+
+function bindRows(){
+  document.querySelectorAll('.uni-row').forEach(r=>{
+    const open=()=>openDrawer(r.dataset.idx|0);
+    r.addEventListener('click',open);
+    r.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}});
+  });
+}
+
+/* -------- Drawer -------- */
+function openDrawer(idx){
+  const u=UNIS[idx];
+  $('d-name').textContent=u.name;
+  $('d-city').textContent=u.city+' · '+TIER_NAMES[u.tier]+' · score '+u.score;
+  $('d-body').innerHTML=drawBody(u);
+  $('drawer').classList.add('open');
+  $('overlay').classList.add('show');
+  document.body.style.overflow='hidden';
+}
+function closeDrawer(){
+  $('drawer').classList.remove('open');
+  $('overlay').classList.remove('show');
+  document.body.style.overflow='';
+}
+function drawBody(u){
+  const ov=[
+    `<span class="ov-chip"><span class="k">Apply via</span><div class="v">${METHOD_LABEL[u.method]}</div></span>`,
+    `<span class="ov-chip"><span class="k">Admission</span><div class="v">${u.nc==='open'?'Open':'Restricted'}</div></span>`,
+    `<span class="ov-chip"><span class="k">Tuition</span><div class="v">${u.fee==='free'?'€0 — free':SUMMER_LABEL[u.summer]}</div></span>`
+  ].join('');
+
+  const dls=u.deadlines?[
+    `<div class="dl-row"><span class="dk">Apply by</span><span class="dv">${esc(u.deadlines.applyBy||'—')}</span></div>`,
+    `<div class="dl-row"><span class="dk">Summer 27</span><span class="dv">${esc(u.deadlines.summer||'—')}</span></div>`,
+    `<div class="dl-row"><span class="dk">Winter 27/28</span><span class="dv">${esc(u.deadlines.winter||'—')}</span></div>`
+  ].join(''):'';
+
+  const pgms=u.programs.map(p=>
+    `<div class="pgm">
+       <div class="pn">${esc(p.name)}</div>
+       <div class="pd">${esc(p.note||'')}</div>
+       ${p.pick?'<span class="pick">Recommended for you</span>':'<span class="no-pick">Alternative option</span>'}
+       ${p.brief?`<div class="brief">${esc(p.brief)}</div>`:''}
+     </div>`).join('');
+
+  const steps=u.steps&&u.steps.length?`<ol class="dsteps">${u.steps.map(s=>`<li>${esc(s)}</li>`).join('')}</ol>`:'';
+
+  let docs='';
+  if(u.docs){
+    const groups=[];
+    ['Mandatory','Recommended','Optional'].forEach(k=>{
+      const arr=u.docs[k]||[];
+      if(!arr.length)return;
+      const cls= k==='Mandatory'?'doc-mand':k==='Recommended'?'doc-rec':'doc-opt';
+      groups.push(`<div class="doc-list" style="margin-bottom:${groups.length?'8px':''}">${arr.map(d=>`<span class="doc-chip ${cls}">${esc(d)}</span>`).join('')}</div>`);
+    });
+    docs=groups.join('');
+  }
+
+  const links=[];
+  if(u.links&&u.links.program)links.push(`<a href="${esc(u.links.program)}" target="_blank" rel="noopener">Program page <span>→</span></a>`);
+  if(u.links&&u.links.apply)links.push(`<a href="${esc(u.links.apply)}" target="_blank" rel="noopener">Apply here <span>→</span></a>`);
+  else if(u.links&&u.links.site)links.push(`<a href="${esc(u.links.site)}" target="_blank" rel="noopener">Apply / admissions <span>→</span></a>`);
+  if(u.links&&u.links.site)links.push(`<a class="sec" href="${esc(u.links.site)}" target="_blank" rel="noopener">University site</a>`);
+
+  return `
+    <section class="d-sec"><h3><span class="dot"></span>Overview</h3><div class="ov-flex">${ov}</div></section>
+    <section class="d-sec"><h3><span class="dot"></span>Deadlines</h3>${dls}</section>
+    <section class="d-sec"><h3><span class="dot"></span>Programs</h3>${pgms}</section>
+    ${steps?`<section class="d-sec"><h3><span class="dot"></span>How to apply</h3>${steps}</section>`:''}
+    ${docs?`<section class="d-sec"><h3><span class="dot"></span>Required documents</h3>${docs}</section>`:''}
+    <section class="d-sec">
+      <h3><span class="dot"></span>Apply links</h3>${links.join('')||'<div style="color:var(--text3);font-size:13px">No direct link listed — check the university site.</div>'}
+      ${u.track?`<div class="d-track" style="margin-top:12px"><b>Track:</b> ${esc(u.track)}</div>`:''}
+    </section>`;
+}
+
+/* bind drawer controls */
+$('overlay').addEventListener('click',closeDrawer);
+$('drawer-close').addEventListener('click',closeDrawer);
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer();});
+
+/* filters */
+['search','f-tier','f-score','f-fee'].forEach(id=>$(id).addEventListener('input',render));
+$('search').addEventListener('input',render);
+
+/* load data */
+(async function(){
+  try{
+    const r=await fetch('universities.json',{cache:'no-store'});
+    if(!r.ok)throw new Error('HTTP '+r.status);
+    UNIS=await r.json();
+    $('s-total').textContent=UNIS.length;
+    $('s-free').textContent=UNIS.filter(u=>u.fee==='free').length;
+    $('s-open').textContent=UNIS.filter(u=>u.nc==='open').length;
+    $('s-top').textContent=UNIS.filter(u=>u.score>=8).length;
+    $('s-summer').textContent=UNIS.filter(u=>u.summer==='yes').length;
+    render();
+  }catch(err){
+    $('list').innerHTML=`<div class="erro">Could not load university data. Please refresh the page — or the data file (universities.json) may be missing. <br><span style="font-size:12px;color:var(--text3)">${esc(err.message)}</span></div>`;
+    $('rescount').textContent='';
+  }
+})();
+</script>
+</body>
+</html>
