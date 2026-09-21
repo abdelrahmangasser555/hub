@@ -12,6 +12,7 @@ Root: `https://abdelrahmangasser555.github.io/hub/`
 | `/university/` | `university/` | German Master's guide — 74 universities (list + drawer, filters) |
 | `/university/uni-assist.html` | `university/` | uni-assist step-by-step (register, apply, costs) |
 | `/university/documents.html` | `university/` | Global documents guide (what each doc needs) |
+| `/reports/bbs-uat/` | `reports/bbs-uat/` | Bahri BBS UAT readiness report (readiness, findings, evidence screenshots, test suite) |
 | TBD | `portfolio/` | Personal portfolio (future) |
 | TBD | `bahri/` | Bahri / maritime work (future) |
 

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BBS UAT — Test-Case Suite</title>
+<link rel="stylesheet" href="../_assets/apple.css">
+<style>
+.hero{max-width:720px;margin:0 auto;padding:44px 20px 8px}
+.hero .big{font-size:30px;font-weight:800;letter-spacing:-0.03em}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px 70px}
+.grp{background:var(--surface);border:1px solid var(--hairline);border-radius:16px;overflow:hidden;margin-top:18px}
+.grp-h{font-size:15px;font-weight:700;padding:16px 18px;border-bottom:1px solid var(--hairline2);display:flex;justify-content:space-between;align-items:center}
+.grp-h .n{font-size:12px;color:var(--text3);font-weight:600}
+.case{padding:15px 18px;border-bottom:1px solid var(--hairline2)}
+.case:last-child{border-bottom:none}
+.case .tt{font-size:14px;font-weight:650}
+.case .meta{font-size:12px;color:var(--text3);margin:3px 0 8px}
+.case p{font-size:13px;color:var(--text2);margin:5px 0}
+.case p b{color:var(--text)}
+.sol{border-collapse:collapse;width:100%;font-size:12.5px}
+.sol td{padding:3px 0;vertical-align:top}
+.sol td:first-child{color:var(--text3);width:86px;font-weight:600}
+@media(max-width:640px){.hero .big{font-size:24px}}
+</style>
+</head>
+<body>
+<div class="hero"><div class="kicker">BBS · UAT</div><div class="big">Test-Case Suite — grouped by user level</div></div>
+<div class="wrap">
+<div style="margin-top:12px"><a href="index.html">← Back to readiness report</a> &nbsp;·&nbsp; source markdown in <span style="font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--text2)">docs/uat/v2/</span></div>
+
+<div class="grp"><div class="grp-h">00 · Preconditions <span class="n">global setup</span></div>
+<div class="case"><div class="tt">PC-01 — Test tenant &amp; seeded data available</div><table class="sol"><tr><td>Status</td><td>Pass (verified live)</td></tr><tr><td>Steps</td><td>Confirm dev server :3000 → /sign-in renders</td></tr><tr><td>Expected</td><td>"Sign in to Bahri BBS / Powered by TailoredTech", Password + Email code tabs</td></tr></table></div>
+<div class="case"><div class="tt">PC-02 / PC-03 — Accounts exist &amp; clean data</div><table class="sol"><tr><td>Expected</td><td>All seed accounts resolve; records not empty (≥1 vessel, ≥1 crew observer, all office roles)</td></tr></table></div>
+</div>
+
+<div class="grp"><div class="grp-h">01 · Office Admin <span class="n">TC-01-001 → 015</span></div>
+<div class="case"><div class="tt">TC-01-001 Admin signs in</div><p><b>Pass.</b> admin@tailoredtech.tech + password → /office, role "Tailored Tech Admin".</p></div>
+<div class="case"><div class="tt">TC-01-002 Dashboard metrics load</div><p><b>Pass.</b> Obs MONTH=4 · At-risk 75% · Red flags 1 + dated table.</p></div>
+<div class="case"><div class="tt">TC-01-003 Observations log</div><p><b>Pass.</b> Full column set renders + filters.</p></div>
+<div class="case"><div class="tt">TC-01-005 / 006 / 007 / 008 / 009 / 010 / 011 / 012</div><p><b>Pass.</b> Action items, Administration shell, Office users, Vessels, ICB Checklists, Chatrooms (STO &amp; ETS Hub), Settings, Notifications all render.</p></div>
+<div class="case"><div class="tt">TC-01-013 Nested routes resolve</div><p><b>Pass.</b> /office/observations, /office/actions, /office/users, /office/vessels, /office/chatrooms, /office/settings, /office/checklists — no 404.</p></div>
+<div class="case"><div class="tt">TC-01-004 / others create-data</div><p>Reserved for client tester (write-path).</p></div>
+</div>
+
+<div class="grp"><div class="grp-h">02 · Office Member <span class="n">Joseph Essam</span></div>
+<div class="case"><div class="tt">TC-02-001 → 005</div><p><b>Pass.</b> Sign-in → /office, dashboard, observations, action items render; admin panels NOT exposed to plain member (permission boundary).</p></div>
+</div>
+
+<div class="grp"><div class="grp-h">03 · Coordinator <span class="n">Test Coordinator</span></div>
+<div class="case"><div class="tt">TC-03-001 → 004</div><p><b>Pass.</b> Sign-in → /office, dashboard, observations, action items render.</p></div>
+<div class="case"><div class="tt">TC-03-005 Sign-on requests</div><p>Defined; needs crew sign-on data (not-run).</p></div>
+</div>
+
+<div class="grp"><div class="grp-h">04 · STO <span class="n">Ahmed Al-Rashid</span></div>
+<div class="case"><div class="tt">TC-04-001 → 005</div><p><b>Pass.</b> Lands on /sto-ets, analytics, chatrooms hub, observations render.</p></div>
+</div>
+
+<div class="grp"><div class="grp-h">05 · ETS <span class="n">Fatima Al-Zahrani</span></div>
+<div class="case"><div class="tt">TC-05-001 Sign-in</div><p><b>Pass.</b></p></div>
+<div class="case"><div class="tt">TC-05-002 Landing route</div><p><b>Needs product decision.</b> ETS → /notifications; /sto-ets bounces back to /notifications. (See report Finding A.)</p></div>
+<div class="case"><div class="tt">TC-05-004 Notifications</div><p><b>Pass.</b> All / Unread 2 / Announcements render.</p></div>
+</div>
+
+<div class="grp"><div class="grp-h">06 · Crew Observer <span class="n">albin.baby.2641</span></div>
+<div class="case"><div class="tt">TC-06-001 OTP flow</div><p><b>Pass (flow).</b> Email-code tab → send verification code renders.</p></div>
+<div class="case"><div class="tt">TC-06-002+ Interactive</div><p><b>Blocked</b> — needs OTP from inbox (Finding B).</p></div>
+</div>
+
+<div class="grp"><div class="grp-h">07 · Vessel <span class="n">ajwad</span></div>
+<div class="case"><div class="tt">TC-07-001 OTP flow</div><p><b>Pass (flow).</b></p></div>
+<div class="case"><div class="tt">TC-07-002+ Interactive</div><p><b>Blocked</b> — needs OTP from inbox (Finding B).</p></div>
+</div>
+
+<div class="grp"><div class="grp-h">08 · Cross-cutting <span class="n">all roles</span></div>
+<div class="case"><div class="tt">TC-08-001 / 002 / 006</div><p><b>Pass / partial.</b> Role isolation, password-vs-OTP segregation, graceful invalid-credentials message.</p></div>
+<div class="case"><div class="tt">TC-08-003 Deep-links</div><p><b>Needs-feedback</b> — real pages live under role prefix; top-level bare routes 404 by design.</p></div>
+<div class="case"><div class="tt">TC-08-004 / 005 / 007</div><p>Persistence, mobile, prod-parity — reserved (not-run).</p></div>
+</div>
+
+</div>
+<div class="foot">Source: docs/uat/v2/ (markdown). Report v2 · 21 Sep 2026 · TailoredTech.</div>
+</body>
+</html>
