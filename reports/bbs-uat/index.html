@@ -3,45 +3,50 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
 <title>BBS — UAT Report v2</title>
 <link rel="stylesheet" href="../_assets/apple.css">
 <style>
 .hero{max-width:720px;margin:0 auto;padding:48px 20px 10px}
-.hero .big{font-size:34px;font-weight:800;letter-spacing:-0.03em;line-height:1.05}
-.hero .meta{color:var(--text2);font-size:13.5px;margin-top:8px}
-.gauge{background:var(--surface);border:1px solid var(--hairline);border-radius:16px;padding:20px;margin:24px auto 0;max-width:720px}
-.gauge .g-label{font-size:12px;color:var(--text3);text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px}
-.gauge .g-num{font-size:44px;font-weight:800;letter-spacing:-0.03em}
-.gauge .g-bar{height:8px;border-radius:99px;background:var(--surface2);margin:14px 0;overflow:hidden}
-.gauge .g-bar>span{display:block;height:100%;background:linear-gradient(90deg,#0a84ff,#30d158);border-radius:99px}
-.gauge .g-note{color:var(--text2);font-size:13.5px}
+.hero .big{font-size:32px;font-weight:750;letter-spacing:-0.03em;line-height:1.08}
+.hero .meta{color:var(--text2);font-size:13.5px;margin-top:10px;line-height:1.6}
+.gauge{background:var(--surface);border:1px solid var(--hairline);border-radius:16px;padding:22px 22px 20px;margin:26px auto 0;max-width:720px}
+.gauge .g-label{font-size:12px;color:var(--text3);text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px}
+.gauge .g-num{font-size:46px;font-weight:800;letter-spacing:-0.04em;line-height:1}
+.gauge .g-num small{font-size:16px;font-weight:600;color:var(--text3);letter-spacing:0}
+.gauge .g-bar{height:6px;border-radius:99px;background:var(--surface2);margin:16px 0 12px;overflow:hidden}
+.gauge .g-bar>span{display:block;height:100%;background:var(--accent);border-radius:99px}
+.gauge .g-note{color:var(--text2);font-size:13.5px;line-height:1.65}
 .grid{max-width:720px;margin:26px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:0 20px}
 .stat{background:var(--surface);border:1px solid var(--hairline);border-radius:16px;padding:16px 18px}
 .stat .n{font-size:26px;font-weight:700;letter-spacing:-0.02em}
-.stat .l{font-size:12.5px;color:var(--text2);margin-top:2px}
+.stat .l{font-size:12.5px;color:var(--text2);margin-top:3px;line-height:1.5}
 .stack{max-width:720px;margin:34px auto 0;display:flex;flex-direction:column;gap:16px;padding:0 20px}
 .card{background:var(--surface);border:1px solid var(--hairline);border-radius:16px;padding:18px 20px}
-.card h3{font-size:15px;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.card h3{font-size:15px;font-weight:700;margin-bottom:10px}
 .card ul{margin:0;padding-left:18px}
-.card li{font-size:14px;color:var(--text2);margin:6px 0}
+.card li{font-size:14px;color:var(--text2);margin:6px 0;line-height:1.55}
 .card li b{color:var(--text)}
-.codeyl{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;background:var(--surface2);border:1px solid var(--hairline);border-radius:8px;padding:3px 7px;color:var(--green)}
-.issue{background:var(--surface);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:18px 20px;border-left:3px solid var(--amber)}
+.codeyl{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;background:var(--surface2);border:1px solid var(--hairline);border-radius:6px;padding:2px 6px;color:var(--text2)}
+.issue{background:var(--surface);border:1px solid var(--hairline);border-radius:16px;padding:18px 20px}
 .issue h3{font-size:15px;font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:8px}
-.issue p{font-size:13.5px;color:var(--text2);margin-top:6px}
-.issue .tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:99px;background:rgba(255,214,10,.12);color:var(--amber)}
-.role-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px 4px;border-bottom:1px solid var(--hairline2)}
+.issue .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:99px;background:var(--surface2);border:1px solid var(--hairline);color:var(--amber)}
+.issue p{font-size:13.5px;color:var(--text2);margin-top:7px;line-height:1.6}
+.role-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 4px;border-bottom:1px solid var(--hairline2)}
 .role-row:last-child{border-bottom:none}
 .role-row .r{font-size:14.5px;font-weight:600}
-.role-row .s{font-size:12px;color:var(--text3)}
-.gallery{max-width:860px;margin:20px auto 0;padding:0 20px;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.role-row .s{font-size:12.5px;color:var(--text3);line-height:1.5;max-width:420px;text-align:right}
+.st{margin-left:12px;white-space:nowrap;font-size:11.5px;font-weight:600;padding:3px 10px;border-radius:99px;background:var(--surface2);color:var(--text2)}
+.st.ok{color:var(--green)}
+.st.warn{border:1px solid rgba(255,214,10,.4);color:var(--amber)}
+.st.block{color:var(--text3)}
+.gallery{max-width:860px;margin:20px auto 0;padding:0 20px;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
 .shot{background:var(--surface2);border:1px solid var(--hairline);border-radius:14px;overflow:hidden}
 .shot img{width:100%;display:block;aspect-ratio:16/10;object-fit:cover;background:#000}
-.shot .c{font-size:12px;color:var(--text2);padding:9px 12px}
-b.res{color:var(--green)}
-.mtu{font-size:12px;color:var(--text3);margin-top:8px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
-a.btn{display:inline-block;background:var(--accent);color:#fff;font-weight:600;font-size:13.5px;border-radius:999px;padding:9px 18px;margin-top:4px}
-@media(max-width:640px){.grid{grid-template-columns:1fr}.hero .big{font-size:28px}}
+.shot .c{font-size:12px;color:var(--text2);padding:9px 12px;line-height:1.4}
+a.btn{display:inline-block;background:var(--accent);color:#fff;font-weight:600;font-size:13.5px;border-radius:999px;padding:9px 20px;margin-top:12px}
+a.btn:hover{text-decoration:none;opacity:.9}
+@media(max-width:640px){.grid{grid-template-columns:1fr}.hero .big{font-size:26px}.role-row{flex-wrap:wrap}.role-row .s{text-align:left;max-width:100%}}
 </style>
 </head>
 <body>
@@ -49,67 +54,67 @@ a.btn{display:inline-block;background:var(--accent);color:#fff;font-weight:600;f
 <div class="hero">
   <div class="kicker">Project · BBS · Bahri Maritime</div>
   <div class="big">User Acceptance Testing — Readiness Report</div>
-  <div class="meta">Activity: full app walkthrough &amp; test-case suite across every user level &nbsp;·&nbsp; 21 Sep 2026 &nbsp;·&nbsp; Prepared by TailoredTech (Hermes &amp; Cursor workflow)</div>
+  <div class="meta">Full app walkthrough &amp; test-case suite across every user level &nbsp;·&nbsp; 21 Sep 2026 &nbsp;·&nbsp; TailoredTech (Hermes &amp; Cursor)</div>
   <div style="margin-top:18px"><span class="chip">7 roles</span><span class="chip">8 test folders</span><span class="chip">~45 test cases</span><span class="chip">22 screenshots</span></div>
 </div>
 
 <div class="gauge">
   <div class="g-label">App readiness for client UAT</div>
-  <div class="g-num">70%</div>
+  <div class="g-num">70<small>%</small></div>
   <div class="g-bar"><span style="width:70%"></span></div>
-  <div class="g-note">All core office/STO/ETS modules render and authenticate. The path to 100% is narrow: (1) unblock crew/vessel OTP login for interactive testing, and (2) one product decision on the ETS landing route.</div>
+  <div class="g-note">All core office / STO / ETS modules render and authenticate. The path to 100% is narrow: unblock crew/vessel OTP login for interactive testing, and one product decision on the ETS landing route.</div>
 </div>
 
 <div class="grid">
-  <div class="stat"><div class="n b res">22</div><div class="l">screenshots captured (evidence)</div></div>
-  <div class="stat"><div class="n">7/7</div><div class="l">roles sign-in verified (office family by password; crew/vessel OTP flow)</div></div>
-  <div class="stat"><div class="n">+30</div><div class="l">cases verified pass in this pass</div></div>
-  <div class="stat"><div class="n">2</div><div class="l">findings requiring product decision (below)</div></div>
+  <div class="stat"><div class="n">22</div><div class="l">screenshots captured as evidence</div></div>
+  <div class="stat"><div class="n">7 / 7</div><div class="l">roles sign-in verified (office by password; crew/vessel OTP flow)</div></div>
+  <div class="stat"><div class="n">30+</div><div class="l">cases verified pass in this pass</div></div>
+  <div class="stat"><div class="n">2</div><div class="l">findings requiring a product decision</div></div>
 </div>
 
 <div class="stack">
 
   <div class="card">
-    <h3>1 · What was done</h3>
+    <h3>What was done</h3>
     <ul>
-      <li>Checked master + open PRs. Master is <b>synced</b> with origin. Found <b>one open PR (#13)</b> — it is <b>conflicting/dirty</b>, so by the rule ("no conflicts or problems") it was <b>skipped</b>, not merged. No clean PRs remained to squash-merge.</li>
+      <li>Checked master + open PRs. Master is <b>synced</b> with origin. Found <b>one open PR (#13)</b> — conflicting/dirty, so by the rule it was <b>skipped</b>. No clean PRs remained to squash-merge.</li>
       <li>Created clean branch <span class="codeyl">uat/full-acceptance-testing</span> off updated master (commit <span class="codeyl">60d2623</span>).</li>
       <li>Located seed login accounts in <span class="codeyl">local/seed-passwords.txt</span>; mapped one account per UAT role.</li>
       <li>Drove the app in a real browser as <b>each role</b>: office admin, office member, basic office user, coordinator, STO, ETS; verified crew &amp; vessel OTP sign-in flow.</li>
-      <li>Built the full suite in <span class="codeyl">docs/uat/v2/</span> (8 folders, one per role, step-by-step cases with preconditions + expected results).</li>
+      <li>Built the full suite in <span class="codeyl">docs/uat/v2/</span> (8 folders, step-by-step cases with preconditions + expected results).</li>
       <li>Captured screenshots into <span class="codeyl">docs/sessions/2026-09-21-uat/images/</span>, committed on the UAT branch.</li>
     </ul>
   </div>
 
   <div class="issue">
-    <h3><span class="tag">Needs product decision</span>A · ETS lands on Notifications, not the STO-ETS workspace</h3>
+    <h3><span class="tag">Needs product decision</span> A · ETS lands on Notifications, not the STO-ETS workspace</h3>
     <p><b>Observed:</b> ETS (<span class="codeyl">fatima.alzahrani@bahri.sa</span>) is redirected after login to <span class="codeyl">/notifications</span>, and navigating directly to <span class="codeyl">/sto-ets</span> bounces back to <span class="codeyl">/notifications</span>. The STO (<span class="codeyl">ahmed.alrashid@bahri.sa</span>) lands correctly on <span class="codeyl">/sto-ets</span>.</p>
-    <p><b>Nature:</b> not a crash or "missing import" — the app runs. It is a <b>routing/UX inconsistency</b> that needs you (product owner) to confirm the intended ETS landing. Is the ETS meant to share the STO-ETS workspace like the STO? If yes → this is a defect to fix.</p>
+    <p><b>Nature:</b> not a crash — the app runs. A <b>routing/UX inconsistency</b> needing the product owner to confirm the intended ETS landing. If ETS should share the STO-ETS workspace like STO, this is a defect to fix.</p>
   </div>
 
   <div class="issue">
-    <h3><span class="tag">Blocker</span>B · Crew &amp; vessel login use email OTP (needs inbox access)</h3>
-    <p><b>Observed:</b> crew/vessel accounts authenticate with a 6-digit email code (AWS SES) — not password — delivered to the authorized inbox. The flow renders correctly ("Send verification code" → OTP step).</p>
-    <p><b>Impact:</b> I verified the OTP <i>flow</i> but could not complete interactive crew/vessel walkthroughs without reading the delivered OTP (no inbox/email token wired up). To finish that third of the suite, either (a) enable OTP delivery/reading for the test inbox, or (b) give me a password-enabled crew/vessel test account.</p>
+    <h3><span class="tag">Blocker</span> B · Crew &amp; vessel login use email OTP (needs inbox access)</h3>
+    <p><b>Observed:</b> crew/vessel accounts authenticate with a 6-digit email code (AWS SES), not password, delivered to the authorized inbox. The flow renders correctly ("Send verification code" → OTP step).</p>
+    <p><b>Impact:</b> the OTP <i>flow</i> was verified but interactive crew/vessel walkthroughs could not be completed without reading the delivered OTP. To finish that third of the suite, either (a) enable OTP delivery/reading for the test inbox, or (b) provide a password-enabled crew/vessel test account.</p>
   </div>
 
   <div class="card">
-    <h3>2 · Role test coverage</h3>
-    <div class="role-row"><div class="r">Office Admin</div><span class="badge bg-green">Pass</span><div class="s">dashboards, observations, action items, administration (users/vessels), checklists, chatrooms, settings, notifications</div></div>
-    <div class="role-row"><div class="r">Office Member</div><span class="badge bg-green">Pass</span><div class="s">sign-in, dashboard, observations, action items, no admin panels</div></div>
-    <div class="role-row"><div class="r">Coordinator</div><span class="badge bg-green">Pass</span><div class="s">sign-in, dashboard, observations, action items</div></div>
-    <div class="role-row"><div class="r">STO</div><span class="badge bg-green">Pass</span><div class="s">/sto-ets landing, analytics, chatrooms hub, observations</div></div>
-    <div class="role-row"><div class="r">ETS</div><span class="badge bg-amber">Review</span><div class="s">sign-in + notifications pass; landing route → product decision (Finding A)</div></div>
-    <div class="role-row"><div class="r">Crew Observer</div><span class="badge bg-grey">Flow pass / interactive blocked</span><div class="s">OTP flow OK; interactive walkthrough needs inbox (Finding B)</div></div>
-    <div class="role-row"><div class="r">Vessel</div><span class="badge bg-grey">Flow pass / interactive blocked</span><div class="s">OTP flow OK; interactive walkthrough needs inbox (Finding B)</div></div>
+    <h3>Role coverage</h3>
+    <div class="role-row"><div class="r">Office Admin</div><span class="st ok">Pass</span><div class="s">dashboards, observations, action items, administration (users/vessels), checklists, chatrooms, settings, notifications</div></div>
+    <div class="role-row"><div class="r">Office Member</div><span class="st ok">Pass</span><div class="s">sign-in, dashboard, observations, action items, no admin panels</div></div>
+    <div class="role-row"><div class="r">Coordinator</div><span class="st ok">Pass</span><div class="s">sign-in, dashboard, observations, action items</div></div>
+    <div class="role-row"><div class="r">STO</div><span class="st ok">Pass</span><div class="s">/sto-ets landing, analytics, chatrooms hub, observations</div></div>
+    <div class="role-row"><div class="r">ETS</div><span class="st warn">Review</span><div class="s">sign-in + notifications pass; landing route → product decision (Finding A)</div></div>
+    <div class="role-row"><div class="r">Crew Observer</div><span class="st block">Flow / blocked</span><div class="s">OTP flow OK; interactive walkthrough needs inbox (Finding B)</div></div>
+    <div class="role-row"><div class="r">Vessel</div><span class="st block">Flow / blocked</span><div class="s">OTP flow OK; interactive walkthrough needs inbox (Finding B)</div></div>
   </div>
 
   <div class="card">
-    <h3>3 · Ready to test folders</h3>
+    <h3>Ready to test folders</h3>
     <ul>
       <li><b>00 Preconditions</b> — verified (seed + accounts + server).</li>
       <li><b>01 Office Admin</b> — 15 cases, majority verified pass; create-observation + data-write cases reserved for the client tester.</li>
-      <li><b>02 Office Member</b>, <b>03 Coordinator</b>, <b>04 STO</b> — verified pass for the covered cases.</li>
+      <li><b>02 Office Member</b>, <b>03 Coordinator</b>, <b>04 STO</b> — verified pass for covered cases.</li>
       <li><b>05 ETS</b> — sign-in &amp; notifications pass; landing route pending decision.</li>
       <li><b>06 Crew Observer</b>, <b>07 Vessel</b> — defined &amp; routed; interactive completion blocked on OTP.</li>
       <li><b>08 Cross-cut</b> — role isolation, auth segregation, deep-links, mobile, prod parity.</li>
@@ -127,12 +132,12 @@ a.btn{display:inline-block;background:var(--accent);color:#fff;font-weight:600;f
   <div class="shot"><img src="images/office-admin-vessels.png" alt=""><div class="c">Office admin — Vessels</div></div>
   <div class="shot"><img src="images/coordinator-home.png" alt=""><div class="c">Coordinator — Home</div></div>
   <div class="shot"><img src="images/sto-home.png" alt=""><div class="c">STO — Home</div></div>
-  <div class="shot"><img src="images/sto-analytics.png" alt=""><div class="c">STO — Analytics</div></div>
+  <div class="shot"><img src="images/sto-observations.png" alt=""><div class="c">STO — Observations</div></div>
   <div class="shot"><img src="images/ets-home.png" alt=""><div class="c">ETS — Notifications landing</div></div>
   <div class="shot"><img src="images/office-member-home.png" alt=""><div class="c">Office member — Home</div></div>
   <div class="shot"><img src="images/vessel-home.png" alt=""><div class="c">Vessel — Home (OTP flow)</div></div>
 </div>
 
-<div class="foot">BBS — Behavior-Based Safety &nbsp;·&nbsp; TailoredTech quality &amp; delivery &nbsp;·&nbsp; <b>Readiness 70%</b> · prepared 21 Sep 2026. Repo branch: <b>uat/full-acceptance-testing</b>.</div>
+<div class="foot">BBS — Behavior-Based Safety &nbsp;·&nbsp; TailoredTech quality &amp; delivery &nbsp;·&nbsp; <b>Readiness 70%</b> · 21 Sep 2026 · branch <b>uat/full-acceptance-testing</b>.</div>
 </body>
 </html>
