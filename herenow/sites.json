@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "happy-sprout-naf3",
+    "siteUrl": "https://happy-sprout-naf3.here.now/",
+    "title": "Gasser Client Ops — Bahri",
+    "ogTitle": "Gasser Client Ops — Bahri",
+    "description": "TailoredTech client operations dashboard for Bahri via Marafei",
+    "image": "herenow/happy-sprout-naf3.png",
+    "updatedAt": "2026-09-21T16:42:11.979Z"
+  },
+  {
+    "slug": "quaint-anchor-hvcc",
+    "siteUrl": "https://quaint-anchor-hvcc.here.now/",
+    "title": "Vercel Pro Capacity Guide — TailoredTech — 2026-09-21",
+    "ogTitle": "Vercel Pro Capacity Guide — TailoredTech — 2026-09-21",
+    "description": "Mobile-ready live usage, used/included bars, per-project accordion, capacity guide",
+    "image": "herenow/quaint-anchor-hvcc.png",
+    "updatedAt": "2026-09-21T05:01:28.284Z"
+  },
+  {
+    "slug": "graceful-plover-e4wy",
+    "siteUrl": "https://graceful-plover-e4wy.here.now/",
+    "title": "Year expenses — Gasser — 2025-09-19 → 2026-09-19",
+    "ogTitle": "Year expenses — Gasser — 2025-09-19 → 2026-09-19",
+    "description": "Past-month expenses from invoice emails · 2026-08-19 to 2026-09-19 Asia/Dubai",
+    "image": "herenow/graceful-plover-e4wy.png",
+    "updatedAt": "2026-09-19T14:00:32.803Z"
+  },
+  {
+    "slug": "swift-aurora-g3vv",
+    "siteUrl": "https://swift-aurora-g3vv.here.now/",
+    "title": "Vercel Pro Guide — TailoredTech — 2026-09-18",
+    "ogTitle": "Vercel Pro Guide — TailoredTech — 2026-09-18",
+    "description": "TailoredTech seats, spend, Hobby vs Pro",
+    "image": "herenow/swift-aurora-g3vv.png",
+    "updatedAt": "2026-09-18T19:06:13.984Z"
+  },
+  {
+    "slug": "snowy-mantle-qzyp",
+    "siteUrl": "https://snowy-mantle-qzyp.here.now/",
+    "title": "TailoredTech portfolio — how this project works",
+    "ogTitle": "TailoredTech portfolio — how this project works",
+    "description": "An architectural overview and technical documentation for the TailoredTech marketing website built with Next.js.",
+    "image": "herenow/snowy-mantle-qzyp.png",
+    "updatedAt": "2026-09-17T07:58:55.252Z"
+  }
+]
