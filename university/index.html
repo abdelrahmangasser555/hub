@@ -212,10 +212,15 @@ header.mast .chips{
 .ov-chip .v{font-weight:600;color:var(--text);margin-top:2px}
 
 /* deadlines */
-.dl-row{display:flex;align-items:center;gap:10px;padding:8px 0;font-size:13.5px}
-.dl-row+.dl-row{border-top:1px dashed rgba(255,255,255,.08)}
-.dl-row .dk{color:var(--text3);width:78px;flex-shrink:0;font-size:12.5px}
+.dl-block{border:1px solid var(--hairline);background:var(--surface2);border-radius:12px;padding:12px 14px;margin-bottom:10px}
+.dl-block:last-child{margin-bottom:0}
+.dl-block .dl-term{font-weight:700;font-size:13.5px;display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.dl-block .dl-term .winter{color:var(--accent)}
+.dl-block .dl-term .summer{color:var(--green)}
+.dl-row{display:flex;align-items:center;gap:10px;padding:5px 0;font-size:13.5px}
+.dl-row .dk{color:var(--text3);width:106px;flex-shrink:0;font-size:12.5px}
 .dl-row .dv{color:var(--text);font-weight:600}
+.dl-note{color:var(--text3);font-size:12px;margin-top:8px;line-height:1.5;border-top:1px dashed rgba(255,255,255,.1);padding-top:8px}
 
 /* programs */
 .pgm{border:1px solid var(--hairline);background:var(--surface2);border-radius:12px;padding:12px 14px;margin-bottom:8px}
@@ -431,11 +436,33 @@ function drawBody(u){
     `<span class="ov-chip"><span class="k">Tuition</span><div class="v">${u.fee==='free'?'€0 — free':SUMMER_LABEL[u.summer]}</div></span>`
   ].join('');
 
-  const dls=u.deadlines?[
-    `<div class="dl-row"><span class="dk">Apply by</span><span class="dv">${esc(u.deadlines.applyBy||'—')}</span></div>`,
-    `<div class="dl-row"><span class="dk">Summer 27</span><span class="dv">${esc(u.deadlines.summer||'—')}</span></div>`,
-    `<div class="dl-row"><span class="dk">Winter 27/28</span><span class="dv">${esc(u.deadlines.winter||'—')}</span></div>`
-  ].join(''):'';
+  const dlNote='<div class="dl-note">Deadlines shown are application-by dates for the intake. German terms: <b>Summer</b> ≈ Apr–Sep, <b>Winter</b> ≈ Oct–Mar (verify each uni).</div>';
+  let dls=dlNote;
+  if(u.deadlines){
+    const blocks=[];
+    // Winter-intake-only uni
+    if(u.summer==='winter'){
+      const winYr=(u.deadlines.winter||'').match(/(20\d\d)/);
+      blocks.push(`<div class="dl-block"><div class="dl-term"><span class="winter">Winter only</span></div>
+        <div class="dl-row"><span class="dk">Apply by</span><span class="dv">${esc(u.deadlines.winter||'—')}</span></div>
+        <div class="dl-row"><span class="dk">Term starts</span><span class="dv">early Oct ${winYr?winYr[1]:'<i>(verify)</i>'}</span></div></div>`);
+    } else {
+      // Winter 27/28
+      if(u.deadlines.winter) blocks.push(`<div class="dl-block"><div class="dl-term"><span class="winter">◈</span> Winter 2027/28</div>
+        <div class="dl-row"><span class="dk">Apply by</span><span class="dv">${esc(u.deadlines.winter)}</span></div>
+        <div class="dl-row"><span class="dk">Term starts</span><span class="dv">early Oct 2027</span></div></div>`);
+      // Summer 2027
+      if(u.deadlines.summer && u.summer!=='winter') blocks.push(`<div class="dl-block"><div class="dl-term"><span class="summer">◈</span> Summer 2027</div>
+        <div class="dl-row"><span class="dk">Apply by</span><span class="dv">${esc(u.deadlines.summer)}</span></div>
+        <div class="dl-row"><span class="dk">Term starts</span><span class="dv">early Apr 2027</span></div></div>`);
+      if(!blocks.length && u.summer==='rolling') blocks.push(`<div class="dl-block"><div class="dl-term"><span class="summer">◈</span> Rolling intake</div>
+        <div class="dl-row"><span class="dk">Apply</span><span class="dv">Anytime / rolling</span></div>
+        <div class="dl-row"><span class="dk">Term starts</span><span class="dv">per schedule</span></div></div>`);
+      if(u.deadlines.applyBy && u.summer!=='rolling') blocks.push(`<div class="dl-block"><div class="dl-term">Application window</div>
+        <div class="dl-row"><span class="dk">Start early</span><span class="dv">${esc(u.deadlines.applyBy)}</span></div></div>`);
+    }
+    dls=blocks.join('')+dlNote;
+  }
 
   const pgms=u.programs.map(p=>
     `<div class="pgm">
