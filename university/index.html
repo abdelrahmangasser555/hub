@@ -144,6 +144,10 @@ header.mast .chips{
 .sb-amber{background:rgba(255,214,10,.12);color:var(--amber)}
 .sb-red{background:rgba(255,69,58,.12);color:var(--red)}
 .chev{flex-shrink:0;color:var(--text3);font-size:16px;font-weight:300;transform:translateY(-1px)}
+/* no-IELTS flag */
+.engflag{flex-shrink:0;font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;border:1px solid rgba(255,214,10,.45);color:var(--amber);background:rgba(255,214,10,.08);animation:blink 2.2s ease-in-out infinite;letter-spacing:.02em}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.42}}
+@media(prefers-reduced-motion:reduce){.engflag{animation:none}}
 
 /* ---------- Drawer ---------- */
 .overlay{
@@ -381,6 +385,7 @@ function render(){
              <span>${METHOD_LABEL[u.method]}</span>
              <span>${u.nc==='open'?'Open':''}<b>${u.nc==='open'?'Open admission':'Restricted'}</b></span>
              <span><b>${u.fee==='free'?'€0 free':SUMMER_LABEL[u.summer]}</b></span>
+             <span class="engflag">no IELTS · MOI ok</span>
            </div>
          </div>
          <div class="score-badge ${scoreCls(u.score)}">${u.score}</div>
@@ -433,7 +438,8 @@ function drawBody(u){
   const ov=[
     `<span class="ov-chip"><span class="k">Apply via</span><div class="v">${METHOD_LABEL[u.method]}</div></span>`,
     `<span class="ov-chip"><span class="k">Admission</span><div class="v">${u.nc==='open'?'Open':'Restricted'}</div></span>`,
-    `<span class="ov-chip"><span class="k">Tuition</span><div class="v">${u.fee==='free'?'€0 — free':SUMMER_LABEL[u.summer]}</div></span>`
+    `<span class="ov-chip"><span class="k">Tuition</span><div class="v">${u.fee==='free'?'€0 — free':SUMMER_LABEL[u.summer]}</div></span>`,
+    `<span class="ov-chip"><span class="k">English</span><div class="v">MOI cert (no IELTS)</div></span>`
   ].join('');
 
   const dlNote='<div class="dl-note">Deadlines shown are application-by dates for the intake. German terms: <b>Summer</b> ≈ Apr–Sep, <b>Winter</b> ≈ Oct–Mar (verify each uni).</div>';
