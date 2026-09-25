@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>Application Flow &amp; Deferral — German Master's Guide</title>
+<style>
+:root{
+  --bg:#000000;--surface:#0c0c10;--surface2:#16161c;
+  --hairline:rgba(255,255,255,0.10);--hairline2:rgba(255,255,255,0.06);
+  --text:#ffffff;--text2:#a1a1ad;--text3:#6b6b76;
+  --accent:#0a84ff;--green:#30d158;--amber:#ffd60a;--red:#ff453a;
+  --radius:14px;
+  --font:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.5;font-size:15px;-webkit-font-smoothing:antialiased;min-height:100vh}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.mast{max-width:760px;margin:0 auto;padding:34px 20px 10px}
+.mast .kicker{font-size:12px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.09em;margin-bottom:8px}
+.mast h1{font-size:27px;font-weight:720;letter-spacing:-0.02em;line-height:1.15}
+.mast .sub{color:var(--text2);font-size:13.5px;margin-top:8px;max-width:680px}
+.mast .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.chip{font-size:12px;font-weight:500;color:var(--text2);padding:4px 10px;border-radius:999px;border:1px solid var(--hairline);background:var(--surface)}
+.back{margin-top:14px;display:inline-block;font-size:13px;font-weight:600}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px 60px}
+.sec-h2{font-size:15px;font-weight:680;letter-spacing:-0.01em;color:var(--text);margin:34px 0 12px;display:flex;align-items:center;gap:9px}
+.sec-h2 .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);opacity:.85}
+.group{background:var(--surface);border:1px solid var(--hairline);border-radius:var(--radius);padding:6px 0;overflow:hidden}
+.row{display:flex;align-items:center;gap:14px;padding:15px 16px;border-bottom:1px solid var(--hairline2);font-size:14.5px}
+.row:last-child{border-bottom:none}
+.row .n{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--surface2);border:1px solid var(--hairline);color:var(--accent);font-size:12.5px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.row .t{flex:1;min-width:0}
+.row .t b{font-weight:650}
+.row .t small{display:block;color:var(--text2);font-size:12.5px;margin-top:2px;line-height:1.45}
+.row .stat{flex-shrink:0;font-size:11.5px;font-weight:700;padding:3px 10px;border-radius:999px;background:var(--surface2);border:1px solid var(--hairline);color:var(--text2)}
+.st-green{color:var(--green);border-color:rgba(48,209,88,.4)}
+.st-amber{color:var(--amber);border-color:rgba(255,214,10,.4)}
+.st-red{color:var(--red);border-color:rgba(255,69,58,.4)}
+.callout{border:1px solid var(--hairline);border-left:3px solid var(--amber);border-radius:12px;background:var(--surface);padding:14px 16px;margin-top:12px}
+.callout.blue{border-left-color:var(--accent)}
+.callout.green{border-left-color:var(--green)}
+.callout.red{border-left-color:var(--red)}
+.callout h4{font-size:13px;font-weight:680;margin-bottom:6px}
+.callout p,.callout li{font-size:13.5px;color:var(--text2);line-height:1.6}
+.callout ul{margin:6px 0 0 18px}
+.callout li{margin:4px 0}
+.callout b{color:var(--text)}
+.callout.hint{border-left-color:var(--accent);background:rgba(10,132,255,.07)}
+table{width:100%;border-collapse:collapse;font-size:13.5px;background:var(--surface);border:1px solid var(--hairline);border-radius:12px;overflow:hidden}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--hairline2);vertical-align:top}
+th{font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--text3);font-weight:600;background:var(--surface2)}
+td b{color:var(--text)}
+tr:last-child td{border-bottom:none}
+.mermaid-wrap{background:var(--surface);border:1px solid var(--hairline);border-radius:14px;padding:20px;overflow:auto;color:#e8e8ec}
+.mermaid-wrap .mm-title{font-size:11.5px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.07em;margin-bottom:12px}
+.steps{background:var(--surface);border:1px solid var(--hairline);border-radius:14px;padding:8px 0}
+.step{display:flex;gap:14px;padding:15px 16px;border-bottom:1px solid var(--hairline2)}
+.step:last-child{border-bottom:none}
+.step .num{flex-shrink:0;width:28px;height:28px;border-radius:9px;background:rgba(10,132,255,.14);color:var(--accent);font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.step .b{flex:1;min-width:0}
+.step .b .tt{font-weight:650;font-size:14px}
+.step .b .dd{color:var(--text2);font-size:13px;margin-top:4px;line-height:1.55}
+.step .b .dd b{color:var(--text)}
+.foot{max-width:760px;margin:0 auto;padding:8px 22px 60px;color:var(--text3);font-size:12px;text-align:center;line-height:1.7}
+@media(max-width:560px){
+  .row{flex-wrap:wrap}.callout{border-left-width:3px}
+  .mermaid-wrap{padding:14px}
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.css">
+</head>
+<body>
+
+<div class="mast">
+  <div class="kicker">German Master's Guide · Process</div>
+  <h1>Application Flow &amp; Military-Service Deferral</h1>
+  <div class="sub">The end-to-end route for Abdelrahman Gasser: Egypt (AAST / Northampton) → German master's admission → student visa → military-service deferral (بعثات / التأجيل). Every step, every condition, and a visual flow.</div>
+  <div class="chips">
+    <span class="chip">uni-assist</span>
+    <span class="chip">VPD</span>
+    <span class="chip">MOI · no IELTS</span>
+    <span class="chip">Blocked account</span>
+    <span class="chip">تجنيــد · بعثات</span>
+  </div>
+  <a class="back" href="index.html">← Back to the guide</a>
+</div>
+
+<div class="wrap">
+
+  <!-- 0. Disclaimers -->
+  <div class="callout blue" style="margin-top:6px">
+    <h4>Read this first</h4>
+    <p><b>Rules change.</b> This page reflects the procedures as of 2026 and is a personal planning guide, not legal advice. Confirm every step with the German embassy/cultural section and the Egyptian missions (بعثات) office before acting — especially anything involving the visa and the military service.</p>
+  </div>
+
+  <!-- 1. The two documents that matter -->
+  <div class="sec-h2"><span class="dot"></span>1 · Which document unlocks what</div>
+  <div class="callout red">
+    <h4>⚠ The professor's "invitation letter" is a reference — not admission</h4>
+    <p><b>What you already have:</b> a reference/recommendation letter from a professor, an English-MOI certificate, a transcript (GPA + credits), and IGCSE school results.</p>
+    <p style="margin-top:8px"><b>What actually unlocks the visa and the deferral:</b> a formal <b>admission offer (Zulassungsbescheid)</b> from a recognized German university. A reference letter helps you <i>get</i> admission, but it is not the admission itself. The chain is <b>admission → blocked account → student visa → deferral follows from being a registered student</b> — never the reverse.</p>
+  </div>
+
+  <!-- 2. College application steps -->
+  <div class="sec-h2"><span class="dot"></span>2 · College application — the steps</div>
+  <div class="steps">
+    <div class="step"><div class="num">1</div><div class="b"><div class="tt">Pick programs that fit you</div><div class="dd">English-taught M.Sc. in Computer Science / Informatics, <b>open admission</b> (no GPA cut-off), <b>tuition-free</b>, and that accept your <b>MOI certificate + IGCSE English</b> in place of IELTS. Filter the report to <i>free &amp; open</i> for the best odds.</div></div></div>
+    <div class="step"><div class="num">2</div><div class="b"><div class="tt">uni-assist account + VPD</div><div class="dd">Create an account at <b>my.uni-assist.de</b>. Submit your documents to get a <b>VPD (pre-check of your Egyptian/Arab + UK degree)</b> — this normally takes <b>4–6 weeks</b>, so start it early. This is the recognition step that German unis use to judge if your bachelor's qualifies.</div></div></div>
+    <div class="step"><div class="num">3</div><div class="b"><div class="tt">Submit applications by deadline</div><div class="dd">Apply for the intakes you target: <b>Winter 2027/28</b> (apply by ~Jul 15 2027, starts early Oct) and/or <b>Summer 2027</b> (apply by ~Jan 2027, starts early Apr). Follow each uni's own portal (direct) or via uni-assist.</div></div></div>
+    <div class="step"><div class="num">4</div><div class="b"><div class="tt">Handle conditional admission</div><div class="dd">With one semester left, most programs can issue a <b>conditional admission (bedingte Zulassung)</b> pending your final degree. Confirm the program accepts this before counting on it. You may also need to prove you will graduate.</div></div></div>
+    <div class="step"><div class="num">5</div><div class="b"><div class="tt">Fund the blocked account</div><div class="dd">Open a <b>Sperrkonto (blocked account)</b> — ~€11,904/yr for 2026 — required for the student visa. Plan for housing + health insurance too.</div></div></div>
+    <div class="step"><div class="num">6</div><div class="b"><div class="tt">Apply for the student visa</div><div class="dd">With the admission + blocked account, file the <b>national (D) student visa</b> at the German embassy. English proof via your MOI certificate is generally accepted at visa stage.</div></div></div>
+  </div>
+
+  <!-- 3. Military deferral -->
+  <div class="sec-h2"><span class="dot"></span>3 · Military-service deferral (تأجيل التجنيد)</div>
+  <div class="callout green">
+    <h4>The good news</h4>
+    <p>Studying a <b>master's abroad defers your conscription until age 29</b> — it's the deferral cap, not a flat "2 years" (your actual study period governs). The route runs through the Egyptian<br><b>educational missions (البعثات)</b> → <b>conscription office (إدارة التجنيد — حِلمية الزيتون)</b> → a <b>travel permit (تصريح سفر) valid Aug–Aug</b>. Since 2025–2026 the missions office generally wants to see the <b>student visa</b> in hand too.</p>
+  </div>
+
+  <div class="steps">
+    <div class="step"><div class="num">1</div><div class="b"><div class="tt">Secure admission + visa first</div><div class="dd">Get your German <b>admission</b> and <b>student visa</b> before the military file. The deferral is a consequence of being an accepted student abroad, not a separate thing you "obtain".</div></div></div>
+    <div class="step"><div class="num">2</div><div class="b"><div class="tt">Register with المبعثات (missions)</div><div class="dd">File your student file (قيد, admission, visa, passport, graduation docs) at the Egyptian educational missions office to put yourself under scientific supervision abroad.</div></div></div>
+    <div class="step"><div class="num">3</div><div class="b"><div class="tt">Conscription office (إدارة التجنيد)</div><div class="dd">They issue the <b>deferral letter (إفادة تأجيل)</b>. Master's deferrals run to <b>age 29</b>.</div></div></div>
+    <div class="step"><div class="num">4</div><div class="b"><div class="tt">Travel permit (تصريح السفر)</div><div class="dd">Return to المبعثات with the deferral letter → they route you to تجنيد once more for the <b>travel permit</b>. It's valid for one year (recommended Aug–Aug) and used to leave Egypt.</div></div></div>
+    <div class="step"><div class="num">5</div><div class="b"><div class="tt">Renew each year</div><div class="dd">Renew the deferral + permit each academic year with a current enrollment (قيد) certificate, attested (تصديق) through the Egyptian cultural bureau.</div></div></div>
+  </div>
+
+  <!-- 4. Conditions -->
+  <div class="sec-h2"><span class="dot"></span>4 · The conditions that make or break it</div>
+  <div class="callout red">
+    <h4>⚠ The big one — only ONE institution defers you</h4>
+    <p>You can only be <b>deferred by one institution at a time</b>. If <b>AAST is currently deferring you</b> as an enrolled student, a <b>German university cannot also defer you</b>. Once your German admission is secure, you must <b>withdraw your enrollment (سحب القيد) from AAST in Egypt</b> — otherwise the missions office will reject your file. Get the German admission <i>first</i>, then withdraw AAST, then file the deferral.</p>
+  </div>
+  <table>
+    <tr><th>Condition</th><th>What it means for you</th></tr>
+    <tr><td><b>Admission (Zulassung)</b></td><td>Formal offer from a recognized German university — the whole plan depends on it.</td></tr>
+    <tr><td><b>Recognized degree / VPD</b></td><td>Your AAST + Northampton UK bachelor's must qualify; uni-assist VPD confirms it (4–6 wks).</td></tr>
+    <tr><td><b>English proof</b></td><td><b>MOI certificate + IGCSE English</b> typically replaces IELTS — verify per program.</td></tr>
+    <tr><td><b>Graduation</b></td><td>Some programs require the completed bachelor's, or a <b>conditional admission</b> with one semester left.</td></tr>
+    <tr><td><b>Blocked account</b></td><td>~€11,904/yr (2026) — mandatory for the visa.</td></tr>
+    <tr><td><b>Student visa</b></td><td>National (D) visa issued on admission + funds; missions now expect it in the deferral file.</td></tr>
+    <tr><td><b>Single-deferral rule</b></td><td>Withdraw AAST enrollment once German admission is safe — before filing with المبعثات.</td></tr>
+    <tr><td><b>Age cap</b></td><td>Master's study defers conscription to <b>age 29</b>; renew yearly with an enrollment certificate.</td></tr>
+  </table>
+
+  <!-- 5. Mermaid flow -->
+  <div class="sec-h2"><span class="dot"></span>5 · The flow (mermaid)</div>
+  <div class="mermaid-wrap">
+    <div class="mm-title">End-to-end route</div>
+    <pre class="mermaid">
+flowchart TD
+    A["🎓 AAST / Northampton<br/>English bachelor's + transcript<br/>MOI cert + IGCSE English"] --> B["uni-assist<br/>VPD (4–6 weeks)"]
+    B --> C{"Apply by deadline<br/>Winter ~Jul 15 · Summer ~Jan"}
+    C --> D["Admission offer<br/>Zulassungsbescheid"]
+    D -- "one semester left?" --> D2["Conditional admission<br/>(bedingte Zulassung)"]
+    D --> E["Blocked account<br/>≈ €11,904 / yr"]
+    D2 --> E
+    E --> F["Student visa<br/>(National D)"]
+    F --> G["🇪🇬 Withdraw AAST<br/>(سحب القيد — single-deferral rule)"]
+    G --> H["المبعثات (missions)<br/>register as student abroad"]
+    H --> I["إدارة التجنيد (حلمية الزيتون)<br/>deferral letter — till age 29"]
+    I --> J["Travel permit<br/>(تصريح سفر · Aug–Aug)"]
+    J --> K["✈️ Travel &amp; enroll<br/>in Germany"]
+    K --> L["Renew yearly<br/>with قيد / enrollment cert"]
+    L -. "back to H" .-> H
+
+    style A fill:#16161c,stroke:#3a3a44,color:#fff
+    style B fill:#0a84ff,stroke:#0a84ff,color:#fff
+    style D fill:#30d158,stroke:#30d158,color:#000
+    style F fill:#30d158,stroke:#30d158,color:#000
+    style G fill:#ffd60a,stroke:#ffd60a,color:#000
+    style J fill:#ffd60a,stroke:#ffd60a,color:#000
+    style K fill:#30d158,stroke:#30d158,color:#000
+    </pre>
+  </div>
+
+  <div class="callout blue hint" style="margin-top:14px">
+    <h4>Bottom line</h4>
+    <p><b>Start uni-assist now</b> — your documents are the real core, and no IELTS is fine with your MOI certificate. Sequence strictly: <b>admission → funds → visa → withdraw AAST → deferral → travel permit → enroll</b>. Do the formal steps with المبعثات and the embassy so nothing stalls on the single-deferral rule.</p>
+  </div>
+
+</div>
+
+<div class="foot">German Master's Guide · Application Flow &amp; Deferral · Compiled Sept 2026 · Verify with the German embassy &amp; المبعثات before acting.</div>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true,theme:'dark',securityLevel:'loose',themeVariables:{background:'#16161c',primaryColor:'#16161c',primaryTextColor:'#ffffff',primaryBorderColor:'#3a3a44',lineColor:'#5a5a66',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif'}});</script>
+</body>
+</html>
