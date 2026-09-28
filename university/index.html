@@ -226,6 +226,26 @@ header.mast .chips{
 .dl-row .dv{color:var(--text);font-weight:600}
 .dl-note{color:var(--text3);font-size:12px;margin-top:8px;line-height:1.5;border-top:1px dashed rgba(255,255,255,.1);padding-top:8px}
 
+/* ---------- Intake timeline ---------- */
+.timeline{border:1px solid var(--hairline);background:var(--surface2);border-radius:12px;padding:13px 14px}
+.timeline .tl-host{font-size:11.5px;font-weight:600;color:var(--t3a,var(--text3));text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+.timeline .tl-rail{position:relative;padding-left:20px}
+.timeline .tl-node{position:relative;display:flex;align-items:flex-start;gap:10px;margin-bottom:7px}
+.timeline .tl-node::before{content:"";position:absolute;left:-16px;top:6px;width:9px;height:9px;border-radius:50%;background:var(--rail,var(--surface2));border:1.5px solid var(--accent)}
+.timeline .tl-node:last-child::after{content:"";position:absolute;left:-12px;top:14px;bottom:-8px;width:2px;border-radius:2px;background:var(--surface2)}
+.timeline .tl-node .d{flex-shrink:0;width:96px;color:var(--text2);font-size:11.5px;font-weight:600;font-variant-numeric:tabular-nums}
+.timeline .tl-node .l{color:var(--text);font-size:12.5px;line-height:1.35}
+.timeline .tl-node .l small{display:block;color:var(--text3);font-size:11px}
+.timeline .tl-today{position:relative;display:flex;align-items:center;gap:10px;margin-top:4px}
+.timeline .tl-today::before{content:"";position:absolute;left:-16px;top:50%;width:11px;height:11px;border-radius:50%;background:var(--accent);transform:translateY(-50%)}
+.timeline .tl-today .d{flex-shrink:0;width:96px;color:var(--accent);font-size:11px;font-weight:700}
+.timeline .tl-today .l{color:var(--accent);font-size:12px;font-weight:650}
+.timeline .tl-side{color:var(--text2);font-size:11.5px;margin-top:6px;line-height:1.45}
+.timeline .tl-side b{color:var(--text);font-weight:650}
+.tl-pill{display:inline-block;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:99px;background:rgba(10,132,255,.14);color:var(--accent);margin-left:6px}
+.tl-open{background:rgba(48,209,88,.14);color:var(--green)}
+.tl-due{background:rgba(255,214,10,.14);color:var(--amber)}
+
 /* programs */
 .pgm{border:1px solid var(--hairline);background:var(--surface2);border-radius:12px;padding:12px 14px;margin-bottom:8px}
 .pgm:last-child{margin-bottom:0}
@@ -349,6 +369,7 @@ ol.dsteps li::before{
 
 <script>
 const TIER_NAMES={T1:'Elite / TU9',T2:'Strong',T3:'Applied (FH) + private'};
+const TODAY=new Date();
 const TIER_DESC={
   T1:'QS-ranked research powerhouses. Work experience + UK degree help at the 3.0 threshold.',
   T2:'Strong research universities, better admission odds.',
@@ -435,6 +456,75 @@ function closeDrawer(){
   $('overlay').classList.remove('show');
   document.body.style.overflow='';
 }
+/* -------- Timeline (date-aware) -------- */
+const MONTHS={Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11};
+function parseDL(s){
+  if(!s)return null;
+  const m=s.match(/([A-Z][a-z]{2})\s+(\d{1,2})\s*,?\s*(\d{4})/);
+  if(m)return new Date(+m[3],MONTHS[m[1]],+m[2]);
+  const y=s.match(/([A-Z][a-z]{2})\s+(\d{4})/);
+  if(y)return new Date(+y[2],MONTHS[y[1]],1);
+  return null;
+}
+const fmtD=d=>{const m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];return `${m[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;};
+const daysFrom=d=>Math.round((d.getTime()-TODAY.getTime())/86400000);
+function statusPill(n){
+  if(n==null)return '<span class="tl-pill">unknown</span>';
+  if(n<0)return '<span class="tl-pill tl-due">passed</span>';
+  if(n<=60)return `<span class="tl-pill tl-due">${n}d left</span>`;
+  return `<span class="tl-pill tl-open">opens in ${n}d</span>`;
+}
+function timelineHTML(u){
+  const dl=u.deadlines||{};
+  const intakes=[];
+  const add=(label,applyBy,start,startLabel)=>{
+    const ab=parseDL(applyBy), st=parseDL(start);
+    if(!ab&&!st)return;
+    intakes.push({label,applyBy:ab,start:st,startLabel:startLabel||(st?`term ~${fmtD(st)}`:'term ~(verify)')});
+  };
+  if(dl.winter&&u.summer==='winter') add('Winter intake',dl.winter,dl.winter?parseDL(dl.winter):null);
+  else{
+    add('Winter 27/28',dl.winter,'early Oct 2027');
+    add('Summer 2027',dl.summer,'early Apr 2027');
+  }
+  const nodes=[];
+  intakes.forEach(it=>{
+    if(it.applyBy){
+      const open=new Date(it.applyBy.getFullYear(),it.applyBy.getMonth()-5,1);
+      nodes.push({d:open,l:`${it.label} — window opens`,s:`start ~${fmtD(open)}`,pill:null});
+      nodes.push({d:it.applyBy,l:`${it.label} — apply by`,s:fmtD(it.applyBy),pill:statusPill(daysFrom(it.applyBy))});
+      const dec=new Date(it.applyBy.getFullYear(),it.applyBy.getMonth(),it.applyBy.getDate()+56);
+      if(it.start&&dec.getTime()>it.start.getTime()){
+        dec.setTime(it.start.getTime()-14*86400000);
+      }
+      nodes.push({d:dec,l:`${it.label} — decision`,s:`~${fmtD(dec)} (est. 8 wks)`,pill:null});
+    }
+    if(it.start)nodes.push({d:it.start,l:`${it.label} starts`,s:it.startLabel,pill:null});
+  });
+  if(!nodes.length)return '';
+  nodes.sort((a,b)=>a.d.getTime()-b.d.getTime());
+  const tl=[];
+  let todayInserted=false;
+  const todayRow={d:TODAY,l:'Today — you can apply now',s:`${fmtD(TODAY)}`,today:true};
+  for(const nd of nodes){
+    if(!todayInserted&&todayRow.d.getTime()<nd.d.getTime()){
+      tl.push(todayRow);todayInserted=true;
+    }
+    tl.push(nd);
+  }
+  if(!todayInserted)tl.push(todayRow);
+  const waitInfo = dl.applyBy?`<div class="tl-side">Apply-window guidance: start ~<b>${esc(dl.applyBy)}</b>.</div>`:'';
+  const rows=tl.map(nd=>nd.today
+    ?`<div class="tl-today"><div class="d">${fmtD(TODAY)}</div><div class="l">Today — apply now if open</div></div>`
+    :`<div class="tl-node"><div class="d">${nd.pill||fmtD(nd.d)}</div><div class="l">${esc(nd.l)}<small>${esc(nd.s||'')}</small></div></div>`
+  ).join('');
+  return `<div class="timeline">
+    <div class="tl-host">Timeline · relative to today</div>
+    <div class="tl-rail">${rows}</div>
+    ${waitInfo}
+  </div>`;
+}
+
 function drawBody(u){
   const ov=[
     `<span class="ov-chip"><span class="k">Apply via</span><div class="v">${METHOD_LABEL[u.method]}</div></span>`,
@@ -500,6 +590,7 @@ function drawBody(u){
   if(u.links&&u.links.site)links.push(`<a class="sec" href="${esc(u.links.site)}" target="_blank" rel="noopener">University site</a>`);
 
   return `
+    <section class="d-sec"><h3><span class="dot"></span>Timeline</h3>${timelineHTML(u)}</section>
     <section class="d-sec"><h3><span class="dot"></span>Overview</h3><div class="ov-flex">${ov}</div></section>
     <section class="d-sec"><h3><span class="dot"></span>Deadlines</h3>${dls}</section>
     <section class="d-sec"><h3><span class="dot"></span>Programs</h3>${pgms}</section>
