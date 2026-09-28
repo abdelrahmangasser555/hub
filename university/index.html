@@ -58,18 +58,6 @@ header.mast .sub{
 header.mast .chips{
   display:flex;flex-wrap:wrap;gap:6px;margin-top:14px;
 }
-.guide-actions{display:flex;flex-direction:column;gap:8px;margin-top:16px}
-.guide-actions .ga{
-  display:flex;align-items:center;gap:12px;
-  background:var(--surface);border:1px solid var(--hairline);border-radius:12px;
-  padding:13px 16px;font-size:14px;font-weight:600;color:var(--text);text-decoration:none;
-}
-.guide-actions .ga:active{background:var(--surface2)}
-.guide-actions .ga .ga-badge{
-  width:24px;height:24px;border-radius:50%;background:var(--accent);color:#fff;
-  display:flex;align-items:center;justify-content:center;font-size:12.5px;font-weight:700;flex-shrink:0;
-}
-.guide-actions .ga .chev{margin-left:auto;color:var(--text3)}
 .chip{
   font-size:12px;font-weight:500;color:var(--text2);
   padding:4px 10px;border-radius:999px;
@@ -144,10 +132,13 @@ header.mast .chips{
 .sb-amber{background:rgba(255,214,10,.12);color:var(--amber)}
 .sb-red{background:rgba(255,69,58,.12);color:var(--red)}
 .chev{flex-shrink:0;color:var(--text3);font-size:16px;font-weight:300;transform:translateY(-1px)}
-/* no-IELTS flag */
-.engflag{flex-shrink:0;font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;border:1px solid rgba(255,214,10,.45);color:var(--amber);background:rgba(255,214,10,.08);animation:blink 2.2s ease-in-out infinite;letter-spacing:.02em}
-@keyframes blink{0%,100%{opacity:1}50%{opacity:.42}}
-@media(prefers-reduced-motion:reduce){.engflag{animation:none}}
+/* ---------- English-proof flag (per-uni) ---------- */
+.engflag{flex-shrink:0;font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;border:1px solid var(--hairline);letter-spacing:.02em}
+.ef-moi{color:var(--green);background:rgba(48,209,88,.12);border-color:rgba(48,209,88,.4)}
+.ef-test{color:var(--red);background:rgba(255,69,58,.10);border-color:rgba(255,69,58,.35)}
+.ef-verify{color:var(--amber);background:rgba(255,214,10,.08);border-color:rgba(255,214,10,.4);animation:blink 2.2s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.45}}
+@media(prefers-reduced-motion:reduce){.ef-verify{animation:none}}
 
 /* ---------- Drawer ---------- */
 .overlay{
@@ -245,6 +236,51 @@ header.mast .chips{
 .tl-pill{display:inline-block;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:99px;background:rgba(10,132,255,.14);color:var(--accent);margin-left:6px}
 .tl-open{background:rgba(48,209,88,.14);color:var(--green)}
 .tl-due{background:rgba(255,214,10,.14);color:var(--amber)}
+.timeline .tl-rail::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;border-radius:2px;background:rgba(255,255,255,.10)}
+.tl-tag{display:block;width:max-content;font-size:10px;font-weight:700;padding:2px 8px;border-radius:99px;margin-top:4px;letter-spacing:.01em}
+.tl-tag-late{background:rgba(255,69,58,.16);color:var(--red)}
+.tl-tag-soon{background:rgba(255,214,10,.16);color:var(--amber)}
+.tl-tag-ok{background:rgba(48,209,88,.14);color:var(--green)}
+.timeline .tl-node.tl-late::before{border-color:var(--red);background:rgba(255,69,58,.35)}
+.timeline .tl-node.tl-soon::before{border-color:var(--amber);background:rgba(255,214,10,.28)}
+.timeline .tl-node.tl-ok::before{border-color:var(--green);background:rgba(48,209,88,.28)}
+
+/* ---------- Where-are-you rod (Apple) ---------- */
+.whereami{border:1px solid var(--hairline);background:var(--surface2);border-radius:14px;padding:14px;margin-bottom:10px}
+.wa-title{font-size:11.5px;font-weight:650;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.wa-title .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);opacity:.85}
+.wa-legend{display:flex;gap:6px;margin:0 0 12px;flex-wrap:wrap}
+.wa-legend .wl{font-size:10.5px;font-weight:600;color:var(--text2);background:var(--surface);border:1px solid var(--hairline);border-radius:99px;padding:3px 9px;display:inline-flex;align-items:center;gap:5px}
+.wa-legend .wl i{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.wa-legend .lg i{background:var(--green)}
+.wa-legend .lo i{background:var(--amber)}
+.wa-legend .lr i{background:var(--red)}
+.wa-track-wrap{position:relative;padding:0 4px}
+.wa-seg-labs{position:relative;height:16px;margin-bottom:2px;pointer-events:none}
+.wa-seg-labs span{position:absolute;transform:translateX(-50%);font-size:9px;font-weight:700;letter-spacing:.02em;white-space:nowrap;text-transform:uppercase}
+.wa-seg-labs .g{color:var(--green)}
+.wa-seg-labs .o{color:var(--amber)}
+.wa-seg-labs .r{color:var(--red)}
+.wa-road{position:relative;padding:26px 0 22px}
+.wa-now{position:absolute;top:0;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;z-index:6;pointer-events:none;filter:drop-shadow(0 0 6px rgba(10,132,255,.55))}
+.wa-now .wa-now-lab{font-size:9px;font-weight:700;color:var(--accent);letter-spacing:.04em;text-transform:uppercase;line-height:1;white-space:nowrap}
+.wa-now .wa-needle{width:0;height:0;margin-top:3px;border-left:6px solid transparent;border-right:6px solid transparent;border-top:8px solid var(--accent)}
+.wa-track{position:relative;height:12px;border-radius:99px;display:flex;overflow:hidden;background:#111116;box-shadow:inset 0 0 0 1px rgba(255,255,255,.14),inset 0 1px 2px rgba(0,0,0,.45)}
+.wa-z{height:100%;position:relative}
+.wa-z+.wa-z{box-shadow:inset 1px 0 0 rgba(0,0,0,.35)}
+.wa-z.g{background:linear-gradient(90deg,#248a44 0%,#30d158 70%,#5ee07a 100%)}
+.wa-z.o{background:linear-gradient(90deg,#e0b800 0%,#ffd60a 55%,#ffb340 100%)}
+.wa-z.r{background:linear-gradient(90deg,#ff8a4c 0%,#ff453a 100%)}
+.wa-dl-label-pos{position:absolute;top:-2px;bottom:-2px;width:2px;background:rgba(255,255,255,.7);border-radius:1px;z-index:4;box-shadow:0 0 6px rgba(255,255,255,.35)}
+.wa-you{position:absolute;bottom:0;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;z-index:5;pointer-events:none}
+.wa-you .wa-arr{width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:7px solid var(--accent);filter:drop-shadow(0 0 4px rgba(10,132,255,.55))}
+.wa-you .wa-lab{font-size:9px;font-weight:700;color:var(--accent);margin-top:2px;letter-spacing:.03em;text-transform:uppercase}
+.wa-scale{position:relative;display:flex;justify-content:space-between;font-size:9.5px;color:var(--text3);margin-top:4px}
+.wa-scale .wa-start{text-align:left}
+.wa-scale .wa-end{text-align:right;font-weight:600;color:var(--amber)}
+.wa-scale .wa-mid{text-align:center;margin-top:0}
+.wa-status{display:flex;align-items:flex-start;gap:7px;font-size:12.5px;color:var(--text2);line-height:1.45;margin-top:8px;border-top:1px dashed rgba(255,255,255,.1);padding-top:8px}
+.wa-status b{color:var(--text);font-weight:650}
 
 /* programs */
 .pgm{border:1px solid var(--hairline);background:var(--surface2);border-radius:12px;padding:12px 14px;margin-bottom:8px}
@@ -307,11 +343,6 @@ ol.dsteps li::before{
     <span class="chip">IGCSE recognized</span>
     <span class="chip">Summer 2027 / Winter 2027-28</span>
   </div>
-  <div class="guide-actions">
-    <a class="ga" href="uni-assist.html"><span class="ga-badge">1</span> uni-assist · How to apply &amp; costs<span class="chev">›</span></a>
-    <a class="ga" href="documents.html"><span class="ga-badge">2</span> Documents guide · What each one needs<span class="chev">›</span></a>
-    <a class="ga" href="flow.html"><span class="ga-badge">3</span> Application flow · deferral &amp; steps<span class="chev">›</span></a>
-  </div>
 </header>
 
 <div class="stats">
@@ -352,6 +383,9 @@ ol.dsteps li::before{
 <div class="foot">
   <p><b>Compiled Sept 2026.</b> Verify each university's current deadlines before submitting.</p>
   <p>Tap a university to open its full details. Built for Abdelrahman Gasser.</p>
+  <p>See the <a href="flow.html" style="color:var(--accent)">application flow &amp; military deferral guide</a> for the end-to-end steps and conditions.</p>
+  <p><a href="apply-plan.html" style="color:var(--accent)">Apply calendar — day-by-day plan →</a></p>
+  <p><a href="uniassist.html" style="color:var(--accent)">Add programs in uni-assist →</a></p>
 </div>
 
 <!-- Drawer -->
@@ -369,7 +403,10 @@ ol.dsteps li::before{
 
 <script>
 const TIER_NAMES={T1:'Elite / TU9',T2:'Strong',T3:'Applied (FH) + private'};
-const TODAY=new Date();
+const TODAY=(function(){
+  const m=String(location.search||'').match(/[?&]asof=(\d{4}-\d{2}-\d{2})/);
+  return m?new Date(m[1]+'T12:00:00'):new Date();
+})();
 const TIER_DESC={
   T1:'QS-ranked research powerhouses. Work experience + UK degree help at the 3.0 threshold.',
   T2:'Strong research universities, better admission odds.',
@@ -377,6 +414,8 @@ const TIER_DESC={
 };
 const METHOD_LABEL={direct:'Direct portal',uniassist:'uni-assist'};
 const SUMMER_LABEL={yes:'Summer + Winter',winter:'Winter only',rolling:'Rolling'};
+const ENG_LABEL={moi:'MOI accepted',test:'IELTS needed',verify:'Check English'};
+const engFlag=u=>{const s=(u.english&&u.english.status)||'verify';return `<span class="engflag ef-${s}" title="${esc((u.english&&u.english.note)||'')}">${ENG_LABEL[s]}</span>`;};
 const DOC_LABEL={Mandatory:'Mandatory',Recommended:'Recommended',Optional:'Optional'};
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
@@ -407,7 +446,7 @@ function render(){
              <span>${METHOD_LABEL[u.method]}</span>
              <span>${u.nc==='open'?'Open':''}<b>${u.nc==='open'?'Open admission':'Restricted'}</b></span>
              <span><b>${u.fee==='free'?'€0 free':SUMMER_LABEL[u.summer]}</b></span>
-             <span class="engflag">no IELTS · MOI ok</span>
+             ${engFlag(u)}
            </div>
          </div>
          <div class="score-badge ${scoreCls(u.score)}">${u.score}</div>
@@ -459,6 +498,8 @@ function closeDrawer(){
 /* -------- Timeline (date-aware) -------- */
 const MONTHS={Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11};
 function parseDL(s){
+  // Returns a Date or null. Handles "~Jul 15, 2027", "Jul 15, 2027",
+  // "early Oct 2027", "Apr 2027", "May 15, 2027 (late)", "(CE: ...)", etc.
   if(!s)return null;
   const m=s.match(/([A-Z][a-z]{2})\s+(\d{1,2})\s*,?\s*(\d{4})/);
   if(m)return new Date(+m[3],MONTHS[m[1]],+m[2]);
@@ -487,13 +528,15 @@ function timelineHTML(u){
     add('Winter 27/28',dl.winter,'early Oct 2027');
     add('Summer 2027',dl.summer,'early Apr 2027');
   }
+  // Build node list: window-opens(≈applyBy-5mo) → apply by → decision(+8wk) → start
   const nodes=[];
   intakes.forEach(it=>{
     if(it.applyBy){
       const open=new Date(it.applyBy.getFullYear(),it.applyBy.getMonth()-5,1);
       nodes.push({d:open,l:`${it.label} — window opens`,s:`start ~${fmtD(open)}`,pill:null});
-      nodes.push({d:it.applyBy,l:`${it.label} — apply by`,s:fmtD(it.applyBy),pill:statusPill(daysFrom(it.applyBy))});
+      nodes.push({d:it.applyBy,l:`${it.label} — apply by`,s:fmtD(it.applyBy),pill:statusPill(daysFrom(it.applyBy)),apply:true});
       const dec=new Date(it.applyBy.getFullYear(),it.applyBy.getMonth(),it.applyBy.getDate()+56);
+      // don't let the estimated decision fall after the term start
       if(it.start&&dec.getTime()>it.start.getTime()){
         dec.setTime(it.start.getTime()-14*86400000);
       }
@@ -503,6 +546,7 @@ function timelineHTML(u){
   });
   if(!nodes.length)return '';
   nodes.sort((a,b)=>a.d.getTime()-b.d.getTime());
+  // insert TODAY marker in chronological position
   const tl=[];
   let todayInserted=false;
   const todayRow={d:TODAY,l:'Today — you can apply now',s:`${fmtD(TODAY)}`,today:true};
@@ -514,14 +558,93 @@ function timelineHTML(u){
   }
   if(!todayInserted)tl.push(todayRow);
   const waitInfo = dl.applyBy?`<div class="tl-side">Apply-window guidance: start ~<b>${esc(dl.applyBy)}</b>.</div>`:'';
-  const rows=tl.map(nd=>nd.today
-    ?`<div class="tl-today"><div class="d">${fmtD(TODAY)}</div><div class="l">Today — apply now if open</div></div>`
-    :`<div class="tl-node"><div class="d">${nd.pill||fmtD(nd.d)}</div><div class="l">${esc(nd.l)}<small>${esc(nd.s||'')}</small></div></div>`
-  ).join('');
+  const applyMark=nd=>{
+    if(!nd.apply||!nd.d)return {cls:'',tag:''};
+    const n=daysFrom(nd.d);
+    if(n<0)return {cls:'tl-late',tag:'<span class="tl-tag tl-tag-late">should have applied</span>'};
+    if(n<=21)return {cls:'tl-soon',tag:`<span class="tl-tag tl-tag-soon">apply now — ${n}d left</span>`};
+    if(n<=90)return {cls:'tl-soon',tag:`<span class="tl-tag tl-tag-soon">apply soon — before ${esc(fmtD(nd.d))}</span>`};
+    return {cls:'tl-ok',tag:`<span class="tl-tag tl-tag-ok">on track — apply before ${esc(fmtD(nd.d))}</span>`};
+  };
+  const rows=tl.map(nd=>{
+    if(nd.today)return `<div class="tl-today"><div class="d">${fmtD(TODAY)}</div><div class="l">Today — apply now if open</div></div>`;
+    const mk=applyMark(nd);
+    return `<div class="tl-node ${mk.cls}"><div class="d">${nd.pill||fmtD(nd.d)}</div><div class="l">${esc(nd.l)}<small>${esc(nd.s||'')}</small>${mk.tag}</div></div>`;
+  }).join('');
   return `<div class="timeline">
     <div class="tl-host">Timeline · relative to today</div>
     <div class="tl-rail">${rows}</div>
     ${waitInfo}
+  </div>`;
+}
+
+/* -------- Where-are-you rod (Apple) -------- */
+const WA_START_OFFSET=150;   // application window opens 150 days before apply-by
+function whereamiHTML(u){
+  const dl=u.deadlines||{};
+  // gather candidate apply-by deadlines (Winter hosted Summer-2027 + Winter-27/28)
+  let cands=[];
+  if(dl.summer&&u.summer!=='winter')cands.push({label:'Summer 2027',d:parseDL(dl.summer)});
+  if(dl.winter)cands.push({label:'Winter 27/28',d:parseDL(dl.winter)});
+  if(u.summer==='winter')cands=[{label:'Winter intake',d:parseDL(dl.winter)}];
+  cands=cands.filter(c=>c.d);
+  if(!cands.length)return '';
+  // pick the nearest FUTURE (or most-recent) apply-by → the one you act on now
+  const future=cands.filter(c=>c.d.getTime()>=TODAY.getTime()-(7*86400000));
+  const pick=(future.length?future:cands).reduce((a,b)=>a.d.getTime()<b.d.getTime()?a:b);
+  const deadline=pick.d;
+  const start=new Date(deadline.getTime()-WA_START_OFFSET*86400000);
+  const span=deadline.getTime()-start.getTime();
+  const clamp=p=>Math.min(1,Math.max(0,p));
+  const tPct=clamp((TODAY.getTime()-start.getTime())/span);
+  const gPct=clamp((deadline.getTime()-90*86400000-start.getTime())/span);   // "safe" → until ~90d before
+  const oPct=clamp((deadline.getTime()-21*86400000-start.getTime())/span);   // "apply soon" → ~21d before
+  const gW=Math.round(gPct*100), oW=Math.round((oPct-gPct)*100), rW=Math.max(0,100-gW-oW);
+  const youLeft=Math.min(98,Math.max(2,Math.round(tPct*100)));
+  const hereLab=youLeft<20||youLeft>80?'Here':'You are here';
+  const daysLeft=daysFrom(deadline);
+  const passed=daysLeft<0;
+  const statusMain=passed?`deadline passed — too late for ${esc(pick.label)}`:(
+    daysLeft<=21?`only <b>${daysLeft}d</b> left for ${esc(pick.label)} — apply now`:
+    daysLeft<=90?`<b>${daysLeft}d</b> to ${esc(pick.label)} apply-by — get applying soon`:
+    `<b>${daysLeft}d</b> until ${esc(pick.label)} apply-by — comfortable, apply when ready`);
+  const dlPct=100;
+  const gC=Math.round(gW/2), oC=gW+Math.round(oW/2), rC=gW+oW+Math.round(rW/2);
+  const segLab=(w,left,cls,txt)=>w>=10?`<span class="${cls}" style="left:${left}%">${txt}</span>`:'';
+  return `
+  <div class="whereami">
+    <div class="wa-title"><span class="dot"></span>Where you are — ${esc(pick.label)}</div>
+    <div class="wa-legend">
+      <span class="wl lg"><i></i>On track — comfortable window</span>
+      <span class="wl lo"><i></i>Apply soon — under 90 days</span>
+      <span class="wl lr"><i></i>Too late — under 21 days / passed</span>
+    </div>
+    <div class="wa-track-wrap">
+      <div class="wa-seg-labs">
+        ${segLab(gW,gC,'g','On track')}
+        ${segLab(oW,oC,'o','Apply soon')}
+        ${segLab(rW,rC,'r','Too late')}
+      </div>
+      <div class="wa-road">
+        <div class="wa-now" style="left:${youLeft}%">
+          <span class="wa-now-lab">${hereLab}</span>
+          <span class="wa-needle"></span>
+        </div>
+        <div class="wa-track">
+          <div class="wa-z g" style="width:${gW}%"></div>
+          <div class="wa-z o" style="width:${oW}%"></div>
+          <div class="wa-z r" style="width:${rW}%"></div>
+          <div class="wa-dl-label-pos" style="left:${dlPct}%"></div>
+        </div>
+        <div class="wa-you" style="left:${youLeft}%"><span class="wa-arr"></span><span class="wa-lab">Now</span></div>
+      </div>
+      <div class="wa-scale">
+        <span class="wa-start">window opens<br>${fmtD(start)}</span>
+        <span class="wa-mid">now · ${fmtD(TODAY)}</span>
+        <span class="wa-end">apply by<br>${fmtD(deadline)}</span>
+      </div>
+    </div>
+    <div class="wa-status"><span class="tl-pill ${passed?'tl-due':daysLeft<=90?'tl-due':'tl-open'}">${passed?'passed':daysLeft+'d left'}</span><span>${statusMain}.</span></div>
   </div>`;
 }
 
@@ -530,14 +653,14 @@ function drawBody(u){
     `<span class="ov-chip"><span class="k">Apply via</span><div class="v">${METHOD_LABEL[u.method]}</div></span>`,
     `<span class="ov-chip"><span class="k">Admission</span><div class="v">${u.nc==='open'?'Open':'Restricted'}</div></span>`,
     `<span class="ov-chip"><span class="k">Tuition</span><div class="v">${u.fee==='free'?'€0 — free':SUMMER_LABEL[u.summer]}</div></span>`,
-    `<span class="ov-chip"><span class="k">English</span><div class="v">MOI cert (no IELTS)</div></span>`
+    `<span class="ov-chip"><span class="k">English</span><div class="v">${ENG_LABEL[(u.english&&u.english.status)||'verify']} · ${u.english?u.english.cefr:'—'}</div></span>`
   ].join('');
 
   const dlNote='<div class="dl-note">Deadlines shown are application-by dates for the intake. German terms: <b>Summer</b> ≈ Apr–Sep, <b>Winter</b> ≈ Oct–Mar (verify each uni).</div>';
   let dls=dlNote;
   if(u.deadlines){
     const blocks=[];
-    // Winter-intake-only uni
+    // Winter intake
     if(u.summer==='winter'){
       const winYr=(u.deadlines.winter||'').match(/(20\d\d)/);
       blocks.push(`<div class="dl-block"><div class="dl-term"><span class="winter">Winter only</span></div>
@@ -590,8 +713,10 @@ function drawBody(u){
   if(u.links&&u.links.site)links.push(`<a class="sec" href="${esc(u.links.site)}" target="_blank" rel="noopener">University site</a>`);
 
   return `
-    <section class="d-sec"><h3><span class="dot"></span>Timeline</h3>${timelineHTML(u)}</section>
-    <section class="d-sec"><h3><span class="dot"></span>Overview</h3><div class="ov-flex">${ov}</div></section>
+    <section class="d-sec"><h3><span class="dot"></span>Timeline</h3>${whereamiHTML(u)}${timelineHTML(u)}</section>
+    <section class="d-sec"><h3><span class="dot"></span>Overview</h3><div class="ov-flex">${ov}</div>
+    ${u.english&&u.english.note?`<div class="dl-note" style="margin-top:10px"><b>English proof:</b> ${esc(u.english.note)}</div>`:''}
+    </section>
     <section class="d-sec"><h3><span class="dot"></span>Deadlines</h3>${dls}</section>
     <section class="d-sec"><h3><span class="dot"></span>Programs</h3>${pgms}</section>
     ${steps?`<section class="d-sec"><h3><span class="dot"></span>How to apply</h3>${steps}</section>`:''}

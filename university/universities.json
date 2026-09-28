@@ -49,6 +49,11 @@
       "program": "https://www.tu.berlin/en/studying/study-programs/all-programs-offered/study-course/computer-science-informatik-m-sc",
       "apply": "",
       "site": "https://www.tu.berlin/en"
+    },
+    "english": {
+      "status": "moi",
+      "cefr": "B2",
+      "note": "English-medium bachelor accepted only from an English-speaking country (Egypt not on the list) — AAST degree likely still needs a test (TOEFL iBT ≥87 / IELTS ≥6.5)."
     }
   },
   {
@@ -98,6 +103,11 @@
       "program": "https://www.tuhh.de/tuhh/en/studying/before-studying/degree-courses/masters-programs/computer-science",
       "apply": "",
       "site": "https://www.tuhh.de/tuhh/en/"
+    },
+    "english": {
+      "status": "test",
+      "cefr": "B2",
+      "note": "Official test only (TOEFL iBT ≥90 / IELTS ≥6.5 / Cambridge / telc C1 / UNIcert III); MOI not accepted (sole exemption: TUHH's own bachelor grads)."
     }
   },
   {
@@ -153,6 +163,11 @@
       "program": "https://www.uni-heidelberg.de/en/study/all-subjects",
       "apply": "",
       "site": "https://www.uni-heidelberg.de/en"
+    },
+    "english": {
+      "status": "moi",
+      "cefr": "B2",
+      "note": "Accepts English-medium bachelor, English-school background, native speaker, OR B2 test (TOEFL iBT ≥90 / IELTS ≥6.5 / CAE)."
     }
   },
   {
@@ -204,6 +219,11 @@
       "program": "https://tu-dresden.de/ing/informatik/studium/studienangebot/master-studiengaenge/m-sc-computer-science?set_language=en",
       "apply": "",
       "site": "https://tu-dresden.de/"
+    },
+    "english": {
+      "status": "moi",
+      "cefr": "C1",
+      "note": "C1 required; English-medium bachelor accepted only from specified countries (EU/UK/US/AU…) that exclude Egypt, else TOEFL iBT ≥100 / IELTS ≥7.0."
     }
   },
   {
@@ -266,6 +286,11 @@
       "program": "https://saarland-informatics-campus.de/en/studium-studies/master-english/",
       "apply": "",
       "site": "https://www.uni-saarland.de/en/home.html"
+    },
+    "english": {
+      "status": "test",
+      "cefr": "C1",
+      "note": "Strict: IELTS 7.0 / TOEFL 95 / PTE 76 / CAE-C1 + GRE required; 'a MOI is not a sufficient equivalent'."
     }
   },
   {
@@ -316,6 +341,11 @@
       "program": "https://www.ief.uni-rostock.de/en/studiengaenge/master-studiengaenge-2/computer-science-international-msc/csi-master-spso-2021",
       "apply": "",
       "site": "https://www.uni-rostock.de/en/"
+    },
+    "english": {
+      "status": "test",
+      "cefr": "C1",
+      "note": "CS International M.Sc. needs TOEFL iBT ≥94 / IELTS ≥7.0 (or native speaker); medium of instruction not accepted."
     }
   },
   {
@@ -363,6 +393,11 @@
       "program": "https://informatik.rub.de/en/studies/application/msc-cs",
       "apply": "",
       "site": "https://www.ruhr-uni-bochum.de/en/"
+    },
+    "english": {
+      "status": "test",
+      "cefr": "C1",
+      "note": "C1 required; explicitly does NOT accept MOI (IELTS ≥7.0 / TOEFL iBT ≥100 / CAE ≥193 / CPE ≥200)."
     }
   },
   {
@@ -409,6 +444,11 @@
       "program": "https://uol.de/en/course-of-study/computer-science-master-642",
       "apply": "",
       "site": "https://uol.de/en"
+    },
+    "english": {
+      "status": "moi",
+      "cefr": "B2",
+      "note": "English-medium bachelor accepted only from an English-official-language or EU country (Egypt under neither), else a ≤2yr B2 test cert."
     }
   },
   {
@@ -462,6 +502,11 @@
       "program": "",
       "apply": "https://applymsc.cs.rptu.de",
       "site": "https://rptu.de/en"
+    },
+    "english": {
+      "status": "test",
+      "cefr": "B2",
+      "note": "IELTS ≥6.5 / TOEFL iBT ≥81 (or German-equivalent HE qual); English-state-language exemption does not cover Egypt."
     }
   },
   {
@@ -509,6 +554,11 @@
       "program": "",
       "apply": "https://www.uni-halle.de/ssc/bewerbungsinformationen?lang=en",
       "site": "https://www.uni-halle.de/"
+    },
+    "english": {
+      "status": "test",
+      "cefr": "B2",
+      "note": "English-taught data-science program needs B2 test (Cambridge FCE / placement); no MOI option. Its Informatik M.Sc. is German-taught."
     }
   },
   {
@@ -568,6 +618,11 @@
       "program": "https://www.uni-weimar.de/en/media/international/international-degree-programmes",
       "apply": "",
       "site": "https://www.uni-weimar.de/en/"
+    },
+    "english": {
+      "status": "test",
+      "cefr": "B2",
+      "note": "Digital Engineering / Applied CS needs B2 via IELTS 6.5 (each ≥6.0) / Cambridge FCE / PTE ≥68; no MOI listed."
     }
   },
   {
@@ -626,6 +681,11 @@
       "program": "https://www.b-tu.de/en/informatik-ms",
       "apply": "",
       "site": "https://www.b-tu.de/en"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "Not individually researched — check the program page for how English is proven."
     }
   },
   {
@@ -680,6 +740,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.uni-leipzig.de/en"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "Not individually researched — check the program page for how English is proven."
     }
   },
   {
@@ -738,6 +803,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.uni-potsdam.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "Not individually researched — check the program page for how English is proven."
     }
   },
   {
@@ -784,6 +854,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.uni-bremen.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "Not individually researched — check the program page for how English is proven."
     }
   },
   {
@@ -830,6 +905,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.uni-hannover.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "C1",
+      "note": "German+English program; needs C1 English (or German) cert; MOI acceptance not confirmed on faculty pages."
     }
   },
   {
@@ -876,6 +956,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.tu-braunschweig.de/en"
+    },
+    "english": {
+      "status": "moi",
+      "cefr": "C1",
+      "note": "English-taught programs accept an English-completed education (no test); TOEFL iBT 88 / IELTS 6.5 only otherwise. Note: its CS M.Sc. itself is German-taught."
     }
   },
   {
@@ -923,6 +1008,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.uni-hamburg.de/en.html"
+    },
+    "english": {
+      "status": "moi",
+      "cefr": "B2",
+      "note": "B2 English required, but waived for a first bachelor completed in English-medium (official UHH rule)."
     }
   },
   {
@@ -969,6 +1059,11 @@
       "program": "",
       "apply": "",
       "site": "https://portal.uni-koeln.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "Needs English B2 + German DSH-2; MOI acceptance for the English B2 proof not stated."
     }
   },
   {
@@ -1015,6 +1110,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.uni-frankfurt.de/en/"
+    },
+    "english": {
+      "status": "moi",
+      "cefr": "B2",
+      "note": "Goethe Informatik needs B2; rules: a bachelor taught throughout in English requires no separate English cert."
     }
   },
   {
@@ -1062,6 +1162,11 @@
       "program": "",
       "apply": "https://www.uni-goettingen.de/en/642406.html",
       "site": "https://www.uni-goettingen.de/en"
+    },
+    "english": {
+      "status": "moi",
+      "cefr": "C1",
+      "note": "Applied CS M.Sc.: official FAQ says an exclusively English-medium bachelor is sufficient proof of C1."
     }
   },
   {
@@ -1108,6 +1213,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.uni-freiburg.de/en/"
+    },
+    "english": {
+      "status": "test",
+      "cefr": "C1",
+      "note": "C1 required (IELTS 7.0 / TOEFL iBT 95 etc.); explicitly 'a confirmation that the medium of instruction was English is not sufficient'. Only native speakers/English-country grads exempt."
     }
   },
   {
@@ -1160,6 +1270,11 @@
       "program": "https://www.fau.eu/studying/degree-programs/masters-degree-programmes",
       "apply": "https://www.master.fau.eu",
       "site": "https://www.fau.eu"
+    },
+    "english": {
+      "status": "moi",
+      "cefr": "B2",
+      "note": "FAU English-taught CS/AI accepts university confirmation of an exclusive-English bachelor as proof (min B2). Primary Informatik M.Sc. is German-taught."
     }
   },
   {
@@ -1212,6 +1327,11 @@
       "program": "https://www.uni-passau.de/en/international-programmes",
       "apply": "",
       "site": "https://www.uni-passau.de/en/"
+    },
+    "english": {
+      "status": "moi",
+      "cefr": "B2",
+      "note": "CS M.Sc. (studiable in English) accepts English-medium instruction proof; English or German B2 required."
     }
   },
   {
@@ -1264,6 +1384,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.uni-bayreuth.de/en/index.html"
+    },
+    "english": {
+      "status": "test",
+      "cefr": "B2",
+      "note": "IELTS 6.5 / TOEFL 88 or equivalent cert; 'English language proficiency letters are not accepted' (no MOI)."
     }
   },
   {
@@ -1310,6 +1435,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.ovgu.de/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "OVGU English MSc needs B2/C1 tests; MOI exemption only for prior degree completed in a listed country; Egypt/AAST unconfirmed."
     }
   },
   {
@@ -1356,6 +1486,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.tu-clausthal.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "English-medium programs expect B2 via tests; 'recommend' wording; MOI acceptance not confirmed."
     }
   },
   {
@@ -1402,6 +1537,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.uni-luebeck.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "Needs B2 English proof for English-taught programs; CS M.Sc. is bilingual (may also need German)."
     }
   },
   {
@@ -1448,6 +1588,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.uni-hildesheim.de/en/"
+    },
+    "english": {
+      "status": "moi",
+      "cefr": "B2",
+      "note": "Data Analytics M.Sc. explicitly accepts an English-medium bachelor if the uni issues a stamped cert the program was in English (≈ IELTS 6.0 / TOEFL 61)."
     }
   },
   {
@@ -1494,6 +1639,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.uni-wuerzburg.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "C1",
+      "note": "English-taught CS needs C1 or German B2; MOI acceptance not confirmed on official pages."
     }
   },
   {
@@ -1540,6 +1690,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.uni-osnabrueck.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "Informatik (German-medium) needs English B2 AND German C1; MOI acceptance for English B2 unconfirmed; German C1 is itself a barrier."
     }
   },
   {
@@ -1586,6 +1741,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.tu-ilmenau.de/en/"
+    },
+    "english": {
+      "status": "test",
+      "cefr": "C1",
+      "note": "C1 direct / B2 conditional. Cert waived only if English is official language AND medium in home country (Egypt does not qualify)."
     }
   },
   {
@@ -1632,6 +1792,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.uni-kiel.de/en/"
+    },
+    "english": {
+      "status": "test",
+      "cefr": "B2",
+      "note": "B2 required; faculty states 'we cannot accept MOI (English) or other university certificates' (IELTS 6.0 / TOEFL iBT 72 etc.)."
     }
   },
   {
@@ -1684,6 +1849,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.uni-due.de/en/"
+    },
+    "english": {
+      "status": "moi",
+      "cefr": "B2",
+      "note": "ISE / English-taught programs explicitly accept TOEFL, IELTS, OR Medium of Instruction as B2 proof for master's."
     }
   },
   {
@@ -1730,6 +1900,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.uni-siegen.de/start/"
+    },
+    "english": {
+      "status": "test",
+      "cefr": "B2",
+      "note": "ETI Intl Master CS needs TOEFL iBT 88 / IELTS 6.5; MOI confirmations not accepted. Exemption only English-official-language countries (Egypt not exempt)."
     }
   },
   {
@@ -1776,6 +1951,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.uni-paderborn.de/en/"
+    },
+    "english": {
+      "status": "test",
+      "cefr": "B2",
+      "note": "English-taught CS M.Sc. needs TOEFL iBT 80 / IELTS 6.5 etc.; bachelor accepted only if from an English-official-language country (Egypt not exempt)."
     }
   },
   {
@@ -1825,6 +2005,11 @@
       "program": "https://en.th-wildau.de/study/programmes",
       "apply": "",
       "site": "https://en.th-wildau.de"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "No English-taught CS/DS/AI M.Sc. (Business Computing is German). English-medium tech M.Eng. accepts 100%-English bachelor as B2 proof."
     }
   },
   {
@@ -1881,6 +2066,11 @@
       "program": "https://www.htw-berlin.de/en/studies/degree-programmes",
       "apply": "https://www.htw-berlin.de/en/studies/application/masters-application",
       "site": "https://www.htw-berlin.de/en"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "CS master is German-taught; Sprachnachweis lists accepted certs but MOI acceptance for English-taught CS/AI not clearly documented."
     }
   },
   {
@@ -1927,6 +2117,11 @@
       "program": "https://www.hochschule-rhein-waal.de/en/faculties/communication-and-environment/degree-programmes/master-degree-programmes/information",
       "apply": "",
       "site": "https://www.hochschule-rhein-waal.de/en"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "Information Engineering & CS M.Sc. needs B2 'or equivalent' via test (TOEFL/IELTS 5.5); MOI not explicitly listed; non-EHEA also need TestAS/GRE."
     }
   },
   {
@@ -1979,6 +2174,11 @@
       "program": "https://www.hs-anhalt.de/en/degree-programs/ain/study.html",
       "apply": "https://www.hs-anhalt.de/en/study/paths-to-university/your-application.html",
       "site": "https://www.hs-anhalt.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "Data Science M.Sc. is German-taught; English-taught courses list test certs; MOI not explicitly accepted."
     }
   },
   {
@@ -2036,6 +2236,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.hof-university.com"
+    },
+    "english": {
+      "status": "test",
+      "cefr": "B2",
+      "note": "Applied Research in CS / AI & Robotics: TOEFL iBT 90 / IELTS 6.5 required; MOI not listed (examination board may consider case-by-case); German A1 also required."
     }
   },
   {
@@ -2088,6 +2293,11 @@
       "program": "https://www.hochschule-stralsund.de/en/studium-und-lehre/international-programs",
       "apply": "",
       "site": "https://www.hochschule-stralsund.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "CS M.Sc. is German-taught; its English-taught M.Eng. programs accept an English-taught prior course as B2 proof, but not CS/DS/AI."
     }
   },
   {
@@ -2134,6 +2344,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.fh-swf.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "Applied CS M.Sc. is German-taught (German C1/DSH2 required); no English-taught CS/DS/AI offered."
     }
   },
   {
@@ -2186,6 +2401,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.hs-emden-leer.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "Business Intelligence & Data Analytics M.Eng. is English-taught (B2 via uni-assist framework); fee-paying; MOI acceptance unconfirmed."
     }
   },
   {
@@ -2238,6 +2458,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.hs-harz.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "Data Science M.Sc. is bilingual German/English (German main); MOI acceptance not documented for English master's."
     }
   },
   {
@@ -2284,6 +2509,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.hs-nordhausen.de/en"
+    },
+    "english": {
+      "status": "moi",
+      "cefr": "B2",
+      "note": "English-taught Computer Engineering for IoT accepts an English-taught bachelor as proof (DAAD); TOEFL iBT 79 / IELTS 6.0 otherwise."
     }
   },
   {
@@ -2330,6 +2560,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.hs-wismar.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B1",
+      "note": "Accepts an English bachelor as MOI proof at ~B1, but offers no English-taught CS/DS/AI M.Sc. (Applied CS is German)."
     }
   },
   {
@@ -2376,6 +2611,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.hs-mittweida.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "Applied Mathematics for Network & Data Sciences needs B2 via TOEFL 76 / Duolingo 110 / 'equivalent certificate'; MOI not explicit."
     }
   },
   {
@@ -2422,6 +2662,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.hs-coburg.de/en/"
+    },
+    "english": {
+      "status": "moi",
+      "cefr": "B2",
+      "note": "Data Science M.Sc. accepts official confirmation of English as the language of instruction as B2 proof. Note: non-EU tuition charged."
     }
   },
   {
@@ -2468,6 +2713,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.hs-kempten.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "CS/Informatik is German-taught; English-taught programs are non-CS."
     }
   },
   {
@@ -2520,6 +2770,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.haw-landshut.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "CS M.Sc. is bilingual — English AND German B2 both required."
     }
   },
   {
@@ -2572,6 +2827,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.th-rosenheim.de/en"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "CS is German-taught; English-taught tech master accepts English-taught bachelor as B2 proof, but not pure CS/DS/AI."
     }
   },
   {
@@ -2624,6 +2884,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.h-brs.de/en"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "n/a",
+      "note": "H-BRS CS is German-taught (DS is a specialization); German proficiency is the relevant requirement."
     }
   },
   {
@@ -2670,6 +2935,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.htwk-leipzig.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "n/a",
+      "note": "HTWK CS/DS is German-taught; no English-taught CS/DS/AI M.Sc."
     }
   },
   {
@@ -2716,6 +2986,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.htw-dresden.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "English-taught masters are business/environment; no English-taught CS/DS/AI."
     }
   },
   {
@@ -2762,6 +3037,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.th-nuernberg.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "n/a",
+      "note": "CS / CS & Media are German-taught; English is not the entry gate."
     }
   },
   {
@@ -2814,6 +3094,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.hsbi.de/en/"
+    },
+    "english": {
+      "status": "test",
+      "cefr": "B2",
+      "note": "HSBI Data Science M.Sc. needs listed certs (IELTS 5.5+ / TOEFL etc.); MOI exemption only for an English-speaking-country high-school cert."
     }
   },
   {
@@ -2860,6 +3145,11 @@
       "program": "",
       "apply": "",
       "site": "https://hm.edu/en/index.en.html"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "CS is German-taught; no clearly documented English requirement for a CS/DS/AI master."
     }
   },
   {
@@ -2907,6 +3197,11 @@
       "program": "https://www.haw-hamburg.de/en/master-computer-science",
       "apply": "",
       "site": "https://www.haw-hamburg.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "CS M.Sc. needs English B2 (HAWAZO), typically via test; MOI acceptance not stated."
     }
   },
   {
@@ -2959,6 +3254,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.th-koeln.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "Digital Sciences needs B2 (IELTS 6.0 / TOEFL 80 etc.) but lists 'equivalent proof' — examination board may accept other supporting docs (could include MOI)."
     }
   },
   {
@@ -3005,6 +3305,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.frankfurt-university.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "CS-related masters mostly German-taught; MOI acceptance not clearly documented."
     }
   },
   {
@@ -3051,6 +3356,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.fh-muenster.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "n/a",
+      "note": "CS M.Sc. is German-taught."
     }
   },
   {
@@ -3097,6 +3407,11 @@
       "program": "",
       "apply": "https://hs-flensburg.de/en/study-with-us/apply",
       "site": "https://hs-flensburg.de/en"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "n/a",
+      "note": "No English-taught CS/DS/AI M.Sc. (English masters are Wind Energy / Applied Biotech)."
     }
   },
   {
@@ -3156,6 +3471,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.th-deg.de/en"
+    },
+    "english": {
+      "status": "test",
+      "cefr": "B2",
+      "note": "DIT Applied CS M.Sc. requires an official English cert (TOEFL/IELTS, B2); MOI not listed among accepted proofs."
     }
   },
   {
@@ -3202,6 +3522,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.h-ka.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "n/a",
+      "note": "HKA CS is German-taught; German proficiency is the gate."
     }
   },
   {
@@ -3256,6 +3581,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.hs-esslingen.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "n/a",
+      "note": "Esslingen Applied CS is German (TestDaF TDN4); some courses in English — English MOI not the entry gate."
     }
   },
   {
@@ -3302,6 +3632,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.fh-erfurt.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "Applied CS is German/English mix; a new English-taught Software Engineering M.Sc. (2026) — check its specific English requirement."
     }
   },
   {
@@ -3354,6 +3689,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.hochschule-trier.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "n/a",
+      "note": "Trier CS is German-taught; English not the entry gate."
     }
   },
   {
@@ -3400,6 +3740,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.oth-regensburg.de/en/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "n/a",
+      "note": "OTH Regensburg CS (incl. AI & DS) is German-taught."
     }
   },
   {
@@ -3453,6 +3798,11 @@
       "program": "https://www.iu.org/master/computer-science/",
       "apply": "",
       "site": "https://www.iu.org"
+    },
+    "english": {
+      "status": "moi",
+      "cefr": "B2",
+      "note": "IU accepts an English-medium bachelor / English-taught education to waive IELTS; uses its own admission interview / internal English assessment."
     }
   },
   {
@@ -3500,6 +3850,11 @@
       "program": "https://constructor.university/programs/graduate-education/computer-science-software-engineering",
       "apply": "",
       "site": "https://constructor.university"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "C1",
+      "note": "Fully English-medium; evidence of English-medium prior study often accepted, but confirm for the specific M.Sc."
     }
   },
   {
@@ -3553,6 +3908,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.srh-university.com/en/"
+    },
+    "english": {
+      "status": "moi",
+      "cefr": "B2",
+      "note": "SRH English-taught applied CS masters normally accept proof of an English-medium degree (MOI) or offer an internal English assessment (B2 target)."
     }
   },
   {
@@ -3600,6 +3960,11 @@
       "program": "",
       "apply": "",
       "site": "https://lancasterleipzig.de/"
+    },
+    "english": {
+      "status": "test",
+      "cefr": "B2",
+      "note": "Routes through Lancaster UK PG requirements — a recognised test (IELTS ~6.5 / TOEFL / PTE) required; an Egyptian MOI is generally NOT accepted."
     }
   },
   {
@@ -3653,6 +4018,11 @@
       "program": "",
       "apply": "",
       "site": "https://www.ue-germany.com/"
+    },
+    "english": {
+      "status": "verify",
+      "cefr": "B2",
+      "note": "Official admission lists test scores (IELTS 5.5 / TOEFL iBT 60 etc.); MOI not explicitly documented but commonly accepted case-by-case."
     }
   }
 ]

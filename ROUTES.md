@@ -11,6 +11,8 @@ Root: `https://abdelrahmangasser555.github.io/hub/`
 | `/` | `index.html` | Hub home (links to every site below) |
 | `/university/` | `university/` | German Master's guide — 74 universities (list + drawer, filters) |
 | `/university/uni-assist.html` | `university/` | uni-assist step-by-step (register, apply, costs) |
+| `/university/uniassist.html` | `university/` | uni-assist 8-program one-by-one checklist (checkable, persists) |
+| `/university/apply-plan.html` | `university/` | Apply Calendar — day-by-day plan from Sep 2026 (IELTS-first order, per-uni links) |
 | `/university/documents.html` | `university/` | Global documents guide (what each doc needs) |
 | `/university/flow.html` | `university/` | Application flow + military deferral: end-to-end steps, conditions, mermaid flow (بعثات / تجنيد) |
 | `/reports/bbs-uat/` | `reports/bbs-uat/` | Bahri BBS UAT readiness report (readiness, findings, evidence screenshots, test suite) |

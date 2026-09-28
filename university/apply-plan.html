@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>Apply Plan — Daily Calendar — German Master's Guide</title>
+<style>
+:root{
+  --bg:#000000;--surface:#0c0c10;--surface2:#16161c;
+  --hairline:rgba(255,255,255,0.10);--hairline2:rgba(255,255,255,0.06);
+  --text:#ffffff;--text2:#a1a1ad;--text3:#6b6b76;
+  --accent:#0a84ff;--green:#30d158;--amber:#ffd60a;--red:#ff453a;
+  --radius:14px;
+  --font:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.5;font-size:15px;-webkit-font-smoothing:antialiased;min-height:100vh}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.mast{max-width:820px;margin:0 auto;padding:34px 20px 10px}
+.mast .kicker{font-size:12px;font-weight:650;color:var(--accent);text-transform:uppercase;letter-spacing:.09em;margin-bottom:8px}
+.mast h1{font-size:27px;font-weight:720;letter-spacing:-0.02em;line-height:1.15}
+.mast .sub{color:var(--text2);font-size:13.5px;margin-top:8px;max-width:720px}
+.mast .nav{display:flex;flex-wrap:wrap;gap:14px;margin-top:14px}
+.back{display:inline-block;font-size:13px;font-weight:600}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px 60px}
+.sec-h2{font-size:14px;font-weight:680;letter-spacing:-0.01em;margin:30px 0 10px;display:flex;align-items:center;gap:9px;color:var(--text)}
+.sec-h2 .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);opacity:.85}
+.callout{border:1px solid var(--hairline);border-left:3px solid var(--amber);border-radius:12px;background:var(--surface);padding:14px 16px;margin-top:12px}
+.callout.blue{border-left-color:var(--accent)}
+.callout.red{border-left-color:var(--red)}
+.callout.green{border-left-color:var(--green)}
+.callout h4{font-size:13px;font-weight:680;margin-bottom:6px}
+.callout p,.callout li{font-size:13px;color:var(--text2);line-height:1.6}
+.callout li{margin:4px 0;list-style:none}
+.callout ul{padding-left:0}
+.callout b{color:var(--text)}
+/* Calendar day cards */
+.day{background:var(--surface);border:1px solid var(--hairline);border-radius:var(--radius);overflow:hidden;margin-bottom:14px}
+.day-head{display:flex;align-items:flex-start;gap:12px;padding:14px 16px;border-bottom:1px solid var(--hairline2)}
+.day-badge{flex-shrink:0;width:44px;height:44px;border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--accent);color:#000}
+.day-badge .mon{font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;line-height:1}
+.day-badge .num{font-size:19px;font-weight:800;line-height:1.05;margin-top:1px}
+.day-badge.grn{background:var(--green)}
+.day-badge.amb{background:var(--amber)}
+.day-badge.red{background:var(--red)}
+.day-title{flex:1;min-width:0}
+.day-title .t{font-size:15px;font-weight:680}
+.day-title .tag{display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:99px;margin-left:6px;vertical-align:middle}
+.tag-today{background:rgba(10,132,255,.16);color:var(--accent)}
+.tag-now{background:rgba(48,209,88,.16);color:var(--green)}
+.tag-wait{background:rgba(255,214,10,.16);color:var(--amber)}
+.day-title .d{color:var(--text3);font-size:12px;margin-top:2px}
+.day-body{padding:6px 16px 12px}
+/* action rows */
+.act{display:flex;align-items:flex-start;gap:12px;padding:11px 0;border-bottom:1px solid var(--hairline2)}
+.act:last-child{border-bottom:none}
+.act .nn{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--surface2);border:1px solid var(--hairline);color:var(--text3);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.act .b{flex:1;min-width:0}
+.act .wh{font-weight:650;font-size:14px}
+.act .wh span{color:var(--text3);font-weight:400;font-size:12.5px}
+.act .lnks{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.lnk{font-size:12px;font-weight:600;padding:4px 10px;border-radius:99px;background:var(--surface2);border:1px solid var(--hairline);color:var(--text2);text-decoration:none}
+.lnk:hover{background:#1f1f27;text-decoration:none;color:var(--text)}
+.lnk.blue{color:var(--accent);border-color:rgba(10,132,255,.3)}
+.lnk.grn{color:var(--green);border-color:rgba(48,209,88,.3)}
+.lnk.amb{color:var(--amber);border-color:rgba(255,214,10,.3)}
+.lnk.red{color:var(--red);border-color:rgba(255,69,58,.3)}
+.chip{display:inline-block;font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:99px;margin:6px 6px 0 0}
+.chip.dead{background:rgba(255,69,58,.14);color:var(--red)}
+.chip.free{background:rgba(48,209,88,.14);color:var(--green)}
+.chip.paid{background:rgba(255,214,10,.14);color:var(--amber)}
+.chip.test{background:rgba(10,132,255,.14);color:var(--accent)}
+.chip.moi{background:rgba(48,209,88,.14);color:var(--green)}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 14px}
+.lg{font-size:11px;color:var(--text2);padding:4px 10px;border-radius:99px;border:1px solid var(--hairline);background:var(--surface)}
+.lg i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px}
+.lg.g i{background:var(--green)}.lg.o i{background:var(--amber)}.lg.r i{background:var(--red)}
+.foot{max-width:820px;margin:0 auto;padding:8px 22px 60px;color:var(--text3);font-size:12px;text-align:center;line-height:1.8}
+.foot a{font-weight:600}
+@media(max-width:560px){.mast h1{font-size:23px}}
+</style>
+</head>
+<body>
+
+<div class="mast">
+  <div class="kicker">German Master's Guide · Plan · from Sep 28, 2026</div>
+  <h1>Apply Calendar</h1>
+  <div class="sub">A day-by-day action plan: what to do, for which university and program, in what order. Everything links to the live program / apply pages. Order matters — IELTS first, then the batched applications.</div>
+  <div class="nav">
+    <a class="back" href="index.html">← Guide</a>
+    <a class="back" href="flow.html">Flow &amp; deferral</a>
+    <a class="back" href="uniassist.html">uni-assist checklist</a>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="callout red">
+    <h4>⚠ Read this first — order matters</h4>
+    <ul>
+      <li><b>You cannot submit a complete application to an IELTS-required university before you have the score.</b> German portals reject/incomplete it. The test score must be in your hand first (~13 days after test day).</li>
+      <li>So: <b>today</b> you apply only to MOI-accepted schools. Everything test/uni-assist/VPD waits for the score.</li>
+      <li>uni-assist covers only your <b>8 programs</b>. The other 68 are <b>direct</b> applications — separate portals, mostly free.</li>
+      <li>Fees are non-refundable — add programs deliberately, not shotgun.</li>
+    </ul>
+  </div>
+
+  <div class="callout blue">
+    <h4>Legend</h4>
+    <div class="legend">
+      <span class="lg g"><i></i>Do now — no IELTS needed</span>
+      <span class="lg o"><i></i>Book / requires IELTS score</span>
+      <span class="lg r"><i></i>Urgent deadline / must not miss</span>
+    </div>
+    <p>Status chips: <span class="chip test">IELTS req</span> <span class="chip moi">MOI ok</span> <span class="chip free">tuition-free</span> <span class="chip paid">paid</span> <span class="chip dead">urgent deadline</span></p>
+  </div>
+
+  <!-- DAY 1 -->
+  <div class="sec-h2"><span class="dot" style="background:var(--green)"></span>Today — Sep 28, 2026</div>
+  <div class="day">
+    <div class="day-head">
+      <div class="day-badge grn"><div class="mon">SEP</div><div class="num">28</div></div>
+      <div class="day-title">
+        <div class="t">Book IELTS + apply to MOI-accepted schools <span class="tag tag-now">NOW</span></div>
+        <div class="d">Win back time: the test frees every IELTS-flagged school. Apply to MOI schools in parallel so nothing stalls.</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="act"><div class="nn">1</div><div class="b">
+        <div class="wh">Book &amp; take IELTS Academic <span>· target 6.5+ (7.0+ for C1 schools)</span></div>
+        <div class="lnks"><a class="lnk blue" href="https://ielts.idp.com/egypt" target="_blank" rel="noopener">IDP Egypt book →</a><a class="lnk blue" href="https://www.britishcouncil.org.eg/en/exam/ielts" target="_blank" rel="noopener">British Council Egypt →</a></div>
+        <span class="chip test">needed by 17 schools</span>
+      </div></div>
+      <div class="act"><div class="nn">2</div><div class="b">
+        <div class="wh">University of Oldenburg — Computer Science M.Sc. <span>· MOI ok · free · Dec 15</span></div>
+        <div class="lnks"><a class="lnk" href="https://uol.de/en/course-of-study/computer-science-master-642" target="_blank" rel="noopener">Program</a><a class="lnk" href="https://uol.de/en" target="_blank" rel="noopener">Uni site</a></div>
+        <span class="chip moi">MOI ok</span><span class="chip free">free</span>
+      </div></div>
+      <div class="act"><div class="nn">3</div><div class="b">
+        <div class="wh">TU Berlin — Computer Science M.Sc. <span>· MOI ok · free · needs VPD</span></div>
+        <div class="lnks"><a class="lnk" href="https://www.tu.berlin/en/studying/study-programs/all-programs-offered/study-course/computer-science-informatik-m-sc" target="_blank" rel="noopener">Program</a><a class="lnk" href="https://www.tu.berlin/en" target="_blank" rel="noopener">Uni site</a></div>
+        <span class="chip moi">MOI ok</span><span class="chip free">free</span><span class="chip amb">VPD</span>
+      </div></div>
+      <div class="act"><div class="nn">4</div><div class="b">
+        <div class="wh">TU Braunschweig — Computer Science M.Sc. <span>· MOI ok · free · Jan 15</span></div>
+        <div class="lnks"><a class="lnk" href="https://www.tu-braunschweig.de/en" target="_blank" rel="noopener">Uni site</a></div>
+        <span class="chip moi">MOI ok</span><span class="chip free">free</span>
+      </div></div>
+      <div class="act"><div class="nn">5</div><div class="b">
+        <div class="wh">Goethe Univ. Frankfurt — Computer Science M.Sc. <span>· MOI ok · free · Jan 15</span></div>
+        <div class="lnks"><a class="lnk" href="https://www.uni-frankfurt.de/en" target="_blank" rel="noopener">Uni site</a></div>
+        <span class="chip moi">MOI ok</span><span class="chip free">free</span>
+      </div></div>
+      <div class="act"><div class="nn">6</div><div class="b">
+        <div class="wh">University of Göttingen — Applied CS M.Sc. <span>· MOI ok · free · Jan 15</span></div>
+        <div class="lnks"><a class="lnk" href="https://www.uni-goettingen.de/en/642406.html" target="_blank" rel="noopener">Apply</a><a class="lnk" href="https://www.uni-goettingen.de/en" target="_blank" rel="noopener">Uni site</a></div>
+        <span class="chip moi">MOI ok</span><span class="chip free">free</span>
+      </div></div>
+      <div class="act"><div class="nn">7</div><div class="b">
+        <div class="wh">University of Passau — CS / AI Eng. M.Sc. <span>· MOI ok · free · Jan 15</span></div>
+        <div class="lnks"><a class="lnk" href="https://www.uni-passau.de/en/international-programmes" target="_blank" rel="noopener">Programs</a><a class="lnk" href="https://www.uni-passau.de/en/" target="_blank" rel="noopener">Uni site</a></div>
+        <span class="chip moi">MOI ok</span><span class="chip free">free</span>
+      </div></div>
+      <div class="act"><div class="nn">8</div><div class="b">
+        <div class="wh">FAU Erlangen — CS / ICT M.Sc. <span>· MOI ok · free · Jan 15</span></div>
+        <div class="lnks"><a class="lnk" href="https://www.fau.eu/" target="_blank" rel="noopener">Uni site</a></div>
+        <span class="chip moi">MOI ok</span><span class="chip free">free</span>
+      </div></div>
+      <div class="act"><div class="nn">9</div><div class="b">
+        <div class="wh">Univ. of Duisburg-Essen — CS / Applied CS · University of Hamburg — Intelligent Adaptive Systems · Hildesheim — Data Analytics · Coburg — Data Science · Nordhausen</div>
+        <div class="lnks"><a class="lnk" href="https://www.uni-due.de/en/" target="_blank" rel="noopener">Duisburg-Essen</a><a class="lnk" href="https://www.uni-hamburg.de/en.html" target="_blank" rel="noopener">Hamburg</a><a class="lnk" href="https://www.uni-hildesheim.de/en/" target="_blank" rel="noopener">Hildesheim</a><a class="lnk" href="https://www.hs-coburg.de/en/" target="_blank" rel="noopener">Coburg</a><a class="lnk" href="https://www.hs-nordhausen.de/en" target="_blank" rel="noopener">Nordhausen</a></div>
+        <span class="chip moi">MOI ok</span><span class="chip free">free</span>
+      </div></div>
+    </div>
+  </div>
+
+  <!-- WINDOW: get score -->
+  <div class="sec-h2"><span class="dot" style="background:var(--amber)"></span>Next ~2 weeks — get the IELTS score</div>
+  <div class="callout blue">
+    <p>You applied to ~10 MOI schools on Day 1. During the test window, <b>don't send more applications</b> — every remaining school needs the score. Your goal: score <b>6.5 overall</b> (min 6.0) at minimum, ideally <b>7.0</b> to clear the C1 schools' bar.</p>
+  </div>
+
+  <!-- WHEN SCORE ARRIVES -->
+  <div class="sec-h2"><span class="dot" style="background:var(--green)"></span>On score arrival (~mid-Oct)</div>
+  <div class="day">
+    <div class="day-head">
+      <div class="day-badge grn"><div class="mon">OCT</div><div class="num">+</div></div>
+      <div class="day-title">
+        <div class="t">uni-assist batch + VPD, in one go <span class="tag tag-now">SCORE IN HAND</span></div>
+        <div class="d">Same session: your 8 uni-assist programs + a VPD request for TU Berlin. Docs uploaded once, reused across all 8.</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="act"><div class="nn">1</div><div class="b">
+        <div class="wh">Add all 8 programs in uni-assist <span>· €75 first + €30 × 7 = €285</span></div>
+        <div class="lnks"><a class="lnk blue" href="uniassist.html">Open checklist →</a><a class="lnk blue" href="https://my.uni-assist.de/" target="_blank" rel="noopener">my.uni-assist.de →</a></div>
+        <span class="chip test">Rostock · Halle need score</span>
+      </div></div>
+      <div class="act"><div class="nn">2</div><div class="b">
+        <div class="wh">Request a VPD <span>· +€75 · 4–6 wks</span></div>
+        <div class="lnks"><a class="lnk" href="https://www.uni-assist.de/en/how-to-apply/plan-your-application/vpd/" target="_blank" rel="noopener">VPD guide</a></div>
+        <span class="chip amb">for TU Berlin &amp; any direct uni that asks</span>
+      </div></div>
+      <div class="act"><div class="nn">3</div><div class="b">
+        <div class="wh">Apply direct to IELTS-required, no-VPD schools</div>
+        <div class="lnks"><a class="lnk" href="https://www.tuhh.de/tuhh/en/studying/before-studying/degree-courses/masters-programs/computer-science" target="_blank" rel="noopener">TUHH</a><a class="lnk" href="https://informatik.rub.de/en/studies/application/msc-cs" target="_blank" rel="noopener">Bochum</a><a class="lnk" href="https://saarland-informatics-campus.de/en/studium-studies/master-english/" target="_blank" rel="noopener">Saarland</a></div>
+        <span class="chip test">need score</span><span class="chip free">free</span>
+      </div></div>
+    </div>
+  </div>
+
+  <!-- URGENT deadlines to watch -->
+  <div class="sec-h2"><span class="dot" style="background:var(--red)"></span>Urgent deadlines — don't miss</div>
+  <div class="callout red">
+    <ul>
+      <li><b>RPTU Kaiserslautern</b> — summer closes <b>Oct 31, 2026</b> · CS / Embedded Computing · direct · IELTS-required → needs score, then apply immediately. <span class="chip dead">33 days</span></li>
+      <li><b>Saarland</b> — summer closes <b>Nov 15, 2026</b> · CS / Data Science &amp; AI / Embedded · direct · IELTS-required (C1). <span class="chip dead">48 days</span></li>
+      <li><b>University of Rostock</b> (uni-assist) — summer <b>Nov 30, 2026</b> · CS International · IELTS C1. Your score must be in before uni-assist clears it. <span class="chip dead">63 days</span></li>
+      <li><b>Ruhr Bochum</b> — summer <b>Dec 15, 2026</b> · CS · IELTS. <span class="chip dead">78 days</span></li>
+    </ul>
+    <p style="margin-top:6px">All four need the IELTS score — that's why <b>Day 1 booking is the critical path</b>.</p>
+  </div>
+
+  <!-- When VPD ready -->
+  <div class="sec-h2"><span class="dot" style="background:var(--amber)"></span>When VPD is ready (~mid-Nov)</div>
+  <div class="callout blue">
+    <p><b>TU Berlin</b> — with your VPD + IELTS in hand, submit the full application on tuPORT (its Summer 2027 window ~Dec 1 2026–Feb 28 2027). Use the same VPD for any other direct university that asks for one. That's the only VPD in your list that's clearly required.</p>
+  </div>
+
+  <div class="callout green" style="margin-top:16px">
+    <h4>Bottom line / sequence</h4>
+    <p><b>Day 1:</b> book IELTS + apply MOI schools. <b>+2 wks:</b> score in hand → uni-assist 8 + VPD + IELTS-direct schools. <b>+4–6 wks:</b> VPD ready → TU Berlin via VPD. The IELTS test is the single gating step — everything else unlocks behind it.</p>
+  </div>
+
+</div>
+
+<div class="foot">
+  German Master's Guide · Apply Calendar · Generated for Abdelrahman Gasser<br>
+  <a href="index.html">Guide</a> · <a href="flow.html">Flow &amp; deferral</a> · <a href="uniassist.html">uni-assist checklist</a><br>
+  Verify every deadline on the live program page before submitting.
+</div>
+
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>Add these in uni-assist — German Master's Guide</title>
+<style>
+:root{
+  --bg:#000000;--surface:#0c0c10;--surface2:#16161c;
+  --hairline:rgba(255,255,255,0.10);--hairline2:rgba(255,255,255,0.06);
+  --text:#ffffff;--text2:#a1a1ad;--text3:#6b6b76;
+  --accent:#0a84ff;--green:#30d158;--amber:#ffd60a;--red:#ff453a;
+  --radius:14px;
+  --font:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.5;font-size:15px;-webkit-font-smoothing:antialiased;min-height:100vh}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+.mast{max-width:760px;margin:0 auto;padding:34px 20px 10px}
+.mast .kicker{font-size:12px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.09em;margin-bottom:8px}
+.mast h1{font-size:27px;font-weight:720;letter-spacing:-0.02em;line-height:1.15}
+.mast .sub{color:var(--text2);font-size:13.5px;margin-top:8px;max-width:680px}
+.mast .nav{display:flex;flex-wrap:wrap;gap:14px;margin-top:14px}
+.back{display:inline-block;font-size:13px;font-weight:600}
+
+.wrap{max-width:760px;margin:0 auto;padding:0 20px 40px}
+
+.callout{border:1px solid var(--hairline);border-left:3px solid var(--amber);border-radius:12px;background:var(--surface);padding:14px 16px;margin-top:12px}
+.callout.blue{border-left-color:var(--accent)}
+.callout h4{font-size:13px;font-weight:680;margin-bottom:6px}
+.callout p{font-size:13.5px;color:var(--text2);line-height:1.6}
+.callout b{color:var(--text)}
+
+.progress{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:18px 0 10px}
+.progress .tally{font-size:15px;font-weight:650;letter-spacing:-0.01em}
+.progress .tally b{color:var(--accent)}
+.progress .bar{flex:1;height:6px;border-radius:99px;background:var(--surface2);border:1px solid var(--hairline);overflow:hidden;max-width:180px}
+.progress .bar i{display:block;height:100%;width:0;background:var(--green);border-radius:99px;transition:width .25s ease}
+
+.list{display:flex;flex-direction:column;gap:10px}
+
+.card{
+  display:flex;gap:12px;align-items:flex-start;
+  background:var(--surface);border:1px solid var(--hairline);
+  border-radius:var(--radius);padding:14px 14px 14px 12px;
+  transition:border-color .15s, background .15s;
+}
+.card.done{border-color:rgba(48,209,88,.35);background:rgba(48,209,88,.05)}
+.card .n{
+  flex-shrink:0;width:22px;height:22px;border-radius:50%;
+  background:var(--surface2);border:1px solid var(--hairline);
+  color:var(--text3);font-size:11px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;margin-top:1px;
+}
+.card.done .n{color:var(--green);border-color:rgba(48,209,88,.4)}
+
+.check{
+  appearance:none;-webkit-appearance:none;
+  flex-shrink:0;width:26px;height:26px;margin-top:0;border-radius:50%;
+  border:1.5px solid rgba(255,255,255,.22);background:var(--surface2);
+  cursor:pointer;position:relative;
+  transition:background .15s,border-color .15s,box-shadow .15s;
+}
+.check:hover{border-color:var(--green)}
+.check:checked{
+  background:var(--green);border-color:var(--green);
+  box-shadow:0 0 0 3px rgba(48,209,88,.18);
+}
+.check:checked::after{
+  content:"";position:absolute;left:7px;top:4px;width:8px;height:13px;
+  border:solid #000;border-width:0 2px 2px 0;transform:rotate(45deg);
+}
+.check:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.body{flex:1;min-width:0}
+.uni{font-size:12px;font-weight:600;color:var(--text2);display:flex;flex-wrap:wrap;align-items:baseline;gap:6px}
+.uni .city{color:var(--text3);font-weight:400}
+.prog{
+  font-size:16px;font-weight:650;letter-spacing:-0.015em;line-height:1.25;
+  margin-top:3px;color:var(--text);
+}
+.card.done .prog{color:var(--text2);text-decoration:line-through;text-decoration-color:rgba(48,209,88,.45)}
+.meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.pill{
+  font-size:11px;font-weight:600;padding:3px 8px;border-radius:999px;
+  border:1px solid var(--hairline);background:var(--surface2);color:var(--text2);
+}
+.pill.en{color:var(--accent);background:rgba(10,132,255,.12);border-color:rgba(10,132,255,.28)}
+.pill.open{color:var(--green);background:rgba(48,209,88,.12);border-color:rgba(48,209,88,.3)}
+
+.dl{margin-top:10px;font-size:12.5px;color:var(--text2);line-height:1.5;border-top:1px dashed rgba(255,255,255,.12);padding-top:8px}
+.dl b{color:var(--text);font-weight:650}
+
+.docs-h{font-size:10.5px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.07em;margin-top:10px;margin-bottom:6px}
+.doc-list{display:flex;flex-wrap:wrap;gap:6px}
+.doc-chip{font-size:12px;padding:5px 10px;border-radius:8px;border:1px solid var(--hairline)}
+.doc-mand{background:rgba(255,69,58,.10);color:var(--red);border-color:rgba(255,69,58,.25)}
+.doc-rec{background:rgba(10,132,255,.10);color:var(--accent);border-color:rgba(10,132,255,.25)}
+
+.note{margin-top:9px;font-size:12.5px;color:var(--text2);line-height:1.5;border-top:1px dashed rgba(255,255,255,.10);padding-top:8px}
+.note b{color:var(--text);font-weight:650}
+
+.foot{max-width:760px;margin:0 auto;padding:8px 22px 60px;color:var(--text3);font-size:12px;text-align:center;line-height:1.7}
+.foot a{font-weight:600}
+
+@media(max-width:560px){
+  .mast h1{font-size:24px}
+  .progress{flex-wrap:wrap}
+  .progress .bar{max-width:none;width:100%;flex-basis:100%}
+}
+</style>
+</head>
+<body>
+
+<div class="mast">
+  <div class="kicker">German Master's Guide · uni-assist</div>
+  <h1>Add these in uni-assist</h1>
+  <div class="sub">One card per program. Open My assist, add each row, tick it off. Progress is saved on this device.</div>
+  <div class="nav">
+    <a class="back" href="index.html">← Back to the guide</a>
+    <a class="back" href="flow.html">Application flow →</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="callout blue">
+    <h4>Fully digital — no paper post</h4>
+    <p>uni-assist is fully digital — you upload scanned documents, no paper post needed. Each program is added one-by-one in My assist. Add them from this list.</p>
+  </div>
+
+  <div class="progress">
+    <div class="tally" id="tally">0 of 8 added</div>
+    <div class="bar" aria-hidden="true"><i id="bar"></i></div>
+  </div>
+
+  <div class="list" id="list"></div>
+</div>
+
+<div class="foot">
+  German Master's Guide · uni-assist checklist · my.uni-assist.de<br>
+  <a href="index.html">← Back to the guide</a> · <a href="flow.html">Application flow</a>
+</div>
+
+<script>
+const ITEMS=[
+  {
+    id:'dresden',
+    uni:'TU Dresden',
+    city:'Dresden',
+    program:'Computer Science — M.Sc.',
+    tags:['English','TU9','Winter only'],
+    deadlines:'Winter ~Jul 15 2027 · apply by May 2027',
+    docs:['Bachelor\'s degree','Transcript','High-school cert','IELTS / TOEFL','CV'],
+    rec:['GRE (recommended, not required)'],
+    note:'German-taught not — this CS M.Sc. is English, winter intake.'
+  },
+  {
+    id:'rostock',
+    uni:'University of Rostock',
+    city:'Rostock',
+    program:'Computer Science International — M.Sc.',
+    tags:['English','Open admission'],
+    deadlines:'Summer Nov 30 2026 · Winter May 31 2027',
+    docs:['Bachelor\'s degree','Transcript','IELTS / TOEFL','CV','Passport'],
+    rec:[],
+    note:'After uni-assist approval, enroll directly at Rostock.'
+  },
+  {
+    id:'halle',
+    uni:'Martin Luther Univ. Halle-Wittenberg',
+    city:'Halle',
+    program:'Computer Science — M.Sc.',
+    tags:['English','IELTS 6.0 / B2'],
+    deadlines:'Summer ~Jan 15 2027 · Winter ~Jul 15 2027',
+    docs:['Bachelor\'s degree','Transcript','IELTS 6.0','CV'],
+    rec:[],
+    note:'Lowest English bar of the set — IELTS 6.0 / B2.'
+  },
+  {
+    id:'leipzig',
+    uni:'Leipzig University',
+    city:'Leipzig',
+    program:'Computer Science — M.Sc.',
+    tags:['English','Affordable city'],
+    deadlines:'Summer Mar 1 2027 · Winter ~Sep 1 2027',
+    docs:['Bachelor\'s degree','Transcript','IELTS (B2 ok at Leipzig)','CV'],
+    rec:[],
+    note:'Leipzig has two programs on this list — add this CS row first.'
+  },
+  {
+    id:'leipzig',
+    uni:'Leipzig University',
+    city:'Leipzig',
+    program:'Data Science — M.Sc.',
+    tags:['English','Affordable city'],
+    deadlines:'Summer Mar 1 2027 · Winter ~Sep 1 2027',
+    docs:['Bachelor\'s degree','Transcript','IELTS (B2 ok at Leipzig)','CV'],
+    rec:[],
+    note:'Second Leipzig row — Data Science is a separate uni-assist application.'
+  },
+  {
+    id:'anhalt',
+    uni:'Hochschule Anhalt',
+    city:'Köthen',
+    program:'Applied Computer Science — M.Sc.',
+    tags:['English','Open admission'],
+    deadlines:'Summer ~Mar 15 2027 · Winter ~Sep 15 2027',
+    docs:['Bachelor\'s degree','Transcript','IELTS / TOEFL','CV'],
+    rec:[],
+    note:'Open admission FH — strong safety-net pick.'
+  },
+  {
+    id:'anhalt',
+    uni:'Hochschule Anhalt',
+    city:'Köthen',
+    program:'Data Science — M.Sc.',
+    tags:['English','Open admission'],
+    deadlines:'Summer ~Mar 15 2027 · Winter ~Sep 15 2027',
+    docs:['Bachelor\'s degree','Transcript','IELTS / TOEFL','CV'],
+    rec:[],
+    note:'Second Anhalt row — add Data Science separately in My assist.'
+  },
+  {
+    id:'flensburg',
+    uni:'Hochschule Flensburg',
+    city:'Flensburg',
+    program:'Computer Science — M.Sc.',
+    tags:['English','Danish border'],
+    deadlines:'Summer ~Jan 15 2027 · Winter ~Jul 15 2027',
+    docs:['Bachelor\'s degree','Transcript','IELTS / TOEFL','CV'],
+    rec:[],
+    note:'Because his degree is non-German, he applies via uni-assist.'
+  }
+];
+
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const slug=s=>s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+const key=it=>`uniassist_${it.id}_${slug(it.program)}`;
+
+function isDone(it){return localStorage.getItem(key(it))==='1'}
+function setDone(it,on){
+  if(on) localStorage.setItem(key(it),'1');
+  else localStorage.removeItem(key(it));
+}
+
+function updateTally(){
+  const n=ITEMS.filter(isDone).length;
+  document.getElementById('tally').textContent=`${n} of ${ITEMS.length} added`;
+  document.getElementById('bar').style.width=`${(n/ITEMS.length)*100}%`;
+}
+
+function render(){
+  const root=document.getElementById('list');
+  root.innerHTML=ITEMS.map((it,i)=>{
+    const done=isDone(it);
+    const tags=it.tags.map(t=>{
+      const cls=/english/i.test(t)?'en':/open/i.test(t)?'open':'';
+      return `<span class="pill ${cls}">${esc(t)}</span>`;
+    }).join('');
+    const docs=it.docs.map(d=>`<span class="doc-chip doc-mand">${esc(d)}</span>`).join('');
+    const rec=(it.rec||[]).map(d=>`<span class="doc-chip doc-rec">${esc(d)}</span>`).join('');
+    return `<label class="card${done?' done':''}" data-key="${esc(key(it))}">
+      <span class="n">${i+1}</span>
+      <input class="check" type="checkbox" ${done?'checked':''} aria-label="Mark ${esc(it.program)} as added">
+      <div class="body">
+        <div class="uni">${esc(it.uni)} <span class="city">${esc(it.city)}</span></div>
+        <div class="prog">${esc(it.program)}</div>
+        <div class="meta">${tags}</div>
+        <div class="dl"><b>Deadlines</b> · ${esc(it.deadlines)}</div>
+        <div class="docs-h">What to upload</div>
+        <div class="doc-list">${docs}${rec}</div>
+        ${it.note?`<div class="note"><b>Note.</b> ${esc(it.note)}</div>`:''}
+      </div>
+    </label>`;
+  }).join('');
+  root.querySelectorAll('.card').forEach((card,i)=>{
+    const box=card.querySelector('.check');
+    box.addEventListener('change',()=>{
+      setDone(ITEMS[i],box.checked);
+      card.classList.toggle('done',box.checked);
+      updateTally();
+    });
+  });
+  updateTally();
+}
+
+render();
+</script>
+</body>
+</html>
