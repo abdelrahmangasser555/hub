@@ -4,84 +4,233 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#000000">
-<title>uni-assist Guide — German Master's</title>
-<link rel="stylesheet" href="../_assets/apple.css">
+<title>uni-assist Guide — German Master's Guide</title>
 <style>
-.prose h2{font-size:17px;font-weight:650;letter-spacing:-0.01em;margin:26px 0 12px}
-.prose p,.prose li{color:var(--text2);font-size:14px;line-height:1.6}
-.prose li{margin-bottom:6px}
-.prose ol,.prose ul{padding-left:20px;margin:8px 0}
-.prose b,.prose strong{color:var(--text)}
-.card{background:var(--surface);border:1px solid var(--hairline);border-radius:var(--radius);padding:18px;margin:12px 0}
+:root{
+  --bg:#000000;--surface:#0c0c10;--surface2:#16161c;
+  --hairline:rgba(255,255,255,0.10);--hairline2:rgba(255,255,255,0.06);
+  --text:#ffffff;--text2:#a1a1ad;--text3:#6b6b76;
+  --accent:#0a84ff;--green:#30d158;--amber:#ffd60a;--red:#ff453a;
+  --radius:14px;
+  --font:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.5;font-size:15px;-webkit-font-smoothing:antialiased;min-height:100vh}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.mast{max-width:760px;margin:0 auto;padding:34px 20px 10px}
+.mast .kicker{font-size:12px;font-weight:650;color:var(--accent);text-transform:uppercase;letter-spacing:.09em;margin-bottom:8px}
+.mast h1{font-size:27px;font-weight:720;letter-spacing:-0.02em;line-height:1.15}
+.mast .sub{color:var(--text2);font-size:13.5px;margin-top:8px;max-width:680px}
+.mast .nav{display:flex;flex-wrap:wrap;gap:14px;margin-top:14px}
+.back{display:inline-block;font-size:13px;font-weight:600}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px 60px}
+.sec-h2{font-size:14px;font-weight:680;letter-spacing:-0.01em;color:var(--text);margin:32px 0 12px;display:flex;align-items:center;gap:9px}
+.sec-h2 .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);opacity:.85}
+.callout{border:1px solid var(--hairline);border-left:3px solid var(--amber);border-radius:12px;background:var(--surface);padding:14px 16px;margin-top:12px}
+.callout.blue{border-left-color:var(--accent)}
+.callout.red{border-left-color:var(--red)}
+.callout.green{border-left-color:var(--green)}
+.callout h4{font-size:13px;font-weight:680;margin-bottom:6px}
+.callout p,.callout li,.step .s-d{color:var(--text2);font-size:13.5px;line-height:1.6}
+.callout ul{margin:6px 0 0;list-style:none;padding:0}
+.callout li{margin:4px 0}
+.callout b{color:var(--text)}
+.card{background:var(--surface);border:1px solid var(--hairline);border-radius:var(--radius);padding:16px 18px;margin:12px 0}
+.card p{color:var(--text2);font-size:13.5px;line-height:1.6}
+.card b{color:var(--text)}
 .cost{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px dashed rgba(255,255,255,.12)}
 .cost:last-child{border-bottom:none}
-.cost .n{font-size:20px;font-weight:700;color:var(--accent);text-align:right;white-space:nowrap}
-.tag-callout{background:rgba(255,69,58,.10);border:1px solid rgba(255,69,58,.3);border-radius:12px;padding:14px 16px;font-size:13px;color:var(--text2);margin:14px 0;line-height:1.55}
-.tag-callout b{color:var(--red)}
-.back{display:inline-flex;align-items:center;color:var(--text2);font-size:13px;margin-bottom:6px}
-.back:hover{color:var(--text);text-decoration:none}
+.cost .n{font-size:19px;font-weight:700;color:var(--accent);text-align:right;white-space:nowrap}
 .step{display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed rgba(255,255,255,.10)}
 .step:last-child{border-bottom:none}
 .step .num{flex-shrink:0;width:30px;height:30px;border-radius:50%;background:var(--surface2);border:1px solid var(--hairline);color:var(--accent);font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center}
-.step .s-t{font-size:15px;font-weight:650}
-.step .s-d{color:var(--text2);font-size:13.5px;margin-top:3px;line-height:1.55}
+.step .s-t{font-size:15px;font-weight:650;color:var(--text)}
+.step .s-d{color:var(--text2);font-size:13px;margin-top:3px;line-height:1.55}
+.mermaid-wrap{background:var(--surface);border:1px solid var(--hairline);border-radius:14px;padding:20px;overflow:auto;color:#e8e8ec}
+.mermaid-wrap .mm-title{font-size:11.5px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.07em;margin-bottom:12px}
+.prog{background:var(--surface);border:1px solid var(--hairline);border-radius:var(--radius);padding:12px 14px;margin-bottom:9px}
+.prog:last-child{margin-bottom:0}
+.prog .pn{font-weight:650;font-size:14px}
+.prog .pu{font-size:12px;font-weight:600;color:var(--text3);margin-top:1px}
+.prog .pd{color:var(--text2);font-size:12.5px;margin-top:4px;line-height:1.5}
+.prog .dn{color:var(--text3);font-size:12px;margin-top:3px}
+.prog .lks{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.lnk{font-size:12px;font-weight:600;padding:4px 10px;border-radius:99px;background:var(--surface2);border:1px solid var(--hairline);color:var(--text2);text-decoration:none}
+.lnk:hover{background:#1f1f27;text-decoration:none;color:var(--text)}
+.lnk.blue{color:var(--accent);border-color:rgba(10,132,255,.3)}
+.ow{display:inline-block;font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:99px;margin-left:6px;vertical-align:middle}
+.ow.free{background:rgba(48,209,88,.14);color:var(--green)}
+.ow.test{background:rgba(10,132,255,.14);color:var(--accent)}
+.ow.moi{background:rgba(48,209,88,.14);color:var(--green)}
+.foot{max-width:760px;margin:0 auto;padding:8px 22px 60px;color:var(--text3);font-size:12px;text-align:center;line-height:1.8}
+.foot a{font-weight:600}
+@media(max-width:560px){.mast h1{font-size:23px}}
 </style>
 </head>
 <body>
 
-<header class="mast">
-  <a class="back" href="index.html">‹ Back to guide</a>
+<div class="mast">
   <div class="kicker">Step-by-step · uni-assist</div>
   <h1>uni-assist Guide</h1>
-  <div class="sub">Everything about VPD: registering, applying, what it costs, and pitfalls. Read this before you do anything.</div>
-</header>
-
-<div class="container prose">
-
-  <div class="tag-callout"><b>Start here first.</b> uni-assist processing takes <b>4–6 weeks</b>, so your VPD applications go in during <b>weeks 5–6</b> of your timeline (~Oct 19 – Nov 1). Do not start the 3-month plan before you understand this page.</div>
-
-  <div class="card">
-    <h2 style="margin-top:0">What is uni-assist?</h2>
-    <p>uni-assist is a central German service (run by <b>UNI-ASSIST e.V.</b> in Berlin) that <b>verifies international school &amp; university documents</b> for German universities. It works two ways:</p>
-    <ul>
-      <li><b>VPD (Vorprüfungsdokumentation):</b> they check your documents and issue a certificate (valid 1 year). You then apply on the <i>university's own portal</i> and upload that VPD. Example: TU Berlin.</li>
-      <li><b>Full application:</b> you submit everything through uni-assist and they forward it to the university. Example: Rostock, Halle.</li>
-    </ul>
-    <p style="margin-top:8px"><b>Who needs it:</b> students with non-German credentials, as an alternative to the APS. Egypt does <b>not</b> need APS — you need the <b>uni-assist VPD</b> instead (for the universities that require it).</p>
+  <div class="sub">Everything about uni-assist &amp; the VPD: how it works, the flow, the exact 8 programs you'll add one-by-one, costs, and pitfalls. Your documents are uploaded digitally — no paper post.</div>
+  <div class="nav">
+    <a class="back" href="index.html">‹ Back to guide</a>
+    <a class="back" href="uniassist.html">Open 8-program checklist →</a>
+    <a class="back" href="apply-plan.html">Apply calendar →</a>
   </div>
-
-  <h2>Register (my.uni-assist.de)</h2>
-  <div class="step"><div class="num">1</div><div><div class="s-t">Go to my.uni-assist.de</div><div class="s-d">Click <b>Register</b> and fill: your email, full name (must match your <b>passport exactly</b>), date of birth, nationality (Egyptian), and contact details.</div></div></div>
-  <div class="step"><div class="num">2</div><div><div class="s-t">Verify your email</div><div class="s-d">They send a confirmation link. Click it to activate the account.</div></div></div>
-  <div class="step"><div class="num">3</div><div><div class="s-t">Complete your profile</div><div class="s-d">Fill in your education history: Cambridge IGCSE high-school, then your AAST Bachelor's. Add English proficiency details.</div></div></div>
-  <div class="step"><div class="num">4</div><div><div class="s-t">Add the universities &amp; programs</div><div class="s-d">Dashboard → <b>Add university / course</b>. Add each uni <b>and</b> the exact program (e.g. "Computer Science – M.Sc."). <b>Batch them all in one semester cycle</b> so you pay the &euro;75 first fee once, not per semester.</div></div></div>
-
-  <h2>Upload &amp; submit</h2>
-  <div class="step"><div class="num">5</div><div><div class="s-t">Upload scans of every required document</div><div class="s-d">Passport, IGCSE/O-Level certificate, bachelor's transcript, credit certificate, IELTS/TOEFL, CV, motivation letters. Upload originals; attach certified translations where asked. uni-assist tells you exactly what's missing.</div></div></div>
-  <div class="step"><div class="num">6</div><div><div class="s-t">Pay the fee</div><div class="s-d">First application <b>&euro;75</b>, each additional <b>&euro;30</b> (per semester). Pay by card or bank transfer and keep your reference number.</div></div></div>
-  <div class="step"><div class="num">7</div><div><div class="s-t">Submit &amp; wait 4–6 weeks</div><div class="s-d">They check completeness + authenticity. Check <b>My Inbox</b> regularly — they message if a document is missing. Respond fast.</div></div></div>
-  <div class="step"><div class="num">8</div><div><div class="s-t">Get your VPD (or forwarded application)</div><div class="s-d"><b>VPD path:</b> it appears in My Inbox (valid 1 year) → upload it with your direct application to the uni.<br><b>Full path:</b> uni-assist forwards your file; your decision comes through uni-assist / the university.</div></div></div>
-
-  <h2>Cost — what money you need</h2>
-  <div class="card" style="padding:6px 18px">
-    <div class="cost"><span>First uni-assist application</span><span class="n">&euro;75</span></div>
-    <div class="cost"><span>Each additional university (same cycle)</span><span class="n">&euro;30</span></div>
-    <div class="cost"><span>Typical realistic batch (~5 uni-assist unis)</span><span class="n">≈ &euro;195</span></div>
-    <div class="cost" style="border-bottom:1px solid var(--hairline2)"><span>Total application budget (incl. IELTS + docs)</span><span class="n">≈ &euro;300–500</span></div>
-  </div>
-  <p style="font-size:13px;color:var(--text3)">Direct-portal universities (not via uni-assist) cost &euro;0 to apply. IELTS exam ~ &euro;230. Document legalisation + sworn translations ~ &euro;50–150.</p>
-
-  <h2>Pitfalls</h2>
-  <ul>
-    <li>Your <b>name must match your passport</b> on every document — mismatches cause rejections.</li>
-    <li><b>Batch</b> all uni-assist applications in one cycle to avoid repaying the &euro;75 first fee.</li>
-    <li>Start <b>4–6 weeks early</b>. Missing the VPD deadline means missing the whole intake.</li>
-    <li>Keep the <b>payment reference</b> — proof you paid is often required.</li>
-  </ul>
-
-  <div class="back" style="margin-top:20px"><a href="index.html" style="color:var(--text2)">‹ Back to guide</a></div>
 </div>
 
-<div class="foot"><p><b>Compiled Sept 2026.</b> uni-assist = my.uni-assist.de</p></div>
+<div class="wrap">
+
+  <div class="callout green">
+    <h4>✅ Fully digital — no paper post</h4>
+    <p>uni-assist's official FAQ: <b>"You do not need to send documents to uni-assist by post. The application is fully digital — upload all required documents in My assist."</b> Upload each scanned document <b>once</b>; uni-assist reuses it across all your programs.</p>
+  </div>
+
+  <div class="sec-h2"><span class="dot"></span>What is uni-assist?</div>
+  <div class="card">
+    <p>uni-assist (UNI-ASSIST e.V., Berlin) is the central service that <b>verifies international documents</b> for German universities. It works two ways:</p>
+    <p style="margin-top:8px"><b>1 · Full application</b> — you submit everything through uni-assist and they forward it to the university. <i>Example: Rostock, Halle, Dresden, Leipzig, Anhalt, Flensburg.</i></p>
+    <p style="margin-top:6px"><b>2 · VPD</b> — uni-assist verifies your degree and issues a certificate (valid 1 year) you then attach to a direct application on the university's own portal. <i>Example: TU Berlin.</i></p>
+    <p style="margin-top:8px">Egypt does <b>not</b> need the APS certificate — you use uni-assist's verification instead.</p>
+  </div>
+
+  <div class="sec-h2"><span class="dot"></span>The flow</div>
+  <div class="mermaid-wrap">
+    <div class="mm-title">uni-assist end-to-end</div>
+    <pre class="mermaid">
+flowchart TD
+    A["Register at my.uni-assist.de<br/>(name must match passport)"] --> B["Add each uni + exact program<br/>(batch all 8 in one semester cycle)"]
+    B --> C["Upload scans once<br/>passport · IGCSE · transcript · IELTS · CV"]
+    C --> D["Pay handling fees<br/>€75 first + €30 each additional"]
+    D --> E["uni-assist verifies 4–6 weeks<br/>(check My Inbox — respond to gaps fast)"]
+    E --> F{"Application type?"}
+    F -- "Full application (6 unis)" --> G["uni-assist forwards file to university<br/>decision via uni-assist / uni"]
+    F -- "VPD request (TU Berlin)" --> H["VPD issued in My Inbox<br/>valid 1 year"]
+    H --> I["Apply on university portal<br/>upload VPD + documents"]
+
+    style A fill:#16161c,stroke:#3a3a44,color:#fff
+    style D fill:#ffd60a,stroke:#ffd60a,color:#000
+    style E fill:#0a84ff,stroke:#0a84ff,color:#fff
+    style G fill:#30d158,stroke:#30d158,color:#000
+    style H fill:#30d158,stroke:#30d158,color:#000
+    </pre>
+  </div>
+
+  <div class="callout red">
+    <h4>⚠ Order matters</h4>
+    <p>You cannot submit a <b>complete</b> application to an IELTS-required program before you have the score. <b>Take IELTS first</b> (result ~2 weeks), then add all 8 uni-assist programs in one batch. See the <a href="apply-plan.html" style="color:var(--accent)"><b>Apply Calendar</b></a> for the exact day-by-day order.</p>
+  </div>
+
+  <div class="sec-h2"><span class="dot" style="background:var(--green)"></span>Your exact 8 programs to add</div>
+  <p style="color:var(--text3);font-size:12.5px;margin:-4px 0 10px">Add each one separately in My assist <b>in the same semester cycle</b>. Docs uploaded once apply to all. Track progress on the <a href="uniassist.html" style="color:var(--accent)">checklist page →</a></p>
+
+  <div class="prog">
+    <div class="pn">1 · TU Dresden — Computer Science — M.Sc. <span class="ow moi">MOI / test</span><span class="ow free">Winter only</span></div>
+    <div class="pu">Dresden · English · TU9 · Winter intake (Oct)</div>
+    <div class="pd">Apply by ~Jul 15 2027 (window ~May 2027). GRE recommended (not required) for non-EU.</div>
+    <div class="dn">Upload: bachelor's · transcript · high-school cert · IELTS/TOEFL · CV</div>
+    <div class="lks"><a class="lnk blue" href="https://tu-dresden.de/ing/informatik/studium/studienangebot/master-studiengaenge/m-sc-computer-science?set_language=en" target="_blank" rel="noopener">Program →</a><a class="lnk" href="https://tu-dresden.de/" target="_blank" rel="noopener">Uni site</a></div>
+  </div>
+
+  <div class="prog">
+    <div class="pn">2 · University of Rostock — Computer Science International — M.Sc. <span class="ow test">IELTS C1 req</span></div>
+    <div class="pu">Rostock · English · open admission</div>
+    <div class="pd">Non-EU deadlines: summer Nov 30 2026 · winter May 31 2027. <b>Needs IELTS/TOEFL (C1, ~7.0).</b></div>
+    <div class="dn">Upload: bachelor's · transcript · IELTS/TOEFL · CV · passport</div>
+    <div class="lks"><a class="lnk blue" href="https://www.ief.uni-rostock.de/en/studiengaenge/master-studiengaenge-2/computer-science-international-msc/csi-master-spso-2021" target="_blank" rel="noopener">Program →</a><a class="lnk" href="https://www.uni-rostock.de/en/" target="_blank" rel="noopener">Uni site</a></div>
+  </div>
+
+  <div class="prog">
+    <div class="pn">3 · Martin Luther Univ. Halle-Wittenberg — Computer Science — M.Sc. <span class="ow test">IELTS B2 req</span></div>
+    <div class="pu">Halle · English · lowest English bar (IELTS 6.0)</div>
+    <div class="pd">Summer ~Jan 15 2027 · winter ~Jul 15 2027. Great safety net.</div>
+    <div class="dn">Upload: bachelor's · transcript · IELTS 6.0 · CV</div>
+    <div class="lks"><a class="lnk blue" href="https://www.uni-halle.de/ssc/bewerbungsinformationen?lang=en" target="_blank" rel="noopener">Apply info →</a><a class="lnk" href="https://www.uni-halle.de/" target="_blank" rel="noopener">Uni site</a></div>
+  </div>
+
+  <div class="prog">
+    <div class="pn">4 · Leipzig University — Computer Science — M.Sc.</div>
+    <div class="pu">Leipzig · English · affordable city</div>
+    <div class="pd">Summer Mar 1 2027 · winter ~Sep 1 2027. B2 ok at Leipzig.</div>
+    <div class="dn">Upload: bachelor's · transcript · IELTS/English proof · CV</div>
+    <div class="lks"><a class="lnk" href="https://www.uni-leipzig.de/en" target="_blank" rel="noopener">Uni site</a></div>
+  </div>
+
+  <div class="prog">
+    <div class="pn">5 · Leipzig University — Data Science — M.Sc.</div>
+    <div class="pu">Leipzig · English · separate uni-assist application</div>
+    <div class="pd">Same deadlines as Leipzig CS. Add as its own row in My assist.</div>
+    <div class="dn">Upload: bachelor's · transcript · IELTS/English proof · CV</div>
+    <div class="lks"><a class="lnk" href="https://www.uni-leipzig.de/en" target="_blank" rel="noopener">Uni site</a></div>
+  </div>
+
+  <div class="prog">
+    <div class="pn">6 · Hochschule Anhalt — Applied Computer Science — M.Sc. <span class="ow free">open admission</span></div>
+    <div class="pu">Köthen · English · open admission FH</div>
+    <div class="pd">Summer ~Mar 15 2027 · winter ~Sep 15 2027. Strong safety-net pick.</div>
+    <div class="dn">Upload: bachelor's · transcript · IELTS/TOEFL · CV</div>
+    <div class="lks"><a class="lnk blue" href="https://www.hs-anhalt.de/en/degree-programs/ain/study.html" target="_blank" rel="noopener">Program →</a><a class="lnk" href="https://www.hs-anhalt.de/en/study/paths-to-university/your-application.html" target="_blank" rel="noopener">Apply →</a><a class="lnk" href="https://www.hs-anhalt.de/en/" target="_blank" rel="noopener">Uni site</a></div>
+  </div>
+
+  <div class="prog">
+    <div class="pn">7 · Hochschule Anhalt — Data Science — M.Sc. <span class="ow free">open admission</span></div>
+    <div class="pu">Köthen · English · separate uni-assist application</div>
+    <div class="pd">Same deadlines. Add as its own row in My assist.</div>
+    <div class="dn">Upload: bachelor's · transcript · IELTS/TOEFL · CV</div>
+    <div class="lks"><a class="lnk blue" href="https://www.hs-anhalt.de/en/degree-programs/ain/study.html" target="_blank" rel="noopener">Program →</a><a class="lnk" href="https://www.hs-anhalt.de/en/" target="_blank" rel="noopener">Uni site</a></div>
+  </div>
+
+  <div class="prog">
+    <div class="pn">8 · Hochschule Flensburg — Computer Science — M.Sc.</div>
+    <div class="pu">Flensburg · English · Danish border · Baltic coast</div>
+    <div class="pd">Summer ~Jan 15 2027 · winter ~Jul 15 2027. Apply via uni-assist because your degree is non-German.</div>
+    <div class="dn">Upload: bachelor's · transcript · IELTS/TOEFL · CV</div>
+    <div class="lks"><a class="lnk blue" href="https://hs-flensburg.de/en/study-with-us/apply" target="_blank" rel="noopener">Apply →</a><a class="lnk" href="https://hs-flensburg.de/en" target="_blank" rel="noopener">Uni site</a></div>
+  </div>
+
+  <div class="sec-h2"><span class="dot" style="background:var(--amber)"></span>Register &amp; submit — the steps</div>
+  <div class="card" style="padding:4px 18px">
+    <div class="step"><div class="num">1</div><div><div class="s-t">Go to my.uni-assist.de</div><div class="s-d">Click <b>Register</b>. Name must match your <b>passport exactly</b>; Egyptian nationality; your DOB.</div></div></div>
+    <div class="step"><div class="num">2</div><div><div class="s-t">Verify your email</div><div class="s-d">Click the confirmation link to activate the account.</div></div></div>
+    <div class="step"><div class="num">3</div><div><div class="s-t">Complete your profile</div><div class="s-d">Education history: Cambridge IGCSE high-school, then AAST bachelor's. Add English proficiency.</div></div></div>
+    <div class="step"><div class="num">4</div><div><div class="s-t">Add the universities &amp; programs</div><div class="s-d">Dashboard → <b>Add university/course</b> → pick each uni and the <b>exact program</b> above. <b>Add all 8 in one semester cycle</b> so the €75 first fee is paid once.</div></div></div>
+    <div class="step"><div class="num">5</div><div><div class="s-t">Upload scans of every document</div><div class="s-d">passport · IGCSE/O-Level · bachelor's · transcript · IELTS/TOEFL (for test-required) · CV · motivation letters. Uploaded once, used for all 8.</div></div></div>
+    <div class="step"><div class="num">6</div><div><div class="s-t">Pay the fee</div><div class="s-d">First application <b>€75</b>, each additional <b>€30</b> (per semester). Keep the payment reference.</div></div></div>
+    <div class="step"><div class="num">7</div><div><div class="s-t">Submit &amp; wait 4–6 weeks</div><div class="s-d">Check <b>My Inbox</b> regularly; respond to missing-document requests fast.</div></div></div>
+    <div class="step"><div class="num">8</div><div><div class="s-t">Get VPD or forwarded application</div><div class="s-d"><b>VPD:</b> appears in My Inbox (valid 1 yr) → attach to direct university application. <b>Full:</b> uni-assist forwards your file; decision comes via uni-assist / the university.</div></div></div>
+  </div>
+
+  <div class="sec-h2"><span class="dot" style="background:var(--green)"></span>Cost — what money you need</div>
+  <div class="card" style="padding:6px 18px">
+    <div class="cost"><span>First uni-assist application</span><span class="n">€75</span></div>
+    <div class="cost"><span>Each additional university (same cycle)</span><span class="n">€30</span></div>
+    <div class="cost"><span>Your 8-program batch (75 + 7×30)</span><span class="n">€285</span></div>
+    <div class="cost"><span>VPD request (TU Berlin)</span><span class="n">+€75</span></div>
+    <div class="cost" style="border-bottom:1px solid var(--hairline2)"><span>Total uni-assist + VPD budget</span><span class="n">≈ €360</span></div>
+  </div>
+  <p style="font-size:12.5px;color:var(--text3)">Direct-portal universities (not via uni-assist) cost <b>€0</b> to apply. IELTS exam ≈ €230. Fees are <b>non-refundable</b> even on rejection.</p>
+
+  <div class="sec-h2"><span class="dot" style="background:var(--red)"></span>Pitfalls</div>
+  <div class="callout red">
+    <ul>
+      <li><b>Name must match your passport</b> on every document — mismatches cause rejections.</li>
+      <li><b>Batch all 8 in one cycle</b> to avoid repaying the €75 first fee per semester.</li>
+      <li>Start <b>4–6 weeks early</b>. Missing the VPD deadline = missing the whole intake.</li>
+      <li>Keep the <b>payment reference</b> — proof of payment is often required.</li>
+      <li><b>IELTS-required programs (Rostock, Halle)</b> won't clear your application until the score is uploaded — take IELTS first.</li>
+    </ul>
+  </div>
+
+  <div style="margin-top:20px"><a href="index.html" style="color:var(--text2);font-size:13px;font-weight:600">‹ Back to the guide</a></div>
+</div>
+
+<div class="foot">German Master's Guide · uni-assist · my.uni-assist.de · Compiled Sept 2026<br>
+<a href="index.html">Guide</a> · <a href="uniassist.html">8-program checklist</a> · <a href="apply-plan.html">Apply calendar</a> · <a href="flow.html">Flow &amp; deferral</a></div>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true,theme:'dark',securityLevel:'loose',themeVariables:{background:'#16161c',primaryColor:'#16161c',primaryTextColor:'#ffffff',primaryBorderColor:'#3a3a44',lineColor:'#5a5a66',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif'}});</script>
 </body>
 </html>

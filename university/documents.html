@@ -4,68 +4,102 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#000000">
-<title>Documents Guide — German Master's</title>
-<link rel="stylesheet" href="../_assets/apple.css">
+<title>Documents Guide — German Master's Guide</title>
 <style>
-.prose h2{font-size:17px;font-weight:650;letter-spacing:-0.01em;margin:26px 0 12px}
-.prose p,.prose li{color:var(--text2);font-size:14px;line-height:1.6}
-.prose li{margin-bottom:5px}
-.prose b,.prose strong{color:var(--text)}
-.doc{background:var(--surface);border:1px solid var(--hairline);border-radius:var(--radius);padding:16px 18px;margin:12px 0}
-.doc .dn{font-size:16px;font-weight:650;display:flex;align-items:center;justify-content:space-between;gap:10px}
-.doc .kat{font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;flex-shrink:0}
+:root{
+  --bg:#000000;--surface:#0c0c10;--surface2:#16161c;
+  --hairline:rgba(255,255,255,0.10);--hairline2:rgba(255,255,255,0.06);
+  --text:#ffffff;--text2:#a1a1ad;--text3:#6b6b76;
+  --accent:#0a84ff;--green:#30d158;--amber:#ffd60a;--red:#ff453a;
+  --radius:14px;
+  --font:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.5;font-size:15px;-webkit-font-smoothing:antialiased;min-height:100vh}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.mast{max-width:760px;margin:0 auto;padding:34px 20px 10px}
+.mast .kicker{font-size:12px;font-weight:650;color:var(--accent);text-transform:uppercase;letter-spacing:.09em;margin-bottom:8px}
+.mast h1{font-size:27px;font-weight:720;letter-spacing:-0.02em;line-height:1.15}
+.mast .sub{color:var(--text2);font-size:13.5px;margin-top:8px;max-width:680px}
+.mast .nav{display:flex;flex-wrap:wrap;gap:14px;margin-top:14px}
+.back{display:inline-block;font-size:13px;font-weight:600}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px 60px}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.lg{font-size:11px;font-weight:600;color:var(--text2);padding:4px 10px;border-radius:99px;border:1px solid var(--hairline);background:var(--surface)}
+.lg i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px}
+.lg.g i{background:var(--green)}.lg.o i{background:var(--amber)}.lg.r i{background:var(--red)}
+.doc{background:var(--surface);border:1px solid var(--hairline);border-radius:var(--radius);padding:14px 16px;margin:10px 0}
+.doc .dn{font-size:15.5px;font-weight:660;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.doc .kat{font-size:10.5px;font-weight:700;padding:3px 10px;border-radius:999px;flex-shrink:0}
 .kat-have{background:rgba(48,209,88,.14);color:var(--green)}
-.kat-need{background:rgba(255,214,10,.12);color:var(--amber)}
-.kat-mustget{background:rgba(255,69,58,.12);color:var(--red)}
+.kat-need{background:rgba(255,214,10,.14);color:var(--amber)}
 .kat-plan{background:var(--surface2);border:1px solid var(--hairline);color:var(--text2)}
-.doc .what{color:var(--text2);font-size:13px;margin-top:4px;line-height:1.5}
-.doc ul{list-style:none;padding:0;margin:10px 0 0}
+.doc .what{color:var(--text2);font-size:13px;margin-top:5px;line-height:1.5}
+.doc ul{list-style:none;padding:0;margin:8px 0 0}
 .doc ul li{display:flex;gap:9px;align-items:flex-start;color:var(--text2);font-size:13px;margin-bottom:4px}
 .doc ul li::before{content:'•';color:var(--accent);flex-shrink:0}
-.legend{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
-.back{display:inline-flex;align-items:center;color:var(--text2);font-size:13px;margin-bottom:6px}
-.back:hover{color:var(--text);text-decoration:none}
+.doc .lks{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.lnk{font-size:12px;font-weight:600;padding:4px 10px;border-radius:99px;background:var(--surface2);border:1px solid var(--hairline);color:var(--text2);text-decoration:none}
+.lnk:hover{background:#1f1f27;text-decoration:none;color:var(--text)}
+.lnk.blue{color:var(--accent);border-color:rgba(10,132,255,.3)}
+.foot{max-width:760px;margin:0 auto;padding:8px 22px 60px;color:var(--text3);font-size:12px;text-align:center;line-height:1.8}
+.foot a{font-weight:600}
+@media(max-width:560px){.mast h1{font-size:23px}}
 </style>
 </head>
 <body>
 
-<header class="mast">
-  <a class="back" href="index.html">‹ Back to guide</a>
+<div class="mast">
   <div class="kicker">Global reference · documents</div>
   <h1>Documents Guide</h1>
-  <div class="sub">Every document you'll need to apply. What it is, what should be in it, and whether you already have it.</div>
-</header>
+  <div class="sub">Every document you'll need to apply — what it is, what should be in it, whether you already have it, and where to get it.</div>
+  <div class="nav">
+    <a class="back" href="index.html">‹ Back to guide</a>
+    <a class="back" href="uni-assist.html">uni-assist guide →</a>
+    <a class="back" href="apply-plan.html">Apply calendar →</a>
+  </div>
+</div>
 
-<div class="container prose">
+<div class="wrap">
 
   <div class="legend">
-    <span class="badge bg-green">You have it</span>
-    <span class="badge bg-amber">Action needed</span>
-    <span class="badge bg-grey">Plan / prepare</span>
-  </div>
-
-  <div class="doc">
-    <div class="dn">Bachelor's Degree / Final-Semester Proof <span class="kat kat-have">You'll have it</span></div>
-    <div class="what"><b>What it is:</b> proof you finished (or are about to finish) your AAST Computer Engineering degree. Since you have 1 semester left, you submit your <b>transcript + a provisional-graduation letter</b> from AAST confirming you're in your final semester with an expected graduation date.</div>
-    <ul><li>Must include: your name, degree title, ECTS/credits completed, expected graduation date.</li></ul>
-  </div>
-
-  <div class="doc">
-    <div class="dn">Transcript (official) <span class="kat kat-have">You'll have it</span></div>
-    <div class="what"><b>What it is:</b> your official AAST grade record. Request it, plus a <b>credit certificate</b> (ECTS breakdown) and the <b>English medium-of-instruction (MOI) letter</b> from the registrar.</div>
-    <ul><li>MOI letter confirms your degree was taught in English — useful at many Fachhochschulen.</li></ul>
+    <span class="lg g"><i></i>You have / will have it</span>
+    <span class="lg o"><i></i>Action needed now</span>
+    <span class="lg"><i style="background:var(--surface2);border:1px solid var(--hairline)"></i>Plan / prepare later</span>
   </div>
 
   <div class="doc">
     <div class="dn">IELTS or TOEFL score <span class="kat kat-need">Book now</span></div>
-    <div class="what"><b>What it is:</b> your universal English key. Target <b>IELTS Academic 6.5+</b> (or TOEFL iBT 90+). It unlocks every university and smooths the visa.</div>
-    <ul><li>Your IGCSE English (grade 7), AAST MOI letter and Northampton UK degree are strong <b>supporting</b> signals — but not a universal replacement. Saarland needs C1 (IELTS 7.0+).</li></ul>
+    <div class="what"><b>What it is:</b> your universal English key. Target <b>IELTS Academic 6.5+</b> (or TOEFL iBT 90+). Unlocks every university and smooths the visa. Result ~13 days after the test — book first.</div>
+    <ul><li>IGCSE English (grade 7), AAST MOI letter and your Northampton UK degree are strong <b>supporting</b> signals but not a universal replacement. Saarland needs C1 (IELTS 7.0+).</li></ul>
+    <div class="lks"><a class="lnk blue" href="https://ielts.idp.com/egypt" target="_blank" rel="noopener">Book IELTS (IDP Egypt) →</a><a class="lnk blue" href="https://www.britishcouncil.org.eg/en/exam/ielts" target="_blank" rel="noopener">British Council Egypt →</a><a class="lnk" href="https://www.ets.org/toefl" target="_blank" rel="noopener">TOEFL →</a></div>
+  </div>
+
+  <div class="doc">
+    <div class="dn">Bachelor's Degree / Final-Semester Proof <span class="kat kat-have">You'll have it</span></div>
+    <div class="what"><b>What it is:</b> proof you finished (or are finishing) your AAST Computer Engineering degree. With 1 semester left, submit your <b>transcript + a provisional-graduation letter</b> from AAST confirming your final semester and expected graduation date.</div>
+    <ul><li>Must include: name, degree title, ECTS/credits completed, expected graduation date.</li></ul>
+  </div>
+
+  <div class="doc">
+    <div class="dn">Transcript (official) <span class="kat kat-have">You'll have it</span></div>
+    <div class="what"><b>What it is:</b> your official AAST grade record. Request it, plus the <b>credit certificate</b> (ECTS breakdown) and the <b>English medium-of-instruction (MOI) letter</b> from the registrar.</div>
+    <ul><li>MOI letter confirms your degree was taught in English — useful at many Fachhochschulen.</li></ul>
+    <div class="lks"><a class="lnk" href="https://aast.edu/" target="_blank" rel="noopener">AAST registrar →</a></div>
+  </div>
+
+  <div class="doc">
+    <div class="dn">English medium-of-instruction (MOI) letter <span class="kat kat-have">You have it</span></div>
+    <div class="what"><b>What it is:</b> an official AAST letter confirming your bachelor's was taught in English. Together with your <b>Northampton UK degree</b> this is your MOI proof for the 16 MOI-accepting universities.</div>
+    <ul><li>Works where the program says "MOI accepted". Not accepted at the 17 TEST universities.</li></ul>
   </div>
 
   <div class="doc">
     <div class="dn">Cambridge IGCSE certificates <span class="kat kat-have">You have it</span></div>
-    <div class="what"><b>What it is:</b> your high-school credentials — Cambridge Statement of Results + O-Level grades (e.g. Reed Statement).</div>
-    <ul><li>Submit the certificate + O-Level grades for your uni-assist VPD. Already in English; keep a certified copy.</li></ul>
+    <div class="what"><b>What it is:</b> your high-school credentials — Cambridge Statement of Results + O-Level grades. Already in English.</div>
+    <ul><li>Submit the certificate + O-Level grades for your uni-assist VPD. Keep a certified copy.</li></ul>
   </div>
 
   <div class="doc">
@@ -78,6 +112,7 @@
     <div class="dn">CV (Europass / tabular) <span class="kat kat-plan">Prepare</span></div>
     <div class="what"><b>What it is:</b> a 1–2 page résumé. Highlight your <b>3 years of work + clients</b>, Northampton UK degree, and IGCSE grades.</div>
     <ul><li>Practice-oriented, scannable, no fluff. Mention projects.</li></ul>
+    <div class="lks"><a class="lnk blue" href="https://europa.eu/europass/en/create-europass-cv" target="_blank" rel="noopener">Europass CV maker →</a></div>
   </div>
 
   <div class="doc">
@@ -87,23 +122,34 @@
   </div>
 
   <div class="doc">
-    <div class="dn">uni-assist VPD <span class="kat kat-plan">Start weeks 5–6</span></div>
-    <div class="what"><b>What it is:</b> the certificate uni-assist issues after verifying your documents (valid 1 year). Required by the unis marked "uni-assist".</div>
-    <ul><li>See the <a href="uni-assist.html" style="color:var(--accent)"><b>uni-assist guide</b></a> for the full step-by-step.</li></ul>
+    <div class="dn">uni-assist VPD <span class="kat kat-plan">Start with IELTS</span></div>
+    <div class="what"><b>What it is:</b> the certificate uni-assist issues after verifying your documents (valid 1 year). Needed by unis marked "uni-assist" and by TU Berlin.</div>
+    <ul><li>See the <a href="uni-assist.html" style="color:var(--accent)"><b>uni-assist guide</b></a> for the full step-by-step and the 8-program checklist.</li></ul>
+    <div class="lks"><a class="lnk blue" href="uni-assist.html" >uni-assist guide →</a><a class="lnk" href="uniassist.html">8-program checklist →</a></div>
   </div>
 
   <div class="doc">
-    <div class="dn">GRE (Saarland only) <span class="kat kat-grey">Conditional</span></div>
+    <div class="dn">GRE (Saarland only) <span class="kat kat-plan">Conditional</span></div>
     <div class="what"><b>What it is:</b> a test Saarland mandates for non-EU applicants. Only take it if you seriously target Saarland.</div>
+    <div class="lks"><a class="lnk" href="https://www.ets.org/gre.html" target="_blank" rel="noopener">GRE →</a></div>
   </div>
 
   <div class="doc">
-    <div class="dn">Blocked account + visa docs <span class="kat kat-plan">Later</span></div>
-    <div class="what"><b>What it is:</b> proof of funds (Sperrkonto, ~&euro;11,904 for 2025/26) + visa application at the German Embassy Cairo once admitted.</div>
+    <div class="dn">Blocked account (Sperrkonto) <span class="kat kat-plan">Later</span></div>
+    <div class="what"><b>What it is:</b> proof of funds (~€11,904/yr for 2025/26) required for the student visa. Open once you have admission.</div>
+    <div class="lks"><a class="lnk blue" href="https://www.fintiba.com/" target="_blank" rel="noopener">Fintiba →</a><a class="lnk blue" href="https://www.expatrio.com/" target="_blank" rel="noopener">Expatrio →</a><a class="lnk" href="https://www.deutsche-bank.de/" target="_blank" rel="noopener">Deutsche Bank →</a></div>
   </div>
 
+  <div class="doc">
+    <div class="dn">Student visa (D) — Embassy Cairo <span class="kat kat-plan">Later</span></div>
+    <div class="what"><b>What it is:</b> the national visa application at the German Embassy in Cairo once admitted. Requires admission + blocked account + insurance.</div>
+    <div class="lks"><a class="lnk blue" href="https://kairo.diplo.de/" target="_blank" rel="noopener">German Embassy Cairo →</a><a class="lnk" href="https://www.uni-assist.de/en/" target="_blank" rel="noopener">uni-assist →</a></div>
+  </div>
+
+  <div style="margin-top:20px"><a href="index.html" style="color:var(--text2);font-size:13px;font-weight:600">‹ Back to the guide</a></div>
 </div>
 
-<div class="foot"><p><b>Compiled Sept 2026.</b> Part of the German Master's guide.</p></div>
+<div class="foot">German Master's Guide · Documents Guide · Compiled Sept 2026<br>
+<a href="index.html">Guide</a> · <a href="uni-assist.html">uni-assist</a> · <a href="uniassist.html">checklist</a> · <a href="apply-plan.html">calendar</a> · <a href="flow.html">flow</a></div>
 </body>
 </html>
